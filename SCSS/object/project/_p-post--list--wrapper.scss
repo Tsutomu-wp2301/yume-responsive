@@ -1,0 +1,26 @@
+@use"../../foundation/breakpoint" as m;
+
+
+@include m.mq(sp){
+  .p-post--list--wrapper {
+    display: flex;
+    flex-direction: column;
+    &::after {
+      content:"";
+      width: 100%;
+      height: 1px;
+      background-color: #dadada;
+      margin: 8px 0px;
+    }
+    a {
+      color: #CC0000;
+    }
+
+
+  }
+}
+
+@include m.mq(tab){
+}
+@include m.mq(pc){
+}

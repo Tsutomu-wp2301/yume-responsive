@@ -1,0 +1,16 @@
+@use"../../foundation/breakpoint" as m;
+
+
+@include m.mq(sp){
+  .c-title {
+    a {
+      color: #cd0707;
+      font-weight: bold;
+    }
+  }
+}
+
+@include m.mq(tab){
+}
+@include m.mq(pc){
+}

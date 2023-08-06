@@ -1,0 +1,21 @@
+@use"../../foundation/breakpoint" as m;
+
+@include m.mq(sp){
+  .p-header-height {
+    height: 50px;
+    width: 100vw;
+  }
+}
+@include m.mq(tab){
+  .p-header-height {
+    height:
+    50px;
+    width: 100%;
+  }
+}
+@include m.mq(pc){
+  .p-header-height {
+    height: 50px;
+    width: 100%;
+  }
+}

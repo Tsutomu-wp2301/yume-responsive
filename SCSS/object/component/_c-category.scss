@@ -1,0 +1,21 @@
+@use"../../foundation/breakpoint" as m;
+
+
+@include m.mq(sp){
+  .c-category {
+    background-color: #990000;
+    padding: 4px 8px;
+    font-size: 10px;
+    border-radius: 10px;
+    color: #fff;
+    a {
+      color: #fff;
+    }
+
+  }
+}
+
+@include m.mq(tab){
+}
+@include m.mq(pc){
+}

@@ -1,0 +1,89 @@
+@use"../../foundation/breakpoint" as m;
+
+
+@include m.mq(sp){
+  .p-header-button--sp {
+    height: 45px;
+    width: 45px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+      .button-line {
+      height: 2px;
+      width: 30px;
+      background-color: #fff;
+      position: relative;
+    }
+  }
+}
+
+// タブレット以上でハンバーガーボタンを消す
+@include m.mq(tab){
+  .p-header-button--sp {
+    display: none;
+  }
+}
+@include m.mq(pc){
+  .p-header-button--sp {
+    display: none;
+  }
+}
+
+
+// ハンバーガーボタンの上下の線
+@include m.mq(sp){
+  .p-header-button--sp {
+    .button-line::before {
+      content: "";
+      width: 30px;
+      height: 2px;
+      background-color: #fff;
+      position: absolute;
+      top: -10px;
+      left: 0;
+      transition: 0.3s;
+    }
+  }
+  .p-header-button--sp {
+    .button-line::after {
+      content: "";
+      width: 30px;
+      height: 2px;
+      background-color: #fff;
+      position: absolute;
+      top: 10px;
+      left: 0;
+      transition: 0.3s;
+    }
+  }
+}
+// 3つの線の動き
+@include m.mq(sp){
+  .p-header-button--sp.open {
+    .button-line{
+      height: 0px;
+    }
+    .button-line::before {
+      content: "";
+      width: 30px;
+      height: 2px;
+      background-color: #fff;
+      position: absolute;
+      top: 0px;
+      left: 0;
+      transform: rotate(45deg);
+    }
+  }
+  .p-header-button--sp.open {
+    .button-line::after {
+      content: "";
+      width: 30px;
+      height: 2px;
+      background-color: #fff;
+      position: absolute;
+      top: 0px;
+      left: 0;
+      transform: rotate(-45deg);
+    }
+  }
+}

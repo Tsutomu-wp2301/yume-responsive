@@ -1,0 +1,33 @@
+// ブレークポイント
+
+
+// $breakpoint: (
+//   sp: 'screen and (max-width: 767px)',
+//   tab: 'screen and (min-width: 768px)',
+//   pc: 'screen and (min-width: 1001px)'
+// );
+
+
+$breakpoint: (
+  sp: 'screen and (max-width: 780px)',
+  tab: 'screen and (min-width:781.5px) and (max-width:1199.5px)',
+  pc: 'screen and (min-width: 1200px)'
+);
+
+@mixin mq($bp) {
+  @media #{map-get($breakpoint, $bp)} {
+   @content;
+  }
+}
+
+
+// タブレットの場合のミックスインの呼び出し方-----
+// @include mq(tab) {
+
+// }
+
+// ミックスインを名前空間で呼び出すやり方---------
+// @use "ファイル名" as m;     /*←メディアクエリを使うファイル全てに記載する */
+// @include m.mq(sp) {
+
+// }

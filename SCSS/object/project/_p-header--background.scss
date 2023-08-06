@@ -1,0 +1,19 @@
+@use"../../foundation/breakpoint" as m;
+
+
+@include m.mq(sp){
+  .p-header--background {
+    background-image: url(../image/slide132.jpg);
+    width: 100vw;
+    height: 300px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: 50px;
+  }
+}
+
+@include m.mq(tab){
+}
+@include m.mq(pc){
+}

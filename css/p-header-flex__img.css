@@ -1,0 +1,7 @@
+@media screen and (max-width: 780px) {
+  .p-header-flex__img {
+    display: flex;
+    align-items: center;
+  }
+}
+/*# sourceMappingURL=p-header-flex__img.css.map */

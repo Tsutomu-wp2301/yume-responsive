@@ -1,0 +1,38 @@
+@use"../../foundation/breakpoint" as m;
+
+
+@include m.mq(sp){
+  .fa-facebook::before {
+  display: none;
+  }
+}
+@include m.mq(tab){
+  .fa-facebook::before {
+    font-size: 40px;
+    color: #a09c9c;
+    margin-right: 10px;
+    transition: color 0.5s;
+  }
+}
+@include m.mq(pc){
+  .fa-facebook::before {
+    font-size: 40px;
+    color: #a09c9c;
+    margin-right: 10px;
+    transition: color 0.5s;
+  }
+}
+
+
+a:hover .fa-facebook::before {
+  @include m.mq(sp){
+
+  }
+  @include m.mq(tab){
+    color: #193152;
+  }
+  @include m.mq(pc){
+    color: #193152;
+  }
+
+}

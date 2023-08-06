@@ -1,0 +1,22 @@
+@use"../../foundation/breakpoint" as m;
+
+
+@include m.mq(sp){
+  .p-media--flex {
+    width: 100%;
+    img {
+      width: 100%;
+      height: auto;
+      margin-top: 6px;
+    }
+    p {
+      margin-bottom: -4px;
+      margin-left: 4px;
+    }
+  }
+}
+
+@include m.mq(tab){
+}
+@include m.mq(pc){
+}

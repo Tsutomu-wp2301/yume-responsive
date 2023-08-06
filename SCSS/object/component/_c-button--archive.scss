@@ -1,0 +1,35 @@
+@use"../../foundation/breakpoint" as m;
+
+
+@include m.mq(sp){
+  .c-button--archive {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 160px;
+    margin: auto;
+    padding: 0.6rem 0.5rem;
+    font-weight: bold;
+    border: 2px solid #CC0000;
+    color: #CC0000;
+    transition: 0.5s;
+    margin-top: 10px;
+    &:hover {
+      color: #fff;
+      background: #CC0000;
+    }
+  }
+  .c-button--archive button {
+    color: #CC0000;
+    font-weight: bold;
+  }
+  .c-button--archive:hover button {
+    color: #fff;
+  }
+}
+
+@include m.mq(tab){
+}
+@include m.mq(pc){
+}
+

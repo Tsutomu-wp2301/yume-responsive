@@ -1,0 +1,133 @@
+@use"../../foundation/breakpoint" as m;
+
+
+@include m.mq(sp){
+  h2.p-title--home {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2em;
+    margin-top: 3rem;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .p-tenkyu{
+    .p-title--home {
+      margin-bottom: 1em;
+    }
+  }
+
+  .p-title--home.show-underline::before {
+    content: "";
+    position: absolute;
+    bottom: -12px;
+    display: inline-block;
+    width: 0px;
+    height: 5px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: #cc0000;
+    border-radius: 4px;
+    animation: underline-appear 1s ease-in-out forwards;
+    animation-delay: 0.2s; /* 遅延 */
+  }
+  @keyframes underline-appear {
+    0% {
+      width: 0px;
+    }
+    100% {
+      width: 50px;
+    }
+  }
+    h2.p-title--home.show-underline::before {
+    animation-name: underline-appear;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+}
+
+
+@include m.mq(tab){
+  h2.p-title--home {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2em;
+    margin-top: 3rem;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .p-title--home.show-underline::before {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    display: inline-block;
+    width: 0px;
+    height: 5px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: #cc0000;
+    border-radius: 4px;
+    animation: underline-appear 1s ease-in-out forwards;
+    animation-delay: 0.2s; /* 遅延 */
+  }
+  @keyframes underline-appear {
+    0% {
+      width: 0px;
+    }
+    100% {
+      width: 70px;
+    }
+  }
+    h2.p-title--home.show-underline::before {
+    animation-name: underline-appear;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+}
+
+
+@include m.mq(pc){
+  h2.p-title--home {
+    position: relative;
+    display: inline-block;
+    margin-bottom: 2em;
+    margin-top: 3rem;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+  }
+  .p-title--home.show-underline::before {
+    content: "";
+    position: absolute;
+    bottom: -15px;
+    display: inline-block;
+    width: 0px;
+    height: 5px;
+    left: 50%;
+    -webkit-transform: translateX(-50%);
+    transform: translateX(-50%);
+    background-color: #cc0000;
+    border-radius: 4px;
+    animation: underline-appear 1s ease-in-out forwards;
+    animation-delay: 0.2s; /* 遅延 */
+  }
+  @keyframes underline-appear {
+    0% {
+      width: 0px;
+    }
+    100% {
+      width: 70px;
+    }
+  }
+    h2.p-title--home.show-underline::before {
+    animation-name: underline-appear;
+    animation-duration: 1s;
+    animation-timing-function: ease-in-out;
+    animation-fill-mode: forwards;
+  }
+}

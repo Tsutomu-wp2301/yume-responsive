@@ -1,0 +1,19 @@
+@use"../../foundation/breakpoint" as m;
+
+
+@include m.mq(sp){
+  .p-footer--bottom {
+    background-color: rgb(223,3,25);
+    color: #fff;
+    font-size: 10px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+}
+
+@include m.mq(tab){
+}
+@include m.mq(pc){
+}

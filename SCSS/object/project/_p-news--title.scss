@@ -1,0 +1,18 @@
+@use"../../foundation/breakpoint" as m;
+
+
+@include m.mq(sp){
+  .p-news--title {
+    margin-top: -4px;
+    margin-bottom: 4px;
+    a {
+      color: #cc0000;
+    }
+
+  }
+}
+
+@include m.mq(tab){
+}
+@include m.mq(pc){
+}

@@ -1,0 +1,13 @@
+@use"../../foundation/breakpoint" as m;
+
+
+@include m.mq(sp){
+  .p-footer-nav {
+    display: none;
+  }
+}
+
+@include m.mq(tab){
+}
+@include m.mq(pc){
+}

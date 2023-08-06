@@ -1,0 +1,25 @@
+@use"../../foundation/breakpoint" as m;
+
+
+@include m.mq(sp) {
+  .p-header-color {
+    background-color: #DF0319;
+  }
+}
+
+@include m.mq(tab) {
+  .p-header-color {
+    background-color: #FFF;
+  }
+}
+
+@include m.mq(pc) {
+  .p-header-color {
+    background-color: #FFF;
+  }
+}
+
+.p-header-color {
+  position: fixed;
+  z-index: 9999;
+}

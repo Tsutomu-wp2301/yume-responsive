@@ -1,0 +1,22 @@
+@use './breakpoint' as m;
+
+body {
+  font-size: 14px;
+  list-style: none;
+  &.open {
+    overflow: hidden;/* ハンバーガーメニュー展開時スクロール禁止 */
+  }
+}
+h2,h3 {
+  font-family: 'Noto Sans','メイリオ','ヒラギノ角ゴ ProN',sans-serif;
+}
+* {
+  font-family: 'Meiryo', '游ゴシック', 'YuGothic', sans-serif;
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+  color: #000;
+}

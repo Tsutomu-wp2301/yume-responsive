@@ -1,0 +1,14 @@
+@use"../foundation/breakpoint" as m;
+
+
+@include m.mq(sp){
+  main {
+    position: relative;
+    top: 50px;
+  }
+}
+
+@include m.mq(tab){
+}
+@include m.mq(pc){
+}

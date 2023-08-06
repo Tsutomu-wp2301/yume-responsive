@@ -1,0 +1,28 @@
+@use"../../foundation/breakpoint" as m;
+
+
+@include m.mq(sp){
+  .p-footer__link {
+    a {
+      color: #696666;
+      border-bottom: 1px solid #fff;
+      transition: 0.1s;
+      font-size: 12px;
+    }
+    a:hover {
+      border-bottom: #696666 solid 1px;
+    }
+    &__flex {
+      display: flex;
+      flex-direction: column;
+    }
+    li {
+      margin: 7px 0px;
+    }
+  }
+}
+
+@include m.mq(tab){
+}
+@include m.mq(pc){
+}

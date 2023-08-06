@@ -1,0 +1,18 @@
+@use"../../foundation/breakpoint" as m;
+
+
+@include m.mq(sp){
+  .p-global-nav {
+  display: none;
+}
+}
+@include m.mq(tab){
+  .p-global-nav {
+    display: block;
+  }
+}
+@include m.mq(pc){
+  .p-global-nav {
+    display: block;
+  }
+}

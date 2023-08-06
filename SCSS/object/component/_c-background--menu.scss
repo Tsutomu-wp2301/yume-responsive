@@ -1,0 +1,29 @@
+@use"../../foundation/breakpoint" as m;
+
+/* メニュー展開時の背景設定 */
+@include m.mq(sp){
+  .c-background--menu {
+    width: 100vw;
+    height: 0vh;
+    background-color: rgba(0,0,0,0.5);
+    position: fixed;
+    top: 0px;
+    z-index: 9997;
+    transition: 0.5s;
+    &.open {
+      height: 100vh;
+      top: 350px;
+    }
+  }
+}
+
+@include m.mq(tab){
+  .c-background--menu {
+    display: none;
+  }
+}
+@include m.mq(pc){
+  .c-background--menu {
+    display: none;
+  }
+}

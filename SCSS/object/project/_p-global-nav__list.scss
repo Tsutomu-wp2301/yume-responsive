@@ -1,0 +1,29 @@
+@use"../../foundation/breakpoint" as m;
+
+
+@include m.mq(sp){
+  .p-global-nav__list {
+    height: 40px;
+    width: 100%;
+    display: flex;
+    align-items: center;
+    position: relative;
+    a {
+      font-size: 16px;
+    }
+    &--home {
+      height: 60px;
+      width: 100%;
+      display: flex;
+      align-items: center;
+      position: relative;
+      a {
+        font-size: 18px;
+      }
+    }
+  }
+}
+
+
+
+
