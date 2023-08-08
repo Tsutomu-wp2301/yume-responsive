@@ -8,6 +8,17 @@
 }
 
 @include m.mq(tab){
+  .p-footer-nav {
+    display: block;
+    background-color: #faf8f8;
+    &::before {
+      display: block;
+      content: "";
+      width: 100vw;
+      height: 2px;
+      background-color: #d5d4d4;
+    }
+  }
 }
 @include m.mq(pc){
 }

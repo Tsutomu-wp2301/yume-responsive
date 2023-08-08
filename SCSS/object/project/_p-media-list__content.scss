@@ -3,7 +3,7 @@
 
 @include m.mq(sp){
   .p-media-list {
-  margin-bottom: 50px;
+    margin-bottom: 50px;
     &__content {
       li {
         padding: 20px;
@@ -13,6 +13,14 @@
 }
 
 @include m.mq(tab){
+  .p-media-list {
+    margin-bottom: 50px;
+    &__content {
+      li {
+        padding: 20px;
+      }
+    }
+  }
 }
 @include m.mq(pc){
 }

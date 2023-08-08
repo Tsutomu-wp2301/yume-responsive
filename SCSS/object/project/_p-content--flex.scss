@@ -11,6 +11,9 @@
 }
 
 @include m.mq(tab){
+  .p-content--flex {
+    display: none;
+  }
 }
 @include m.mq(pc){
 }

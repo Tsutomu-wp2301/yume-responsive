@@ -14,6 +14,19 @@
 }
 
 @include m.mq(tab){
+  .p-footer__wrapper {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #faf8f8;
+    color: #696666;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 20px 0px 20px 0px;
+  }
 }
 @include m.mq(pc){
+  .p-footer__wrapper {
+    padding: 40px 0px 20px 0px;
+  }
 }

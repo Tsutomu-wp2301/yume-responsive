@@ -9,6 +9,14 @@
 }
 
 @include m.mq(tab){
+  main {
+    position: relative;
+    top: 100px;
+  }
 }
 @include m.mq(pc){
+  main {
+    position: relative;
+    top: 100px;
+  }
 }

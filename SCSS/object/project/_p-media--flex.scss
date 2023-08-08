@@ -15,8 +15,22 @@
     }
   }
 }
-
 @include m.mq(tab){
+  .p-media--flex--tab {
+    width: 100%;
+    display: flex;
+    
+    img {
+      width: 100%;
+      height: auto;
+      margin-top: 6px;
+    }
+    p {
+      margin-bottom: -4px;
+      margin-left: 4px;
+    }
+  }
 }
 @include m.mq(pc){
+
 }

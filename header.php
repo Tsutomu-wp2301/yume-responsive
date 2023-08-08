@@ -9,7 +9,6 @@
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <script src="https://kit.fontawesome.com/ea77b87548.js" crossorigin="anonymous"></script>
-  <link rel="stylesheet" href="<?php echo get_template_directory_uri(); ?>/font-awesome-animation.min.css" type="text/css" />
   <meta name="vewport" content="width=device-width, initial-scale=1">
   <?php wp_head(); ?>
 </head>
