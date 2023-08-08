@@ -1,0 +1,19 @@
+@use"../../foundation/breakpoint" as m;
+
+
+@include m.mq(sp){
+  .p-content--tab--flex {
+    display: none;
+
+  }
+}
+
+@include m.mq(tab){
+  .p-content--tab--flex {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+  }
+}
+@include m.mq(pc){
+}

@@ -8,6 +8,12 @@
 }
 
 @include m.mq(tab){
+  .p-article-layout {
+    width: 80vw;
+  }
 }
 @include m.mq(pc){
+  .p-article-layout {
+    width: 80vw;
+  }
 }

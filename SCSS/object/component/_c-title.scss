@@ -11,6 +11,18 @@
 }
 
 @include m.mq(tab){
+  .c-title {
+    a {
+      color: #cd0707;
+      font-weight: bold;
+      font-size: 18px;
+    }
+  }
 }
 @include m.mq(pc){
+  .c-title {
+    a {
+      font-size: 20px;
+    }
+  }
 }

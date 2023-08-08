@@ -1,0 +1,65 @@
+@use"../../foundation/breakpoint" as m;
+
+
+@include m.mq(sp){
+}
+
+/* ヘッダーのグローバルナビ */
+@include m.mq(tab){
+  .p-inner-list--wrapper {
+		position: absolute;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.3s ease;
+    &4 {
+      position: absolute;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+  }
+  /* ホバー時にインナーリストを表示 */
+  .open {
+    .p-inner-list--wrapper {
+      max-height: 40px;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      position: absolute;
+      &4 {
+        max-height: 160px;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        position: absolute;
+      }
+    }
+  }
+}
+@include m.mq(pc){
+  .p-inner-list--wrapper {
+		position: absolute;
+		max-height: 0;
+		overflow: hidden;
+		transition: max-height 0.3s ease;
+    &4 {
+      position: absolute;
+      max-height: 0;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+    }
+  }
+  /* ホバー時にインナーリストを表示 */
+  .open {
+    .p-inner-list--wrapper {
+      max-height: 40px;
+      overflow: hidden;
+      transition: max-height 0.3s ease;
+      position: absolute;
+      &4 {
+        max-height: 160px;
+        overflow: hidden;
+        transition: max-height 0.3s ease;
+        position: absolute;
+      }
+    }
+  }
+}

@@ -1,0 +1,36 @@
+@use"../../foundation/breakpoint" as m;
+
+
+@include m.mq(sp){
+
+}
+
+@include m.mq(tab){
+  .p-header--navMenu {
+    box-sizing: content-box;
+		height: 50px;
+		width: 100vw;
+		position: fixed;
+		top: 50px;
+		border-top: 2px solid #d5d4d4;
+		background-color: #faf8f8;
+		opacity: 1;
+    transition: 0.3s;
+    &--flex {
+      display: flex;
+      align-items: stretch;
+      justify-content: center;
+    }
+    li {
+      display: block;
+      color: #000;
+      font-size: 1rem;
+    }
+  }
+
+}
+@include m.mq(pc){
+  .p-header--navMenu {
+		top: 70px;
+  }
+}

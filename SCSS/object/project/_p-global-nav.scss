@@ -9,10 +9,22 @@
 @include m.mq(tab){
   .p-global-nav {
     display: block;
+    position: fixed;
+    z-index: 9996;
+    &.headerInactive {
+      .p-header--navMenu {
+        height: 0px;
+        border-top: 0px;
+        opacity: 0.3;
+        overflow: hidden;
+      }
+    }
   }
 }
 @include m.mq(pc){
   .p-global-nav {
     display: block;
+    position: fixed;
+    z-index: 9996;
   }
 }

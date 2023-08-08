@@ -9,8 +9,19 @@
     margin-top: 20px;
   }
 }
-
 @include m.mq(tab){
+  .p-h2--flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
 }
 @include m.mq(pc){
+  .p-h2--flex {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 20px;
+  }
 }

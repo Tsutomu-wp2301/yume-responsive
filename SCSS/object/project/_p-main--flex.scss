@@ -7,8 +7,15 @@
     justify-content: center;
   }
 }
-
 @include m.mq(tab){
+  .p-main--flex {
+    display: flex;
+    justify-content: center;
+  }
 }
 @include m.mq(pc){
+  .p-main--flex {
+    display: flex;
+    justify-content: center;
+  }
 }

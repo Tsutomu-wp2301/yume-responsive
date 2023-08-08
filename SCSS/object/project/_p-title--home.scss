@@ -48,7 +48,6 @@
   }
 }
 
-
 @include m.mq(tab){
   h2.p-title--home {
     position: relative;
@@ -56,7 +55,7 @@
     margin-bottom: 2em;
     margin-top: 3rem;
     color: #000;
-    font-size: 20px;
+    font-size: 26px;
     font-weight: bold;
   }
   .p-title--home.show-underline::before {
@@ -98,7 +97,7 @@
     margin-bottom: 2em;
     margin-top: 3rem;
     color: #000;
-    font-size: 20px;
+    font-size: 26px;
     font-weight: bold;
   }
   .p-title--home.show-underline::before {

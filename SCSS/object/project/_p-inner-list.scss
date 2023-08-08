@@ -1,0 +1,38 @@
+@use"../../foundation/breakpoint" as m;
+
+
+@include m.mq(sp){
+}
+
+@include m.mq(tab){
+  .p-inner-list {
+    background-color: #fff;
+    white-space: nowrap;
+    transition: 0.1s;
+    font-weight: normal;
+    a {
+      height: 40px;
+    }
+    &:hover {
+      background-color: #dcd8d8df;
+      font-weight: bold;
+    }
+  }
+}
+@include m.mq(pc){
+  .p-inner-list {
+    background-color: #fff;
+    white-space: nowrap;
+    transition: 0.1s;
+    font-weight: normal;
+    a {
+      height: 40px;
+    }
+    &:hover {
+      background-color: #dcd8d8df;
+      font-weight: bold;
+    }
+  }
+}
+
+

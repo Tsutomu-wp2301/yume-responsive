@@ -30,6 +30,56 @@
 }
 
 @include m.mq(tab){
+  .p-tenkyu--honbun {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &::after {
+      display: block;
+      content: "";
+      width: 80vw;
+      height:1px;
+      background-color: #9e9c9c;
+      margin: 20px 0px;
+    }
+    &::before {
+      display: block;
+      content: "";
+      width: 80vw;
+      height:1px;
+      background-color: #9e9c9c;
+      margin: 20px 0px;
+    }
+  }
 }
 @include m.mq(pc){
+  .p-tenkyu--honbun {
+    margin-top: 0px;
+    margin-bottom: 30px;
+    text-align: center;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    &::after {
+      display: block;
+      content: "";
+      width: 80vw;
+      height:1px;
+      background-color: #9e9c9c;
+      margin: 20px 0px;
+    }
+    &::before {
+      display: block;
+      content: "";
+      width: 80vw;
+      height:1px;
+      background-color: #9e9c9c;
+      margin: 20px 0px;
+    }
+  }
 }

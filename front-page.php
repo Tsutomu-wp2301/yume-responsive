@@ -42,11 +42,11 @@
         );
         if (have_posts()) : while (have_posts()) : the_post();
       ?>
-      <?php get_template_part('template-parts/media','postsp')?>
-      <div class="img_bottom20"></div>
+      <?php get_template_part('template-parts/media','postsp')?><!-- sp用テンプレート -->
+      <?php get_template_part('template-parts/media','posttab')?><!-- tab/pc用テンプレート -->
       <?php endwhile; endif; wp_reset_query(); ?>
     </section><!-- メディア掲載情報セクション -->
-    <section>
+    <section class="p-media-list--wrapper">
       <div class="p-media-list">
         <ul class="p-media-list__tab">
           <li id="media-tab--all">すべて</li>
@@ -140,8 +140,8 @@
         <a id="c-button--sp" href="<?php echo home_url() ; ?>/category/media/" class="c-button--archive">
           <button>メディア情報一覧</button>
         </a><!-- メディアボタン -->
-      </div><!-- メディア情報のタブのセクション -->
-    </section>
+      </div>
+    </section><!-- メディア情報リストのセクション -->
     <sevtion>
       <div class="p-h2--flex">
         <h2 class= "p-title--home">夢らんどニュース</h2>
@@ -177,7 +177,7 @@
               <?php the_post_thumbnail(); ?>
             </a>
             <p class="p-news--text">
-              <?php echo nl2br(mb_substr(strip_tags($post-> post_content),0,150)); ?>
+              <?php echo nl2br(mb_substr(strip_tags($post-> post_content),0,130)); ?>
             </p>
           </div>
           <a id="c-button--more--sp" href="<?php the_permalink(); ?>" class="c-button--more"><button>もっと見る</button></a><!-- もっと見るボタン -->
@@ -186,9 +186,9 @@
         <?php endwhile; endif; wp_reset_query(); ?> 
       </ul>
       <a id="c-button--sp" href="<?php echo home_url() ; ?>/category/media/" class="c-button--archive">
-          <button>NEWS一覧</button>
-        </a><!-- メディアボタン -->
-    </section><!-- 夢らんどニュースセクション -->
+        <button>NEWS一覧</button>
+      </a><!-- メディアボタン -->
+    </section><!-- 夢らんどニュースのセクション -->
   </article>
   <div class="c-background--menu"></div><!-- メニュー展開時の背景 -->
 </main>

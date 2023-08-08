@@ -1,6 +1,6 @@
 @use"../../foundation/breakpoint" as m;
 
-
+/* メディアリストタブで表示の切り替え */
 @include m.mq(sp){
   .hide {
     display: none;
@@ -9,8 +9,13 @@
     display: block;
   }
 }
-
 @include m.mq(tab){
+  .hide {
+    display: none;
+  }
+  .hide.select {
+    display: block;
+  }
 }
 @include m.mq(pc){
 }

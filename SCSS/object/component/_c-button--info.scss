@@ -28,10 +28,36 @@
   .c-button--info:hover button {
     color: #fff;
   }
-
 }
 
 @include m.mq(tab){
+  .c-button--info {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 180px;
+    margin: auto;
+    padding: 0.6rem 1rem;
+    font-weight: bold;
+    border: 2px solid #CC0000;
+    color: #CC0000;
+    border-radius: 100vh;
+    transition: 0.5s;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    &:hover {
+      color: #fff;
+      background: #CC0000;
+    }
+  }
+  .c-button--info button {
+    color: #CC0000;
+    font-weight: bold;
+  }
+  .c-button--info:hover button {
+    color: #fff;
+  }
 }
+
 @include m.mq(pc){
 }
