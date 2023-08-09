@@ -378,6 +378,72 @@ a {
   }
 }
 @media screen and (max-width: 780px) {
+  .c-button--wp {
+    width: 140px;
+    margin: 10px 0px;
+    padding: 0.6rem 1rem;
+    font-weight: bold;
+    border: 2px solid #CC0000;
+    color: #CC0000;
+    border-radius: 100vh;
+    transition: 0.5s;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .c-button--wp .wp-block-button__link {
+    background-color: #fff;
+    padding: 0;
+    color: #CC0000;
+    font-weight: bold;
+    transition: 0.5s;
+  }
+  .c-button--wp:hover {
+    color: #fff;
+    background: #CC0000;
+  }
+  .c-button--wp:hover a {
+    color: #fff;
+  }
+  .c-button--wp:hover .wp-block-button__link {
+    background-color: #cc0000;
+    padding: 0;
+  }
+}
+@media screen and (min-width:781.5px) {
+  .c-button--wp {
+    width: 140px;
+    margin: auto;
+    padding: 0.6rem 1rem;
+    font-weight: bold;
+    border: 2px solid #CC0000;
+    color: #CC0000;
+    border-radius: 100vh;
+    transition: 0.5s;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+  }
+  .c-button--wp .wp-block-button__link {
+    background-color: #fff;
+    padding: 0;
+    color: #CC0000;
+    font-weight: bold;
+    transition: 0.5s;
+  }
+  .c-button--wp:hover {
+    color: #fff;
+    background: #CC0000;
+  }
+  .c-button--wp:hover a {
+    color: #fff;
+  }
+  .c-button--wp:hover .wp-block-button__link {
+    background-color: #cc0000;
+    padding: 0;
+  }
+}
+@media screen and (max-width: 780px) {
   .p-header-flex {
     display: flex;
     justify-content: space-between;
@@ -868,6 +934,24 @@ a {
     position: relative;
     top: 50px;
   }
+  .p-header--background--archive {
+    background-image: url(../image/eyecatch-tenpo.png);
+    width: 100vw;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: 50px;
+  }
+  .p-header--background--post {
+    background-image: url(../image/eyecatch-post.png);
+    width: 100vw;
+    height: 100px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: 50px;
+  }
 }
 @media screen and (min-width:781.5px) {
   .p-header--background {
@@ -879,12 +963,48 @@ a {
     position: relative;
     top: 100px;
   }
+  .p-header--background--archive {
+    background-image: url(../image/eyecatch-tenpo.png);
+    width: 100vw;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: 100px;
+  }
+  .p-header--background--post {
+    background-image: url(../image/eyecatch-post.png);
+    width: 100vw;
+    height: 150px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: 100px;
+  }
 }
 @media screen and (min-width: 1200px) {
   .p-header--background {
     background-image: url(../image/slide132.jpg);
     width: 100vw;
     height: 600px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: 100px;
+  }
+  .p-header--background--archive {
+    background-image: url(../image/eyecatch-tenpo.png);
+    width: 100vw;
+    height: 250px;
+    background-size: cover;
+    background-position: center;
+    position: relative;
+    top: 100px;
+  }
+  .p-header--background--post {
+    background-image: url(../image/eyecatch-post.png);
+    width: 100vw;
+    height: 250px;
     background-size: cover;
     background-position: center;
     position: relative;
@@ -924,6 +1044,11 @@ a {
     color: #000;
     font-size: 20px;
     font-weight: bold;
+    /* page.phpのマージン調整 */
+  }
+  h2.p-title--home.margin-top--page {
+    margin-top: 0px;
+    margin-bottom: 40px;
   }
   .p-tenkyu .p-title--home {
     margin-bottom: 1em;
@@ -1603,6 +1728,7 @@ a {
   }
   .p-footer__flex--tab li a {
     font-size: 12px;
+    color: #696666;
   }
   .p-footer__flex--tab li a:hover {
     border-bottom: 1px solid #a19e9e;
@@ -1614,6 +1740,34 @@ a {
   }
   .p-footer__flex--tab li {
     padding: 5px 15px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .p-article--page p {
+    font-size: 14px;
+    margin: 10px 0px;
+  }
+  .p-article--page p:nth-of-type(1) {
+    margin-top: 20px;
+  }
+  .p-article--page .is-layout-flex {
+    margin-top: 40px;
+    margin-bottom: 50px;
+    flex-direction: column;
+  }
+  .p-article--page iframe {
+    width: 100vw;
+    height: 300px;
+    position: relative;
+    left: -10vw;
+  }
+}
+@media screen and (min-width:781.5px) {
+  iframe {
+    width: 100vw;
+    height: 300px;
+    position: relative;
+    left: -10vw;
   }
 }
 /* メディアリストタブで表示の切り替え */

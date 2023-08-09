@@ -1,0 +1,72 @@
+@use"../../foundation/breakpoint" as m;
+
+
+@include m.mq(sp){
+  .c-button--wp {
+    width: 140px;
+    margin: 10px 0px;
+    padding: 0.6rem 1rem;
+    font-weight: bold;
+    border: 2px solid #CC0000;
+    color: #CC0000;
+    border-radius: 100vh;
+    transition: 0.5s;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    .wp-block-button__link {
+      background-color: #fff;
+      padding: 0;
+      color: #CC0000;
+      font-weight: bold;
+      transition: 0.5s;
+    }
+    &:hover {
+      color: #fff;
+      background: #CC0000;
+      a {
+        color: #fff;
+      }
+      .wp-block-button__link {
+        background-color: #cc0000;
+        padding: 0;
+      }
+    }
+  }
+}
+
+@include m.mq(tab){
+  .c-button--wp {
+    width: 140px;
+    margin: auto;
+    padding: 0.6rem 1rem;
+    font-weight: bold;
+    border: 2px solid #CC0000;
+    color: #CC0000;
+    border-radius: 100vh;
+    transition: 0.5s;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    .wp-block-button__link {
+      background-color: #fff;
+      padding: 0;
+      color: #CC0000;
+      font-weight: bold;
+      transition: 0.5s;
+    }
+    &:hover {
+      color: #fff;
+      background: #CC0000;
+      a {
+        color: #fff;
+      }
+      .wp-block-button__link {
+        background-color: #cc0000;
+        padding: 0;
+      }
+    }
+  }
+}
+@include m.mq(pc){
+}
