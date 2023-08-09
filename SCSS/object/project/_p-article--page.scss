@@ -1,0 +1,36 @@
+@use"../../foundation/breakpoint" as m;
+
+
+@include m.mq(sp){
+  .p-article--page {
+    p {
+      font-size: 14px;
+      margin: 10px 0px;
+      &:nth-of-type(1) {
+        margin-top: 20px;
+      }
+    }
+    .is-layout-flex  {
+      margin-top: 40px;
+      margin-bottom: 50px;
+      flex-direction: column;
+    }
+    iframe {
+      width: 100vw;
+      height:300px;
+      position: relative;
+      left: calc(100vw*(-0.1));
+    }
+  }
+}
+
+@include m.mq(tab){
+  iframe {
+    width: 100vw;
+    height:300px;
+    position: relative;
+    left: calc(100vw*(-0.1));
+  }
+}
+@include m.mq(pc){
+}

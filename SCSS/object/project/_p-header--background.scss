@@ -10,6 +10,26 @@
     background-position: center;
     position: relative;
     top: 50px;
+
+    &--archive {
+      background-image: url(../image/eyecatch-tenpo.png);
+      width: 100vw;
+      height: 150px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      top: 50px;
+    }
+
+    &--post {
+      background-image: url(../image/eyecatch-post.png);
+      width: 100vw;
+      height: 100px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      top: 50px;
+    }
   }
 }
 
@@ -22,6 +42,26 @@
     background-position: center;
     position: relative;
     top: 100px;
+
+    &--archive {
+      background-image: url(../image/eyecatch-tenpo.png);
+      width: 100vw;
+      height: 150px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      top: 100px;
+    }
+
+    &--post {
+      background-image: url(../image/eyecatch-post.png);
+      width: 100vw;
+      height: 150px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      top: 100px;
+    }
   }
 }
 @include m.mq(pc){
@@ -33,5 +73,25 @@
     background-position: center;
     position: relative;
     top: 100px;
+
+    &--archive {
+      background-image: url(../image/eyecatch-tenpo.png);
+      width: 100vw;
+      height: 250px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      top: 100px;
+    }
+
+    &--post {
+      background-image: url(../image/eyecatch-post.png);
+      width: 100vw;
+      height: 250px;
+      background-size: cover;
+      background-position: center;
+      position: relative;
+      top: 100px;
+    }
   }
 }

@@ -27,45 +27,56 @@
       </button>
     </div>
   </div>
-  <div class="p-header--background">
-    <section class = "p-global-nav--sp"><!-- SPハンバーガーボタン -->
-      <ul>
-        <li class = "p-global-nav__list--home">
-        <img class="c-nav-icon--home" src="<?php bloginfo('template_directory'); ?>/image/globalnav/icon-home.svg" alt="ホームに戻るアイコン"/>
-          <a hlef="#">トップページへ戻る</a>
-        </li>
-        <li class = "p-global-nav__list">
-        <img class="c-nav-icon" src="<?php bloginfo('template_directory'); ?>/image/globalnav/icon-tenpo.svg" alt="店舗一覧アイコン"/>
-          <a hlef="#">店舗一覧</a>
-        </li>
-        <li class = "p-global-nav__list">
-        <img class="c-nav-icon" src="<?php bloginfo('template_directory'); ?>/image/globalnav/icon-media.svg" alt="メディアアイコン"/>
-          <a hlef="#">メディア</a>
-        </li>
-        <li class = "p-global-nav__list">
-        <img class="c-nav-icon" src="<?php bloginfo('template_directory'); ?>/image/globalnav/icon-recruit.svg" alt="採用情報アイコン"/>
-          <a hlef="#">採用情報</a>
-        </li>
-        <li class = "p-global-nav__list">
-        <img class="c-nav-icon" src="<?php bloginfo('template_directory'); ?>/image/globalnav/icon-conpany.svg" alt="企業情報アイコン"/>
-          <a hlef="#">企業情報</a>
-        </li>
-        <li class = "p-global-nav__list">
-        <img class="c-nav-icon" src="<?php bloginfo('template_directory'); ?>/image/globalnav/icon-QA.svg" alt="Q&Aアイコン"/>
-          <a hlef="#">Q&A</a>
-        </li>
-        <li class = "p-global-nav__list">
-        <img class="c-nav-icon" src="<?php bloginfo('template_directory'); ?>/image/globalnav/icon-facebook.svg" alt="フェイスブックアイコン"/>
-          <a hlef="#">facebook</a>
-        </li>
-      </ul>
-    </section>
-    <section class = "p-global-nav">
-      <?php 
-        get_template_part( 'template-parts/header', 'menu2' ); 
-      ?>
-    </section>
-  </div>
+  <!-- フロントページの背景 -->
+  <?php if (is_front_page()) : ?>
+    <div class="p-header--background"></div>
+
+    <!-- アーカイブ、カテゴリー、タクソノミーページの背景 -->
+    <?php elseif (is_archive() || is_category() || is_tax()) : ?>
+      <div class="p-header--background--archive"></div>
+
+    <!-- 投稿など、その他のページの背景 -->
+    <?php else : ?>
+      <div class="p-header--background--post"></div>
+  <?php endif; ?>
+
+  <section class = "p-global-nav--sp"><!-- SPハンバーガーボタン -->
+    <ul>
+      <li class = "p-global-nav__list--home">
+      <img class="c-nav-icon--home" src="<?php bloginfo('template_directory'); ?>/image/globalnav/icon-home.svg" alt="ホームに戻るアイコン"/>
+        <a hlef="#">トップページへ戻る</a>
+      </li>
+      <li class = "p-global-nav__list">
+      <img class="c-nav-icon" src="<?php bloginfo('template_directory'); ?>/image/globalnav/icon-tenpo.svg" alt="店舗一覧アイコン"/>
+        <a hlef="#">店舗一覧</a>
+      </li>
+      <li class = "p-global-nav__list">
+      <img class="c-nav-icon" src="<?php bloginfo('template_directory'); ?>/image/globalnav/icon-media.svg" alt="メディアアイコン"/>
+        <a hlef="#">メディア</a>
+      </li>
+      <li class = "p-global-nav__list">
+      <img class="c-nav-icon" src="<?php bloginfo('template_directory'); ?>/image/globalnav/icon-recruit.svg" alt="採用情報アイコン"/>
+        <a hlef="#">採用情報</a>
+      </li>
+      <li class = "p-global-nav__list">
+      <img class="c-nav-icon" src="<?php bloginfo('template_directory'); ?>/image/globalnav/icon-conpany.svg" alt="企業情報アイコン"/>
+        <a hlef="#">企業情報</a>
+      </li>
+      <li class = "p-global-nav__list">
+      <img class="c-nav-icon" src="<?php bloginfo('template_directory'); ?>/image/globalnav/icon-QA.svg" alt="Q&Aアイコン"/>
+        <a hlef="#">Q&A</a>
+      </li>
+      <li class = "p-global-nav__list">
+      <img class="c-nav-icon" src="<?php bloginfo('template_directory'); ?>/image/globalnav/icon-facebook.svg" alt="フェイスブックアイコン"/>
+        <a hlef="#">facebook</a>
+      </li>
+    </ul>
+  </section>
+  <section class = "p-global-nav">
+    <?php 
+      get_template_part( 'template-parts/header', 'menu2' ); 
+    ?>
+  </section>
 </header>
 <body class="l-body" <?php body_class(); ?>>
 <?php wp_body_open(); ?>

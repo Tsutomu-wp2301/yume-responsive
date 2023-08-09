@@ -10,6 +10,11 @@
     color: #000;
     font-size: 20px;
     font-weight: bold;
+    /* page.phpのマージン調整 */
+    &.margin-top--page {
+      margin-top: 0px;
+      margin-bottom: 40px;
+    }
   }
   .p-tenkyu{
     .p-title--home {
