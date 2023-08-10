@@ -379,7 +379,59 @@ a {
 }
 @media screen and (max-width: 780px) {
   .c-button--wp {
+    position: relative;
     width: 140px;
+    margin: 10px 0px;
+    padding: 0.6rem 1rem;
+    font-weight: bold;
+    border: 2px solid #CC0000;
+    color: #CC0000;
+    border-radius: 100vh;
+    transition: 0.5s;
+    margin-top: 30px;
+    margin-bottom: 10px;
+    text-align: center;
+    /* ボタンのリンク範囲を広げる */
+  }
+  .c-button--wp .wp-block-button__link {
+    background-color: #fff;
+    padding: 0;
+    color: #CC0000;
+    font-weight: bold;
+    transition: 0.5s;
+  }
+  .c-button--wp:hover {
+    color: #fff;
+    background: #CC0000;
+  }
+  .c-button--wp:hover a {
+    color: #fff;
+  }
+  .c-button--wp:hover .wp-block-button__link {
+    background-color: #cc0000;
+    padding: 0;
+  }
+  .c-button--wp .wp-block-buttons .c-button--wp:nth-of-type(2) {
+    margin: 20px 0px;
+  }
+  .c-button--wp a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 10;
+  }
+  .wp-block-buttons .c-button--wp:nth-of-type(2) {
+    margin: 10px 0px;
+  }
+}
+@media screen and (min-width:781.5px) {
+  .c-button--wp {
+    position: relative;
+    width: 160px;
     margin: 10px 0px;
     padding: 0.6rem 1rem;
     font-weight: bold;
@@ -409,38 +461,32 @@ a {
     background-color: #cc0000;
     padding: 0;
   }
+  .c-button--wp .wp-block-buttons .c-button--wp:nth-of-type(2) {
+    margin: 20px 0px;
+  }
+  .c-button--wp a::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background-color: rgba(0, 0, 0, 0);
+    z-index: 10;
+  }
+  .wp-block-buttons .c-button--wp:nth-of-type(2) {
+    margin: 10px 0px;
+  }
+  .wp-block-buttons > .wp-block-button {
+    margin: 10px 20px;
+  }
 }
-@media screen and (min-width:781.5px) {
+@media screen and (min-width: 1200px) {
   .c-button--wp {
-    width: 140px;
-    margin: auto;
-    padding: 0.6rem 1rem;
-    font-weight: bold;
-    border: 2px solid #CC0000;
-    color: #CC0000;
-    border-radius: 100vh;
-    transition: 0.5s;
-    margin-top: 30px;
-    margin-bottom: 10px;
-    text-align: center;
+    width: 180px;
   }
-  .c-button--wp .wp-block-button__link {
-    background-color: #fff;
-    padding: 0;
-    color: #CC0000;
-    font-weight: bold;
-    transition: 0.5s;
-  }
-  .c-button--wp:hover {
-    color: #fff;
-    background: #CC0000;
-  }
-  .c-button--wp:hover a {
-    color: #fff;
-  }
-  .c-button--wp:hover .wp-block-button__link {
-    background-color: #cc0000;
-    padding: 0;
+  .wp-block-buttons > .wp-block-button {
+    margin: 10px 40px;
   }
 }
 @media screen and (max-width: 780px) {
@@ -1105,6 +1151,11 @@ a {
     color: #000;
     font-size: 26px;
     font-weight: bold;
+    /* page.phpのマージン調整 */
+  }
+  h2.p-title--home.margin-top--page {
+    margin-top: 20px;
+    margin-bottom: 60px;
   }
   .p-title--home.show-underline::before {
     content: "";
@@ -1156,8 +1207,13 @@ a {
     margin-bottom: 2em;
     margin-top: 3rem;
     color: #000;
-    font-size: 26px;
+    font-size: 30px;
     font-weight: bold;
+    /* page.phpのマージン調整 */
+  }
+  h2.p-title--home.margin-top--page {
+    margin-top: 30px;
+    margin-bottom: 70px;
   }
   .p-title--home.show-underline::before {
     content: "";
@@ -1747,9 +1803,6 @@ a {
     font-size: 14px;
     margin: 10px 0px;
   }
-  .p-article--page p:nth-of-type(1) {
-    margin-top: 20px;
-  }
   .p-article--page .is-layout-flex {
     margin-top: 40px;
     margin-bottom: 50px;
@@ -1761,13 +1814,49 @@ a {
     position: relative;
     left: -10vw;
   }
+  .p-article--page > .wp-block-group {
+    margin-top: 20px;
+  }
 }
 @media screen and (min-width:781.5px) {
-  iframe {
+  .p-article--page p {
+    font-size: 16px;
+    margin: 10px 20px;
+  }
+  .p-article--page .is-layout-flex {
+    margin-top: 20px;
+    margin-bottom: 50px;
+    flex-direction: row;
+    justify-content: center;
+  }
+  .p-article--page iframe {
     width: 100vw;
     height: 300px;
     position: relative;
     left: -10vw;
+  }
+  .p-article--page > .wp-block-group {
+    margin-top: 30px;
+  }
+  .p-article--page > .wp-block-group > .wp-block-group__inner-container {
+    display: flex;
+    justify-content: center;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .p-article--page p {
+    margin: 10px 30px;
+  }
+  .p-article--page iframe {
+    width: 100vw;
+    height: 450px;
+  }
+  .p-article--page > .wp-block-group {
+    margin-top: 30px;
+  }
+  .p-article--page > .wp-block-group > .wp-block-group__inner-container {
+    display: flex;
+    justify-content: center;
   }
 }
 /* メディアリストタブで表示の切り替え */

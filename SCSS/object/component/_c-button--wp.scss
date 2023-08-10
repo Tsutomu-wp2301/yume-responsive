@@ -3,6 +3,7 @@
 
 @include m.mq(sp){
   .c-button--wp {
+    position: relative;
     width: 140px;
     margin: 10px 0px;
     padding: 0.6rem 1rem;
@@ -32,13 +33,36 @@
         padding: 0;
       }
     }
+    .wp-block-buttons {
+      .c-button--wp:nth-of-type(2) {
+        margin: 20px 0px;
+      }
+    }
+
+    /* ボタンのリンク範囲を広げる */
+    a::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0,0,0,0);
+      z-index: 10;
+    }
+  }
+  .wp-block-buttons {
+    .c-button--wp:nth-of-type(2) {
+      margin: 10px 0px;
+    }
   }
 }
 
 @include m.mq(tab){
   .c-button--wp {
-    width: 140px;
-    margin: auto;
+    position: relative;
+    width: 160px;
+    margin: 10px 0px;
     padding: 0.6rem 1rem;
     font-weight: bold;
     border: 2px solid #CC0000;
@@ -66,7 +90,37 @@
         padding: 0;
       }
     }
+    .wp-block-buttons {
+      .c-button--wp:nth-of-type(2) {
+        margin: 20px 0px;
+      }
+    }
+    a::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      background-color: rgba(0,0,0,0);
+      z-index: 10;
+    }
+  }
+  .wp-block-buttons {
+    .c-button--wp:nth-of-type(2) {
+      margin: 10px 0px;
+    }
+  }
+  .wp-block-buttons > .wp-block-button {
+    margin: 10px 20px ;
   }
 }
+
 @include m.mq(pc){
+  .c-button--wp {
+    width: 180px;
+  }
+  .wp-block-buttons > .wp-block-button {
+    margin: 10px 40px ;
+  }
 }

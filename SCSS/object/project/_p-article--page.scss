@@ -6,9 +6,6 @@
     p {
       font-size: 14px;
       margin: 10px 0px;
-      &:nth-of-type(1) {
-        margin-top: 20px;
-      }
     }
     .is-layout-flex  {
       margin-top: 40px;
@@ -21,16 +18,54 @@
       position: relative;
       left: calc(100vw*(-0.1));
     }
+    & > .wp-block-group {
+      margin-top: 20px;
+    }
   }
 }
 
 @include m.mq(tab){
-  iframe {
-    width: 100vw;
-    height:300px;
-    position: relative;
-    left: calc(100vw*(-0.1));
+  .p-article--page {
+    p {
+      font-size: 16px;
+      margin: 10px 20px;
+    }
+    .is-layout-flex  {
+      margin-top: 20px;
+      margin-bottom: 50px;
+      flex-direction: row;
+      justify-content: center;
+    }
+    iframe {
+      width: 100vw;
+      height:300px;
+      position: relative;
+      left: calc(100vw*(-0.1));
+    }
+    & > .wp-block-group {
+      margin-top: 30px;
+    }
+    & > .wp-block-group >.wp-block-group__inner-container {
+      display: flex;
+      justify-content:center ;
+    }
   }
 }
 @include m.mq(pc){
+  .p-article--page {
+    p {
+      margin: 10px 30px;
+    }
+    iframe {
+      width: 100vw;
+      height:450px;
+    }
+    & > .wp-block-group {
+      margin-top: 30px;
+    }
+    & > .wp-block-group >.wp-block-group__inner-container {
+      display: flex;
+      justify-content:center ;
+    }
+  }
 }
