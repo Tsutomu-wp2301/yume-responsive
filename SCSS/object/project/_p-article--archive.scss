@@ -1,0 +1,32 @@
+@use"../../foundation/breakpoint" as m;
+
+
+@include m.mq(sp){
+  .p-article--archive {
+    background-color: #F1EFEF;
+    img {
+      width: 100%;
+      height: auto;
+    }
+  }
+}
+@include m.mq(tab){
+  .p-article--archive {
+    background-color: #F1EFEF;
+    img {
+      width: 350px;
+      height: 170px;
+
+    }
+  }
+}
+@include m.mq(pc){
+  .p-article--archive {
+    background-color: #F1EFEF;
+    img {
+      width: 450px;
+      height: 218px;
+
+    }
+  }
+}

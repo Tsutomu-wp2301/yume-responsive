@@ -4,12 +4,19 @@
 @include m.mq(sp){
   .p-article-layout {
     width: 80vw;
+    &--singlepage {
+      width: 80vw;
+    }
   }
 }
 
 @include m.mq(tab){
   .p-article-layout {
     width: 80vw;
+    max-width: 1000px;
+    &--singlepage {
+      width: 80vw;
+    }
   }
 }
 @include m.mq(pc){

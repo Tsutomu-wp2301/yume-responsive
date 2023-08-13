@@ -43,32 +43,39 @@
   <section class = "p-global-nav--sp"><!-- SPハンバーガーボタン -->
     <ul>
       <li class = "p-global-nav__list--home">
-      <img class="c-nav-icon--home" src="<?php bloginfo('template_directory'); ?>/image/globalnav/icon-home.svg" alt="ホームに戻るアイコン"/>
-        <a hlef="#">トップページへ戻る</a>
+        <a href="<?php echo esc_url(home_url()); ?>">
+          <img class="c-nav-icon--home" src="<?php bloginfo('template_directory'); ?>/image/globalnav/icon-home.svg" alt="ホームに戻るアイコン"/>トップページへ戻る
+        </a>
       </li>
       <li class = "p-global-nav__list">
-      <img class="c-nav-icon" src="<?php bloginfo('template_directory'); ?>/image/globalnav/icon-tenpo.svg" alt="店舗一覧アイコン"/>
-        <a hlef="#">店舗一覧</a>
+        <a href="<?php echo esc_url(home_url('tenpointroduction')); ?>">
+          <img class="c-nav-icon" src="<?php bloginfo('template_directory'); ?>/image/globalnav/icon-tenpo.svg" alt="店舗一覧アイコン"/>店舗一覧
+        </a>
       </li>
       <li class = "p-global-nav__list">
-      <img class="c-nav-icon" src="<?php bloginfo('template_directory'); ?>/image/globalnav/icon-media.svg" alt="メディアアイコン"/>
-        <a hlef="#">メディア</a>
+        <a href="#">
+          <img class="c-nav-icon" src="<?php bloginfo('template_directory'); ?>/image/globalnav/icon-media.svg" alt="メディアアイコン"/>メディア
+        </a>
       </li>
       <li class = "p-global-nav__list">
-      <img class="c-nav-icon" src="<?php bloginfo('template_directory'); ?>/image/globalnav/icon-recruit.svg" alt="採用情報アイコン"/>
-        <a hlef="#">採用情報</a>
+        <a href="#">
+          <img class="c-nav-icon" src="<?php bloginfo('template_directory'); ?>/image/globalnav/icon-recruit.svg" alt="採用情報アイコン"/>採用情報
+        </a>
       </li>
       <li class = "p-global-nav__list">
-      <img class="c-nav-icon" src="<?php bloginfo('template_directory'); ?>/image/globalnav/icon-conpany.svg" alt="企業情報アイコン"/>
-        <a hlef="#">企業情報</a>
+        <a href="#">
+          <img class="c-nav-icon" src="<?php bloginfo('template_directory'); ?>/image/globalnav/icon-conpany.svg" alt="企業情報アイコン"/>企業情報
+        </a>
       </li>
       <li class = "p-global-nav__list">
-      <img class="c-nav-icon" src="<?php bloginfo('template_directory'); ?>/image/globalnav/icon-QA.svg" alt="Q&Aアイコン"/>
-        <a hlef="#">Q&A</a>
+        <a href="#">
+          <img class="c-nav-icon" src="<?php bloginfo('template_directory'); ?>/image/globalnav/icon-QA.svg" alt="Q&Aアイコン"/>Q&A
+        </a>
       </li>
       <li class = "p-global-nav__list">
-      <img class="c-nav-icon" src="<?php bloginfo('template_directory'); ?>/image/globalnav/icon-facebook.svg" alt="フェイスブックアイコン"/>
-        <a hlef="#">facebook</a>
+        <a href="#">
+          <img class="c-nav-icon" src="<?php bloginfo('template_directory'); ?>/image/globalnav/icon-facebook.svg" alt="フェイスブックアイコン"/>facebook
+        </a>
       </li>
     </ul>
   </section>
