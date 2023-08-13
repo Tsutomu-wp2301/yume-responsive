@@ -1,0 +1,26 @@
+@use"../../foundation/breakpoint" as m;
+
+
+@include m.mq(sp){
+  .p-single--layout {
+    img {
+      width: 80vw;
+      height: auto;
+    }
+    h2 {
+      font-weight: normal;
+      font-family:  "メイリオ", "ヒラギノ角ゴ ProN", sans-serif;
+      margin-top: 20px;
+      margin-bottom: 20px;
+    }
+    p {
+      font-size: 16px;
+    }
+
+  }
+}
+
+@include m.mq(tab){
+}
+@include m.mq(pc){
+}

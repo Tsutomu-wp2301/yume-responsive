@@ -1,0 +1,18 @@
+@use"../../foundation/breakpoint" as m;
+
+
+@include m.mq(sp){
+}
+
+@include m.mq(tab){
+  .c-img--container {
+    width: 350px;
+    overflow: hidden;
+  }
+}
+@include m.mq(pc){
+  .c-img--container {
+    width: 450px;
+    overflow: hidden;
+  }
+}

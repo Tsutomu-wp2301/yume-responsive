@@ -1,0 +1,62 @@
+@use"../../foundation/breakpoint" as m;
+
+
+@include m.mq(sp){
+  .p-archive--wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 50px;
+    h2 {
+      font-weight: normal;
+      padding-left: 10px;
+      padding-top: 10px;
+    }
+    ul {
+      padding-left: 20px;
+      padding-bottom: 10px;
+    }
+    .p-tenpointroduction--wrapper {
+      align-items: flex-start;
+      margin-top: 0;
+    }
+    article {
+      margin-bottom: 30px;
+      margin-top: 20px;
+    }
+  }
+}
+
+@include m.mq(tab){
+  .p-archive--wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 50px;
+    h2 {
+      font-weight: normal;
+      padding-left: 0px;
+      padding-top: 10px;
+    }
+    ul {
+      padding-left: 20px;
+      padding-bottom: 10px;
+    }
+    .p-tenpointroduction--wrapper {
+      align-items: flex-start;
+      margin-top: 0;
+    }
+    article {
+      margin-bottom: 30px;
+      margin-top: 20px;
+    }
+  }
+}
+@include m.mq(pc){
+  // .p-archive--wrapper {
+  //   max-width: 1000px;
+  // }
+}

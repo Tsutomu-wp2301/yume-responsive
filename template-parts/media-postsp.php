@@ -31,6 +31,6 @@
       </div>
     </div>
   </div>
-  <a href="#" id="c-button--info" class="c-button--info"><button>もっと見る</button></a>
+  <a href="<?php echo the_permalink() ; ?>" id="c-button--info" class="c-button--info"><button>もっと見る</button></a>
   <div class="c-media--line"></div>
 </div>

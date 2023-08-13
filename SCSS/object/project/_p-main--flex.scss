@@ -5,17 +5,111 @@
   .p-main--flex {
     display: flex;
     justify-content: center;
+    &--archive {
+      flex-direction: column;
+      align-items: center;
+      p {
+        padding: 15px;
+        padding-left: 10%;
+        padding-right: 10%;
+        padding-top: 0px;
+      }
+      h2 {
+        font-size: 24px;
+        color: #fff;
+        position: relative;
+        top: -68px;
+        left: 10%;
+        display: flex;
+        align-items: center;
+        &::before {
+          content: "";
+          height: 26px;
+          width: 3px;
+          background-color: #cc0000;
+          display: block;
+          margin-right: 8px;
+        }
+      }
+      .p-archive--wrapper {
+        h2 {
+          top: 0;
+          left: 0;
+          color: #000;
+          font-size: 22px;
+          &::before {
+            height: 0px;
+          }
+        }
+      }
+    }
   }
 }
 @include m.mq(tab){
   .p-main--flex {
     display: flex;
     justify-content: center;
+    &--archive {
+      flex-direction: column;
+      align-items: center;
+      p {
+        padding: 0px 100px 30px 100px;
+      }
+      h2 {
+        font-size: 32px;
+        color: #fff;
+        position: relative;
+        top: -96px;
+        left: 90px;
+        display: flex;
+        align-items: center;
+        &::before {
+          content: "";
+          height: 34px;
+          width: 3px;
+          background-color: #cc0000;
+          display: block;
+          margin-right: 10px;
+          margin-left: 10px;
+        }
+      }
+      .p-archive--wrapper {
+        h2 {
+          top: 0;
+          left: 0;
+          color: #000;
+          font-size: 22px;
+          &::before {
+            height: 0px;
+          }
+        }
+      }
+    }
   }
 }
 @include m.mq(pc){
   .p-main--flex {
     display: flex;
     justify-content: center;
+      &--archive {
+      h2 {
+        top: -145px;
+        font-size: 40px;
+        &::before {
+          content: "";
+          height: 42px;
+          width: 4px;
+          background-color: #cc0000;
+          display: block;
+          margin-right: 15px;
+          margin-left: 100px;
+        }
+      }
+      p {
+        padding: 0px 0px 30px 0px;
+        padding-left: 10%;
+        padding-right: 10%;
+      }
+    }
   }
 }
