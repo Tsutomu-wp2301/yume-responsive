@@ -10,12 +10,12 @@
         <li class="p-inner-list"><a href="<?php echo esc_url(home_url('tenpointroduction/hirakata'));?>">平方夢らんど</a></li>
       </ul>
     </li>
-    <li class="c-menu-item"><a href="#">メディア</a>
+    <li class="c-menu-item"><a href="<?php echo esc_url(home_url('category/media'));?>">メディア</a>
       <ul class="p-inner-list--wrapper4">
-        <li class="p-inner-list"><a href="#">スーパー夢らんど</a></li>
-        <li class="p-inner-list"><a href="#">かすかべ夢らんど</a></li>
-        <li class="p-inner-list"><a href="#">内牧夢らんど</a></li>
-        <li class="p-inner-list"><a href="#">平方夢らんど</a></li>
+        <li class="p-inner-list"><a href="<?php echo esc_url(home_url('category/super'));?>">スーパー夢らんど</a></li>
+        <li class="p-inner-list"><a href="<?php echo esc_url(home_url('category/media/kasukabe'));?>">かすかべ夢らんど</a></li>
+        <li class="p-inner-list"><a href="<?php echo esc_url(home_url('category/media/uchimaki'));?>">内牧夢らんど</a></li>
+        <li class="p-inner-list"><a href="<?php echo esc_url(home_url('category/media/hirakata'));?>">平方夢らんど</a></li>
       </ul>
     </li>
     <li class="c-menu-item"><a href="#">初心者ガイド</a></li>
