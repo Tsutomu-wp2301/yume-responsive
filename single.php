@@ -24,7 +24,7 @@
         <?php else: ?><!-- アイキャッチ画像が無ければ指定した画像を表示 -->
         <img src="<?php echo esc_url(get_template_directory_uri()); ?>/assets/img/dummy-image.png" alt="" width="" height="" load="lazy">
       <?php endif; ?>
-      <a id="c-button--sp" href="<?php echo home_url('media') ; ?>" class="c-button--archive margin-top100">
+      <a id="c-button--sp" href="<?php echo home_url('category/media') ; ?>" class="c-button--archive margin-top100">
         <button>記事一覧</button>
       </a><!-- 記事一覧アーカイブページへ -->
     </article>

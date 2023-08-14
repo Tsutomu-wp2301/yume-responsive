@@ -501,6 +501,20 @@ a {
     overflow: hidden;
   }
 }
+@media screen and (min-width:781.5px) {
+  .c-image--container {
+    height: 158px;
+    width: 240px;
+    position: relative;
+  }
+}
+@media screen and (min-width:781.5px) {
+  .c-media--content--container {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+  }
+}
 @media screen and (max-width: 780px) {
   .p-header-flex {
     display: flex;
@@ -1447,7 +1461,7 @@ a {
     align-items: center;
   }
   .p-main--flex--archive p {
-    padding: 0px 100px 30px 100px;
+    padding: 0px;
   }
   .p-main--flex--archive h2 {
     font-size: 32px;
@@ -2187,8 +2201,9 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    width: 100%;
+    width: 80vw;
     margin-bottom: 50px;
+    background-color: #F7F3F3;
   }
   .p-archive--wrapper h2 {
     font-weight: normal;
@@ -2223,9 +2238,82 @@ a {
     font-size: 16px;
   }
 }
+@media screen and (min-width:781.5px) {
+  .p-single--layout img {
+    width: 80vw;
+    height: auto;
+  }
+  .p-single--layout h2 {
+    font-weight: normal;
+    font-family: "メイリオ", "ヒラギノ角ゴ ProN", sans-serif;
+    margin-top: 20px;
+    margin-bottom: 20px;
+  }
+  .p-single--layout p {
+    font-size: 16px;
+  }
+}
 @media screen and (max-width: 780px) {
   .p-post--content--wrapper {
     margin-bottom: 10px;
+  }
+}
+@media screen and (min-width:781.5px) {
+  .p-post--content--wrapper {
+    margin-bottom: 10px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .p-media-archive--layout img {
+    width: 80vw;
+    height: auto;
+  }
+  .p-media-archive--layout h3 {
+    color: #CD0506;
+    margin: 10px 0px;
+  }
+  .p-media-archive--layout p {
+    font-size: 16px;
+    padding-left: 10px;
+  }
+  .p-media-archive--layout::after {
+    content: "";
+    height: 1px;
+    width: 100%;
+    background-color: #9E9C9C;
+    display: block;
+    margin-top: 20px;
+  }
+}
+@media screen and (min-width:781.5px) {
+  .p-media-archive--layout {
+    display: flex;
+    flex-direction: column;
+    width: 80%;
+    height: 280px;
+    background-color: #fff;
+    padding-top: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .p-media-archive--layout img {
+    -o-object-fit: contain;
+       object-fit: contain;
+    width: 240px;
+    height: 158px;
+  }
+  .p-media-archive--layout h3 {
+    color: #CD0506;
+    margin: 10px 0px;
+  }
+  .p-media-archive--layout p {
+    font-size: 16px;
+    margin-left: 10px;
+  }
+}
+@media screen and (min-width:781.5px) {
+  .p-media--content--wrapper {
+    display: flex;
   }
 }
 /* メディアリストタブで表示の切り替え */

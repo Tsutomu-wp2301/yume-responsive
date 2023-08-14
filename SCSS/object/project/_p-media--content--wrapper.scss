@@ -1,0 +1,15 @@
+@use"../../foundation/breakpoint" as m;
+
+
+@include m.mq(sp){
+
+}
+
+@include m.mq(tab){
+  .p-media--content--wrapper {
+    display: flex;
+
+  }
+}
+@include m.mq(pc){
+}
