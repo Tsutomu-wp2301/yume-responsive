@@ -8,6 +8,9 @@
 }
 
 @include m.mq(tab){
+  .p-post--content--wrapper {
+    margin-bottom: 10px;
+  }
 }
 @include m.mq(pc){
 }
