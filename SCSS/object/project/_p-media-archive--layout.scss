@@ -52,4 +52,11 @@
   }
 }
 @include m.mq(pc){
+  .p-media-archive--layout {
+    height: 320px;
+    img {
+      width: 300px;
+      height: 198px;
+    }
+  }
 }

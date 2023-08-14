@@ -10,9 +10,12 @@
     height: 158px;
     width: 240px;
     position: relative;
-
-
   }
 }
 @include m.mq(pc){
+  .c-image--container {
+    height: 198px;
+    width: 300px;
+    position: relative;
+  }
 }

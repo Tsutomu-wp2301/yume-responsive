@@ -37,4 +37,9 @@
   }
 }
 @include m.mq(pc){
+  .p-single--layout {
+    img {
+      max-width: 1000px;
+    }
+  }
 }
