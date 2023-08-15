@@ -21,7 +21,7 @@
     <li class="c-menu-item"><a href="#">初心者ガイド</a></li>
     <li class="c-menu-item"><a href="#">採用情報</a>
       <ul class="p-inner-list--wrapper">
-        <li class="p-inner-list"><a href="#">採用情報専用サイト</a></li>
+        <li class="p-inner-list"><a href="https://taihei-g-job.jp/list/ds_8000507102/">採用情報専用サイト</a></li>
       </ul>
     </li>
     <li class="c-menu-item"><a href="#">企業情報</a></li>
