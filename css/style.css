@@ -510,6 +510,18 @@ a {
     justify-content: flex-start;
   }
 }
+@media screen and (min-width:781.5px) {
+  .c-img--container {
+    width: 350px;
+    overflow: hidden;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .c-img--container {
+    width: 450px;
+    overflow: hidden;
+  }
+}
 @media screen and (max-width: 780px) {
   .p-header-flex {
     display: flex;
