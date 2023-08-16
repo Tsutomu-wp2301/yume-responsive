@@ -1,0 +1,17 @@
+@use"../../foundation/breakpoint" as m;
+
+/* ホバー時の画像の幅を一定にする */
+@include m.mq(sp){
+}
+@include m.mq(tab){
+  .c-img--container {
+    width: 350px;
+    overflow: hidden;
+  }
+}
+@include m.mq(pc){
+  .c-img--container {
+    width: 450px;
+    overflow: hidden;
+  }
+}
