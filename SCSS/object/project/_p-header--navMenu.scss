@@ -32,5 +32,8 @@
 @include m.mq(pc){
   .p-header--navMenu {
 		top: 70px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
   }
 }

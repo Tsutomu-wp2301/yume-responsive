@@ -368,7 +368,7 @@ a {
 @media screen and (min-width: 1200px) {
   .c-menu-item a {
     display: flex;
-    height: 50px;
+    height: 64px;
     align-items: center;
     color: #696666;
     font-size: 1rem;
@@ -1764,6 +1764,9 @@ a {
 @media screen and (min-width: 1200px) {
   .p-header--navMenu {
     top: 70px;
+    height: 64px;
+    display: flex;
+    justify-content: center;
   }
 }
 /* ヘッダーのグローバルナビ */
@@ -2325,6 +2328,36 @@ a {
     display: flex;
   }
 }
+@media screen and (max-width: 780px) {
+  .p-article-layout--page {
+    padding: 10px 20px;
+    background-color: #edebeb;
+    margin-top: 20px;
+    width: 90vw;
+  }
+  .p-article-layout--page h2 {
+    margin: 20px 0px 10px 0px;
+  }
+}
+@media screen and (min-width:781.5px) {
+  .p-article-layout--page {
+    padding: 20px 80px;
+    background-color: #edebeb;
+    margin-top: 40px;
+    width: 80vw;
+  }
+  .p-article-layout--page h2 {
+    margin: 30px 0px 10px 0px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .p-article-layout--page {
+    padding: 40px 120px;
+    background-color: #edebeb;
+    margin-top: 80px;
+    width: 70vw;
+  }
+}
 /* メディアリストタブで表示の切り替え */
 @media screen and (max-width: 780px) {
   .hide {
@@ -2350,27 +2383,24 @@ a {
 @media screen and (min-width:781.5px) {
   .fa-facebook::before {
     font-size: 40px;
-    color: #a09c9c;
+    color: #193152;
     margin-right: 10px;
     transition: color 0.5s;
   }
 }
 @media screen and (min-width: 1200px) {
   .fa-facebook::before {
-    font-size: 40px;
-    color: #a09c9c;
-    margin-right: 10px;
-    transition: color 0.5s;
+    font-size: 50px;
   }
 }
 @media screen and (min-width:781.5px) {
   a:hover .fa-facebook::before {
-    color: #193152;
+    color: #a09c9c;
   }
 }
 @media screen and (min-width: 1200px) {
   a:hover .fa-facebook::before {
-    color: #193152;
+    color: #a09c9c;
   }
 }
 

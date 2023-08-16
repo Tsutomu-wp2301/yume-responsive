@@ -9,17 +9,14 @@
 @include m.mq(tab){
   .fa-facebook::before {
     font-size: 40px;
-    color: #a09c9c;
+    color: #193152;
     margin-right: 10px;
     transition: color 0.5s;
   }
 }
 @include m.mq(pc){
   .fa-facebook::before {
-    font-size: 40px;
-    color: #a09c9c;
-    margin-right: 10px;
-    transition: color 0.5s;
+    font-size: 50px;
   }
 }
 
@@ -29,10 +26,10 @@ a:hover .fa-facebook::before {
 
   }
   @include m.mq(tab){
-    color: #193152;
+    color: #a09c9c;
   }
   @include m.mq(pc){
-    color: #193152;
+    color: #a09c9c;
   }
 
 }

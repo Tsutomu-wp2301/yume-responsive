@@ -5,7 +5,7 @@
       while( have_posts() ) : 
       the_post();
     ?>
-    <article id="post-<?php the_ID(); ?>" class="p-article-layout p-article--page" <?php post_class(); ?>>
+    <article id="post-<?php the_ID(); ?>" class="p-article-layout p-article--page p-article-layout--page" <?php post_class(); ?>>
       <div class="p-h2--flex">
         <h2 class="p-title--home margin-top--page">
           <?php
@@ -18,7 +18,6 @@
           ?>
         </h2>
       </div>
-      <?php echo do_shortcode('[smartslider3 slider="3"]'); ?>
       <?php the_content(); ?>
     </article>
   <?php endwhile;  endif; ?>
