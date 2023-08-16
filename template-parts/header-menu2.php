@@ -24,7 +24,7 @@
         <li class="p-inner-list"><a href="https://taihei-g-job.jp/list/ds_8000507102/">採用情報専用サイト</a></li>
       </ul>
     </li>
-    <li class="c-menu-item"><a href="#">企業情報</a></li>
+    <li class="c-menu-item"><a href="<?php echo esc_url(home_url('taihei'));?>">企業情報</a></li>
     <li class="c-menu-item"><a href="#">Q&A</a></li>
   </ul>
 </div>
