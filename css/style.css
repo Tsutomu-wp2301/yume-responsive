@@ -510,6 +510,7 @@ a {
     justify-content: flex-start;
   }
 }
+/* ホバー時の画像の幅を一定にする */
 @media screen and (min-width:781.5px) {
   .c-img--container {
     width: 350px;
@@ -520,6 +521,44 @@ a {
   .c-img--container {
     width: 450px;
     overflow: hidden;
+  }
+}
+@media screen and (max-width: 780px) {
+  /* 質問の表示 */
+  .c-qalist {
+    font-size: 16px;
+    margin-left: 10px;
+    margin-top: 20px;
+    /* 答えの表示 */
+  }
+  .c-qalist p {
+    font-weight: bold;
+    position: relative;
+  }
+  .c-qalist p:hover {
+    cursor: pointer;
+  }
+  .c-qalist p::before {
+    content: "";
+    height: 18px;
+    width: 3px;
+    background-color: #cc0000;
+    display: block;
+    position: absolute;
+    top: 3px;
+    left: -10px;
+    border-radius: 2px;
+  }
+  .c-qalist__inner {
+    font-size: 14px;
+    padding-top: 6px;
+    height: 0px;
+    overflow: hidden;
+  }
+  .open .c-qalist__inner {
+    height: -webkit-fit-content;
+    height: -moz-fit-content;
+    height: fit-content;
   }
 }
 @media screen and (max-width: 780px) {
@@ -1909,6 +1948,11 @@ a {
     margin-top: 20px;
   }
 }
+@media screen and (max-width: 780px) {
+  .p-footer__flex--tab {
+    display: none;
+  }
+}
 @media screen and (min-width:781.5px) {
   .p-footer__flex {
     display: flex;
@@ -2340,6 +2384,7 @@ a {
     display: flex;
   }
 }
+/* 企業情報ページのレイアウト・設定 */
 @media screen and (max-width: 780px) {
   .p-article-layout--page {
     padding: 10px 20px;
@@ -2348,7 +2393,15 @@ a {
     width: 90vw;
   }
   .p-article-layout--page h2 {
-    margin: 20px 0px 10px 0px;
+    font-size: 26px;
+  }
+  .p-article-layout--page h3 {
+    font-size: 20px;
+    margin-top: 20px;
+  }
+  .p-article-layout--page .wp-block-table {
+    margin-top: 20px;
+    margin-bottom: 40px;
   }
 }
 @media screen and (min-width:781.5px) {
@@ -2359,7 +2412,15 @@ a {
     width: 80vw;
   }
   .p-article-layout--page h2 {
-    margin: 30px 0px 10px 0px;
+    font-size: 34px;
+  }
+  .p-article-layout--page h3 {
+    font-size: 26px;
+    margin-top: 20px;
+  }
+  .p-article-layout--page .wp-block-table {
+    margin-top: 20px;
+    margin-bottom: 40px;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -2368,6 +2429,22 @@ a {
     background-color: #edebeb;
     margin-top: 80px;
     width: 70vw;
+  }
+  .p-article-layout--page h2 {
+    font-size: 40px;
+  }
+  .p-article-layout--page h3 {
+    font-size: 30px;
+    margin-top: 20px;
+  }
+  .p-article-layout--page .wp-block-table {
+    margin-top: 20px;
+    margin-bottom: 40px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .p-qalist--wrapper {
+    margin-top: 15px;
   }
 }
 /* メディアリストタブで表示の切り替え */

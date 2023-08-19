@@ -20,7 +20,7 @@
         <img src="<?php echo get_template_directory_uri(); ?>/image/h2logo.png" alt="夢らんどグループ" width="100%">
       </h1>
       <a href="https://www.facebook.com/taiheiyumeland">
-      <i class="fa-brands fa-facebook"></i>
+        <i class="fa-brands fa-facebook"></i>
       </a>
       <button id="toggleButton" class = "p-header-button--sp">
         <div class="button-line"></div>
