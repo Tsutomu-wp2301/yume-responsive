@@ -4,18 +4,17 @@
 		<ul class="p-footer__flex">
 			<div class="p-footer__flex--tab">
 				<li><a href="<?php echo home_url() ; ?>" title="夢らんど">ホーム</a></li>
-				<li><a href="<?php echo home_url() ; ?>/tenpo/">店舗一覧</a></li>
-				<li><a href="<?php echo home_url() ; ?>/first_guide/">初心者ガイド</a></li>
+				<li><a href="<?php echo home_url('tenpointroduction') ; ?>">店舗一覧</a></li>
 				<li><a href="<?php echo home_url() ; ?>/category/media/">メディア情報</a></li>
-				<li><a href="<?php echo home_url() ; ?>/saiyou/">採用情報</a></li>
-				<li><a href="<?php echo home_url() ; ?>/company/">企業情報</a></li>
-				<li><a href="<?php echo home_url() ; ?>/qanda/">Q&amp;A</a></li>
+				<li><a href="https://taihei-g-job.jp/list/ds_8000507102/">採用情報</a></li>
+				<li><a href="<?php echo home_url('taihei') ; ?>">企業情報</a></li>
+				<li><a href="<?php echo home_url('qa') ; ?>">Q&amp;A</a></li>
 			</div>
 			<div class="p-footer__flex--tab">
 				<li><a href="<?php echo home_url() ; ?>/sitemap/">サイトマップ</a></li>
 				<li><a href="<?php echo home_url() ; ?>/privacy/">プライバシーポリシー</a></li>
 				<li><a href="<?php echo home_url() ; ?>/inquiry/">お問合せ</a>
-				</div>
+			</div>
 		</ul>
 	</div>
 	<div class="p-footer__wrapper">

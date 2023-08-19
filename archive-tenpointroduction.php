@@ -18,7 +18,6 @@
   <a id="c-button--sp" href="<?php echo home_url() ; ?>" class="c-button--archive">
     <button>トップページ</button>
   </a><!-- トップページへ戻るボタン -->
-  <a href="<?php echo esc_url(home_url('tenpointroduction')); ?>">店舗一覧</a>
   <div class="c-background--menu"></div><!-- メニュー展開時の背景 -->
 </main>
 <?php get_footer(); ?>

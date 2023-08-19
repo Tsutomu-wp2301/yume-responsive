@@ -1,0 +1,14 @@
+@use"../../foundation/breakpoint" as m;
+
+
+@include m.mq(sp){
+  .p-qalist--wrapper {
+    margin-top: 15px;
+
+  }
+}
+
+@include m.mq(tab){
+}
+@include m.mq(pc){
+}
