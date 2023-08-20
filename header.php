@@ -53,27 +53,27 @@
         </a>
       </li>
       <li class = "p-global-nav__list">
-        <a href="#">
-          <img class="c-nav-icon" src="<?php bloginfo('template_directory'); ?>/image/globalnav/icon-media.svg" alt="メディアアイコン"/>メディア
+        <a href="<?php echo esc_url(home_url('media')); ?>">
+          <img class="c-nav-icon" src="<?php bloginfo('template_directory'); ?>/image/globalnav/icon-media.png" alt="メディアアイコン"/>メディア
         </a>
       </li>
       <li class = "p-global-nav__list">
-        <a href="#">
-          <img class="c-nav-icon" src="<?php bloginfo('template_directory'); ?>/image/globalnav/icon-recruit.svg" alt="採用情報アイコン"/>採用情報
+        <a href="https://taihei-g-job.jp/list/ds_8000507102/">
+          <img class="c-nav-icon" src="<?php bloginfo('template_directory'); ?>/image/globalnav/icon-recruit.png" alt="採用情報アイコン"/>採用情報
         </a>
       </li>
       <li class = "p-global-nav__list">
-        <a href="#">
+        <a href="<?php echo esc_url(home_url('taihei')); ?>">
           <img class="c-nav-icon" src="<?php bloginfo('template_directory'); ?>/image/globalnav/icon-conpany.svg" alt="企業情報アイコン"/>企業情報
         </a>
       </li>
       <li class = "p-global-nav__list">
-        <a href="#">
+        <a href="<?php echo esc_url(home_url('qa')); ?>">
           <img class="c-nav-icon" src="<?php bloginfo('template_directory'); ?>/image/globalnav/icon-QA.svg" alt="Q&Aアイコン"/>Q&A
         </a>
       </li>
       <li class = "p-global-nav__list">
-        <a href="#">
+        <a href="https://www.facebook.com/taiheiyumeland">
           <img class="c-nav-icon" src="<?php bloginfo('template_directory'); ?>/image/globalnav/icon-facebook.svg" alt="フェイスブックアイコン"/>facebook
         </a>
       </li>

@@ -24,17 +24,21 @@
           夢らんど全般に関するQ&A
         </h3>
         <ul class="p-qalist--wrapper">
-          <li class="c-qalist open"><p>夢らんどの社名はなんですか？</p>
-            <ul class="c-qalist__inner"><li>「株式会社太平」です。お客様に夢を提供できる空間づくりをコンセプトに店舗展開しております。詳しくは、企業情報をご覧ください。
-            </li></ul>
+          <li class="c-qalist"><p>夢らんどの社名はなんですか？</p>
+            <ul class="c-qalist__inner">
+              <li>「株式会社太平」です。お客様に夢を提供できる空間づくりをコンセプトに店舗展開しております。詳しくは、企業情報をご覧ください。
+              </li>
+            </ul>
           </li>
           <li class="c-qalist"><p>子供を連れてお店に行けますか？</p>
             <ul class="c-qalist__inner"><li>法律により禁止されています。18歳未満の方のご入場はできません。</li></ul>
           </li>
           <li class="c-qalist"><p>新店のオープン情報はありますか？</p>
-            <ul class="c-qalist__inner"><li>予定が決まり次第、随時HPやp-worldにてご案内いたします。</li></ul>
+            <ul class="c-qalist__inner">
+              <li>予定が決まり次第、随時HPやp-worldにてご案内いたします。</li>
+            </ul>
           </li>
-          <li class="c-qalist"><p>店舗の詳しい情報を知りたいです。</p>
+          <!-- <li class="c-qalist"><p>店舗の詳しい情報を知りたいです。</p>
             <ul class="c-qalist__inner">
               <li>店舗一覧ページ、または以下のURLからp-worldのホームページをご確認ください。
                 <a href="">スーパー夢らんど</a>
@@ -43,17 +47,19 @@
                 <a href="">平方夢らんど</a>
               </li>
             </ul>
-          </li>
-          <li class="c-qalist"><p>開店前に並ぶ場合はどうしたらいいですか？</p>
+          </li> -->
+          <li class="c-qalist"><p>開店前に並ぶにはどうしたらいい？</p>
             <ul class="c-qalist__inner"><li>店舗情報からアクセス方法をご覧ください。</li></ul>
           </li>
           <li class="c-qalist"><p>店舗へのアクセス方法は？</p>
             <ul class="c-qalist__inner"><li>9：45より店舗正面入口にて入場順番券をお配りしております。</li></ul>
           </li>
-          <li class="c-qalist"><p>開店・閉店時間はお店ごとに異なりますか？</p>
-            <ul class="c-qalist__inner"><li>店舗情報から営業時間をご確認ください。</li></ul>
+          <li class="c-qalist"><p>開店・閉店時間はお店ごとに違うの？</p>
+            <ul class="c-qalist__inner">
+              <li>店舗情報から営業時間をご確認ください。</li>
+            </ul>
           </li>
-          <li class="c-qalist"><p>店休日、店休日、時間差の開店はあるの？</p>
+          <li class="c-qalist"><p>店休日、時間差の開店はあるの？</p>
             <ul class="c-qalist__inner"><li>店休情報をご覧ください。</li></ul>
           </li>
         </ul>
@@ -62,36 +68,56 @@
         <h3>
           遊技全般に関するQ&A
         </h3>
-        <ul>
-          <li>遊技中に食事に行っても大丈夫？
-            <ul class="c-innerlist"><li>40分間の休憩をとることができます。<br>遊技台上部の呼び出しボタンにてスタッフをお呼びください。</li></ul>
+        <ul class="p-qalist--wrapper">
+          <li class="c-qalist"><p>遊技中に食事に行っても大丈夫？</p>
+            <ul class="c-qalist__inner">
+              <li>40分間の休憩をとることができます。<br>遊技台上部の呼び出しボタンにてスタッフをお呼びください。</li>
+            </ul>
           </li>
-          <li>貯玉って何？
-            <ul class="c-innerlist"><li>店舗ごとに発行している会員カードに出玉を預けることができます。<br>翌日以降の景品交換が可能となりますので、景品交換時の混雑を避けることができます。</li></ul>
+          <li class="c-qalist"><p>貯玉って何？</p>
+            <ul class="c-qalist__inner">
+              <li>店舗ごとに発行している会員カードに出玉を預けることができます。<br>翌日以降、お客様のご都合に合わせて景品交換が可能です。</li>
+            </ul>
           </li>
-          <li>１円と４円パチンコの遊技台に何か違いがありますか？
-            <ul class="c-innerlist"><li>遊技台に違いはありません。１玉あたりの貸し出し料金が違います。</li></ul>
+          <li class="c-qalist"><p>１円と４円パチンコの遊技台に何か違いがありますか？</p>
+            <ul class="c-qalist__inner">
+              <li>遊技台に違いはありません。１玉あたりの貸し出し料金が違います。</li>
+            </ul>
           </li>
-          <li>飲酒しながら遊技しても大丈夫ですか？
-            <ul class="c-innerlist"><li>お断りさせていただいております。</li></ul>
+          <li class="c-qalist"><p>飲酒しながら遊技しても大丈夫ですか？</p>
+            <ul class="c-qalist__inner">
+              <li>お断りさせていただいております。</li>
+            </ul>
           </li>
-          <li>パチンコやスロットのやり方がわからないのですか・・・
-            <ul class="c-innerlist"><li>遊技方法はもちろん、ご不明な点はお気軽にスタッフへお尋ねください。<br>スタッフが丁寧にご案内いたします。</li></ul>
+          <li class="c-qalist"><p>パチンコやスロットのやり方がわからないのですが・・</p>
+            <ul class="c-qalist__inner">
+              <li>遊技方法はもちろん、ご不明な点はお気軽にスタッフへお尋ねください。<br>スタッフが丁寧にご案内いたします。</li>
+            </ul>
           </li>
-          <li>店内で電子タバコは吸えますか？
-            <ul class="c-innerlist"><li>夢らんどグループでは、紙タバコ・電子タバコ共に全館禁煙とさせていただいております。<br>所定の喫煙スペースをご利用ください。</li></ul>
+          <li class="c-qalist"><p>店内で電子タバコは吸えますか？</p>
+            <ul class="c-qalist__inner">
+              <li>夢らんどグループでは、紙タバコ・電子タバコ共に全館禁煙とさせていただいております。<br>所定の喫煙スペースをご利用ください。</li>
+            </ul>
           </li>
-          <li>遊技台の音量が大きいのですが・・・
-            <ul class="c-innerlist"><li>音量を調節させていただきます。<br>お気軽にスタッフへお声がけください。</li></ul>
+          <li class="c-qalist"><p>遊技台の音量が大きいのですが・・</p>
+            <ul class="c-qalist__inner">
+              <li>音量を調節させていただきます。<br>お気軽にスタッフへお声がけください。</li>
+            </ul>
           </li>
-          <li>ホール側でパチンコの大当りを制御できますか？
-            <ul class="c-innerlist"><li>違法行為にあたりますので、大当りや出玉に関する一切の制御はできません。</li></ul>
+          <li class="c-qalist"><p>ホール側でパチンコの大当りを制御できますか？</p>
+            <ul class="c-qalist__inner">
+              <li>違法行為にあたりますので、大当りや出玉に関する一切の制御はできません。</li>
+            </ul>
           </li>
-          <li>車椅子での遊技はできますか？
-            <ul class="c-innerlist"><li>各遊技台の椅子の取り外しを行います。<br>お気軽にスタッフへお声がけください。</li></ul>
+          <li class="c-qalist"><p>車椅子での遊技はできますか？</p>
+            <ul class="c-qalist__inner">
+              <li>各遊技台の椅子の取り外しを行います。<br>お気軽にスタッフへお声がけください。</li>
+            </ul>
           </li>
-          <li>精算し忘れたカードは後日精算できますか？
-            <ul class="c-innerlist"><li>精算は当日に限り有効です。<br>翌日以降はご遊技のみ可能です。</li></ul>
+          <li class="c-qalist"><p>精算し忘れたカードは後日精算できますか？</p>
+            <ul class="c-qalist__inner">
+              <li>精算は当日に限り有効です。<br>翌日以降はご遊技のみ可能です。</li>
+            </ul>
           </li>
         </ul>
       </section>
