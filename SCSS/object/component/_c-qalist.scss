@@ -1,31 +1,29 @@
-@use"../../foundation/breakpoint" as m;
+@use "../../foundation/breakpoint" as m;
 
-
-@include m.mq(sp){
-
-  /* 質問の表示 */
-  .c-qalist {
-    font-size: 16px;
-    margin-left: 10px;
-    margin-top: 20px;
-
+@include m.mq(sp) {
+	/* 質問の表示 */
+	.c-qalist {
+    font-size: 14px;
+    margin-top: 4px;
+    :hover {
+      cursor: pointer;
+    }
     p {
       font-weight: bold;
       position: relative;
-
-      &:hover {
-        cursor: pointer;;
-      }
-      &::before {
+      padding: 14px;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background-color 0.3s;
+      &::after {
         content: "";
-        height: 18px;
-        width: 3px;
-        background-color: #cc0000;
+        height: 16px;
+        width: 22px;
+        background-image: url(../image/icon-down.png);
         display: block;
-        position: absolute;
-        top: 3px;
-        left: -10px;
-        border-radius: 2px;
+        margin-top: -6px;
       }
     }
     /* 答えの表示 */
@@ -34,16 +32,30 @@
       padding-top: 6px;
       height: 0px;
       overflow: hidden;
+      transition: height 0.3s;
     }
   }
   .open {
-    .c-qalist__inner {
-      height: fit-content;
+    p::after {
+      background-image: url(../image/icon-up.png);
+    }
+  }
+	.open {
+		.c-qalist__inner {
+			height: 90px;
+		}
+	}
+  /* 質問の背景色切り替え */
+  .p-qalist--wrapper {
+    .hover {
+      p {
+        background-color: #f7c3c3;
+      }
     }
   }
 }
 
-@include m.mq(tab){
+@include m.mq(tab) {
 }
-@include m.mq(pc){
+@include m.mq(pc) {
 }

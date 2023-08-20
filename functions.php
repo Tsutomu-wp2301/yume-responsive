@@ -41,6 +41,8 @@ function add_files(){
     wp_enqueue_script('mediaList_script', get_template_directory_uri().'/JS/mediaList.js', array(),'1.0.0',true);
     wp_enqueue_script('addopen_script', get_template_directory_uri().'/JS/addOpen.js', array(),'1.0.0',true);
     wp_enqueue_script('headerInactive_script', get_template_directory_uri().'/JS/headerInactive.js', array(),'1.0.0',true);
+    wp_enqueue_script('accordionMenu_script', get_template_directory_uri().'/JS/accordionMenu.js', array(),'1.0.0',true);
+    wp_enqueue_script('drawerMenu_script', get_template_directory_uri().'/JS/drawerMenu.js', array(),'1.0.0',true);
 
 }
 add_action('wp_enqueue_scripts', 'add_files');
