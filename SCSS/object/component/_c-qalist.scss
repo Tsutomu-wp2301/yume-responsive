@@ -55,7 +55,61 @@
   }
 }
 
+
+
 @include m.mq(tab) {
+  /* 質問の表示 */
+	.c-qalist {
+    font-size: 14px;
+    margin-top: 4px;
+    :hover {
+      cursor: pointer;
+    }
+    p {
+      font-weight: bold;
+      position: relative;
+      padding: 14px;
+      background-color: #ffffff;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      transition: background-color 0.3s;
+      &::after {
+        content: "";
+        height: 16px;
+        width: 22px;
+        background-image: url(../image/icon-down.png);
+        display: block;
+        margin-top: -6px;
+      }
+    }
+    /* 答えの表示 */
+    &__inner {
+      font-size: 14px;
+      padding-top: 6px;
+      height: 0px;
+      overflow: hidden;
+      transition: height 0.3s;
+    }
+  }
+  .open {
+    p::after {
+      background-image: url(../image/icon-up.png);
+    }
+  }
+	.open {
+		.c-qalist__inner {
+			height: 90px;
+		}
+	}
+  /* 質問の背景色切り替え */
+  .p-qalist--wrapper {
+    .hover {
+      p {
+        background-color: #f7c3c3;
+      }
+    }
+  }
 }
 @include m.mq(pc) {
 }
