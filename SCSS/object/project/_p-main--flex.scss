@@ -49,11 +49,14 @@
   .p-main--flex {
     display: flex;
     justify-content: center;
+    background-image: url(../image/background1.png);
+    background-size: cover;
     &--archive {
       flex-direction: column;
       align-items: center;
       p {
-        padding:0px;
+        padding: 0% 10%;
+        margin-bottom: 30px;
       }
       h2 {
         font-size: 32px;

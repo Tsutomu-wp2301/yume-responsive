@@ -569,6 +569,52 @@ a {
     background-color: #f7c3c3;
   }
 }
+@media screen and (min-width:781.5px) {
+  /* 質問の表示 */
+  .c-qalist {
+    font-size: 14px;
+    margin-top: 4px;
+    /* 答えの表示 */
+  }
+  .c-qalist :hover {
+    cursor: pointer;
+  }
+  .c-qalist p {
+    font-weight: bold;
+    position: relative;
+    padding: 14px;
+    background-color: #ffffff;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    transition: background-color 0.3s;
+  }
+  .c-qalist p::after {
+    content: "";
+    height: 16px;
+    width: 22px;
+    background-image: url(../image/icon-down.png);
+    display: block;
+    margin-top: -6px;
+  }
+  .c-qalist__inner {
+    font-size: 14px;
+    padding-top: 6px;
+    height: 0px;
+    overflow: hidden;
+    transition: height 0.3s;
+  }
+  .open p::after {
+    background-image: url(../image/icon-up.png);
+  }
+  .open .c-qalist__inner {
+    height: 90px;
+  }
+  /* 質問の背景色切り替え */
+  .p-qalist--wrapper .hover p {
+    background-color: #f7c3c3;
+  }
+}
 @media screen and (max-width: 780px) {
   .p-header-flex {
     display: flex;
@@ -1415,6 +1461,7 @@ a {
     display: block;
     content: "";
     width: 80vw;
+    max-width: 1000px;
     height: 1px;
     background-color: #9e9c9c;
     margin: 20px 0px;
@@ -1423,6 +1470,7 @@ a {
     display: block;
     content: "";
     width: 80vw;
+    max-width: 1000px;
     height: 1px;
     background-color: #9e9c9c;
     margin: 20px 0px;
@@ -1456,6 +1504,9 @@ a {
   }
   .p-article-layout--singlepage {
     width: 80vw;
+  }
+  .p-article-layout--frontpage {
+    background-color: #fff;
   }
 }
 @media screen and (min-width: 1200px) {
@@ -1509,13 +1560,16 @@ a {
   .p-main--flex {
     display: flex;
     justify-content: center;
+    background-image: url(../image/background1.png);
+    background-size: cover;
   }
   .p-main--flex--archive {
     flex-direction: column;
     align-items: center;
   }
   .p-main--flex--archive p {
-    padding: 0px;
+    padding: 0% 10%;
+    margin-bottom: 30px;
   }
   .p-main--flex--archive h2 {
     font-size: 32px;
