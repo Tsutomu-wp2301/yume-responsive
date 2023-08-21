@@ -1664,6 +1664,9 @@ a {
     margin-bottom: -4px;
     margin-left: 4px;
   }
+  .p-media--flex--tab a {
+    width: 100%;
+  }
 }
 @media screen and (max-width: 780px) {
   .p-media-list__tab {
@@ -1998,6 +2001,7 @@ a {
     display: flex;
     flex-direction: column;
     padding: 10px 20px;
+    width: 65%;
   }
 }
 @media screen and (max-width: 780px) {
