@@ -1,0 +1,35 @@
+@use"../../foundation/breakpoint" as m;
+
+
+@include m.mq(sp){
+  .p-tenpointroduction-margin {
+    .p-archive--wrapper {
+      margin-bottom: -20px;
+
+    }
+  }
+}
+
+@include m.mq(tab){
+  .p-tenpointroduction-margin {
+    .c-button--archive {
+      margin-bottom: 150px;
+      margin-top: 0px;
+    }
+    p {
+      padding: 0px 10%;
+      margin-bottom: 40px;
+    }
+  }
+}
+@include m.mq(pc){
+  .p-tenpointroduction-margin {
+    .c-button--archive {
+      margin-bottom: 150px;
+    }
+    p {
+      padding: 0px 10%;
+      margin-bottom: 54px;
+    }
+  }
+}

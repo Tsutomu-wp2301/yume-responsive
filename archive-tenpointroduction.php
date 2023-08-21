@@ -1,10 +1,10 @@
 <?php get_header(); ?>
-<main class="p-main--flex--archive">
+<main class="p-main--flex--archive p-tenpointroduction-margin">
   <h2>店舗一覧</h2>
   <P>　夢らんどグループは埼玉県に4店舗、地域密着型のエンターテイメントパーラー
-として展開中です。老若男女問わず幅広い世代のお客様にご支持を頂いております。
-パチンコ・スロットで遊ぶなら夢らんど♪　お近くの夢らんどへGO！</p>
-<div class="center">
+  として展開中です。老若男女問わず幅広い世代のお客様にご支持を頂いております。
+  パチンコ・スロットで遊ぶなら夢らんど♪　お近くの夢らんどへGO！</p>
+  <div class="center">
     <div class="p-archive--wrapper">
       <?php if( have_posts() ) : ?>
         <?php  

@@ -53,7 +53,7 @@
         </a>
       </li>
       <li class = "p-global-nav__list">
-        <a href="<?php echo esc_url(home_url('media')); ?>">
+        <a href="<?php echo esc_url(home_url('category/media')); ?>">
           <img class="c-nav-icon" src="<?php bloginfo('template_directory'); ?>/image/globalnav/icon-media.png" alt="メディアアイコン"/>メディア
         </a>
       </li>

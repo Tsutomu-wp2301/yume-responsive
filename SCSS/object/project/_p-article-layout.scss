@@ -7,6 +7,12 @@
     &--singlepage {
       width: 80vw;
     }
+    &--sitemap {
+      display: flex;
+      flex-direction: column;
+      justify-content: center;
+      align-items: center;
+    }
   }
 }
 

@@ -185,7 +185,7 @@
           <div class="c-news--line c-news--line--tab"></div>
           <?php endwhile; endif; wp_reset_query(); ?> 
         </ul>
-        <a id="c-button--sp" href="<?php echo home_url() ; ?>/category/media/" class="c-button--archive">
+        <a id="c-button--sp" href="<?php echo home_url() ; ?>/category/news/" class="c-button--archive">
           <button>NEWS一覧</button>
         </a><!-- メディアボタン -->
       </section><!-- 夢らんどニュースのセクション -->
