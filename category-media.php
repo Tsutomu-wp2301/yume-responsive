@@ -1,20 +1,23 @@
 <?php get_header(); ?>
-<main class="p-main--flex--archive">
+<main class="p-main--flex--archive archive-margin">
   <h2>投稿一覧</h2>
   <div class="center">
     <div class="p-archive--wrapper">
-      <!-- メインループ開始 -->
-      <?php
-        query_posts(
-        Array(
-          'category_name' => 'media',/* メディア */
-          'post_type' => 'post',
-          'orderby' => 'date',
-          'order' => 'DESC',
-          'posts_per_page' => '5'
-          )
+      <!-- /* サブループ開始 */ -->
+      <?php 
+        $media_args = array(
+          'post_type'       => 'post',  /* 出力する投稿タイプ */
+          'posts_per_page'  => '5',  /* 表示数 */
+          'category_name'   =>'media','',  /* カテゴリーのスラッグ名 */
+          'order'           =>'',  /* 昇順はASC、降順はDESC */
+          'orderby'         =>'',  /* 何を基準に並び替えるか */
+          'paged'           => get_query_var('paged') // ページネーションのために追加
         );
-        if (have_posts()) : while (have_posts()) : the_post();
+        $media_post_query = new WP_Query($media_args);
+        if($media_post_query->have_posts()) : 
+          ?>
+          <?php while($media_post_query->have_posts()) :
+          $media_post_query->the_post();
       ?>
         <article id="post-<?php the_ID(); ?>" <?php post_class('p-article-layout p-media-archive--layout'); ?>>
           <div class="p-media--content--wrapper">
@@ -36,12 +39,17 @@
             <button>もっと見る</button>
           </a>
         </article>
-      <?php endwhile; endif; wp_reset_query(); ?><!-- メインループ終了 -->
+        <?php endwhile; wp_reset_postdata(); endif; ?>
+        <!-- サブループ終了 -->
     </div>
   </div>
   <div class="p-navigation">
     <?php if (function_exists('wp_pagenavi')) {wp_pagenavi();} ?>
   </div>
+  <nav class="p-navigation--sp">
+    <P><?php previous_posts_link('<< 前へ'); ?></P>
+    <P><?php next_posts_link('次へ >>'); ?></P>
+  </nav>
   <a id="c-button--sp" href="<?php echo home_url() ; ?>" class="c-button--archive">
     <button>トップページ</button>
   </a><!-- トップページへ戻るボタン -->

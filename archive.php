@@ -1,5 +1,5 @@
 <?php get_header(); ?>
-<main class="p-main--flex--archive">
+<main class="p-main--flex--archive archive-margin">
   <h2>投稿一覧</h2>
   <div class="center">
     <div class="p-archive--wrapper">
@@ -28,13 +28,17 @@
               <button>もっと見る</button>
             </a>
           </article>
-        <?php endwhile; 
-      endif; wp_reset_query(); ?><!-- メインループ終了 -->
+        <?php endwhile; ?>
+      <?php endif; ?><!-- メインループ終了 -->
     </div>
   </div>
-  <div class="p-navigation">
+  <nav class="p-navigation">
     <?php if (function_exists('wp_pagenavi')) {wp_pagenavi();} ?>
-  </div>
+  </nav>
+  <nav class="p-navigation--sp">
+    <P><?php previous_posts_link('<< 前へ'); ?></P>
+    <P><?php next_posts_link('次へ >>'); ?></P>
+  </nav>
   
   <a id="c-button--sp" href="<?php echo home_url() ; ?>" class="c-button--archive">
     <button>トップページ</button>

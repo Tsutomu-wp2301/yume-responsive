@@ -1,0 +1,23 @@
+@use"../../foundation/breakpoint" as m;
+
+
+@include m.mq(sp){
+
+}
+
+@include m.mq(tab){
+  .sitemap-margin {
+    .c-button--archive {
+      margin-top: 40px;
+      margin-bottom: 70px;
+    }
+  }
+}
+@include m.mq(pc){
+  .sitemap-margin {
+    .c-button--archive {
+      margin-top: 70px;
+      margin-bottom: 70px;
+    }
+  }
+}

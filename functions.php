@@ -88,13 +88,13 @@ add_filter('pre_get_posts', 'custom_search_posts_per_page');
 
 
 //アーカイブページで投稿数を6件にする
-function custom_archive_posts_per_page($query) {
-    if (!is_admin() && (is_tax() || is_post_type_archive() || is_category() || is_tag())) {
-        $query->set('posts_per_page', 6);
-    }
-    return $query;
-}
-add_filter('pre_get_posts', 'custom_archive_posts_per_page');
+// function custom_archive_posts_per_page($query) {
+//     if (!is_admin() && (is_tax() || is_post_type_archive() || is_category() || is_tag())) {
+//         $query->set('posts_per_page', 6);
+//     }
+//     return $query;
+// }
+// add_filter('pre_get_posts', 'custom_archive_posts_per_page');
 
 
 

@@ -1,11 +1,11 @@
 <?php get_header(); ?>
-<main class="p-main--flex">
+<main class="p-main--flex sitemap-margin">
   <?php if( have_posts() ) : ?>
     <?php  
       while( have_posts() ) : 
       the_post();
     ?>
-    <article id="post-<?php the_ID(); ?>" class="p-article-layout p-article--page p-article-layout--page" <?php post_class(); ?>>
+    <article id="post-<?php the_ID(); ?>" class="p-article-layout p-article--page p-article-layout--page p-article-layout--sitemap p-sitemap" <?php post_class(); ?>>
       <div class="p-h2--flex">
         <h2 class="p-title--home margin-top--page">
           <?php

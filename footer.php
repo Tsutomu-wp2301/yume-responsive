@@ -33,6 +33,9 @@
 					<li>
 						<a href="http://www.taihei-g.co.jp/golf/" target="_blank" class="glance">太平ゴルフセンター</a>
 					</li>
+					<li>
+						<a href="https://brilliant-village.com/" target="_blank" class="glance">ブリリアントヴレッジ日光</a>
+					</li>
 				</ul>
 				<div class="p-footer__link__flex--sp p-footer__link__flex--pc">
 					<ul class="p-footer__link p-footer__link__flex">

@@ -27,6 +27,7 @@
     display: flex;
     flex-direction: column;
     margin-left: 50px;
+    margin-right: 50px;
     a {
       color: #696666;
       border-bottom: 1px solid #faf8f8;
@@ -38,7 +39,7 @@
     }
     &__flex {
       display: flex;
-      order: 1;
+      order: 0;
     }
     li {
       margin: 7px 0px;
@@ -49,7 +50,7 @@
       justify-content: center;
     }
     &__flex--pc {
-      margin-left: -25px;
+      margin-left: 0px;
     }
   }
 }

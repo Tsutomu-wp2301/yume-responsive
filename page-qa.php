@@ -123,6 +123,9 @@
       </section>
     </article>
   <?php endwhile;  endif; ?>
+  <a id="c-button--sp" href="<?php echo home_url() ; ?>" class="c-button--archive">
+    <button>トップページ</button>
+  </a><!-- トップページへ戻るボタン -->
     
   <div class="c-background--menu"></div><!-- メニュー展開時の背景 -->
 </main>

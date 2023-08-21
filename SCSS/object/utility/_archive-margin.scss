@@ -6,10 +6,10 @@
 }
 
 @include m.mq(tab){
-  .p-media--content--wrapper {
-    display: flex;
-    max-height: 200px;
-    overflow: hidden;
+  .archive-margin {
+    .c-button--archive {
+      margin-bottom: 150px;
+    }
 
   }
 }
