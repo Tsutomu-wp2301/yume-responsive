@@ -2509,6 +2509,57 @@ a {
     margin-top: 15px;
   }
 }
+@media screen and (max-width: 780px) {
+  .p-navigation {
+    display: none;
+  }
+}
+@media screen and (min-width:781.5px) {
+  .p-navigation .wp-pagenavi {
+    clear: both;
+    text-align: center;
+    font-family: "Roboto";
+    font-size: 16px;
+    margin-bottom: 70px;
+  }
+  .p-navigation .wp-pagenavi::before {
+    content: "page";
+    color: #cc0000;
+    margin-right: -20px;
+  }
+  .p-navigation .wp-pagenavi span, .p-navigation .wp-pagenavi a {
+    padding: 14px 20px;
+    margin: 0px 4px;
+    color: #cc0000;
+    background-color: #FFFFFF;
+    white-space: nowrap;
+    transition: 0.2s ease-in-out;
+    text-align: center;
+    text-decoration: none;
+    border: solid 2px #cc0000;
+  }
+  .p-navigation .wp-pagenavi span {
+    font-weight: bold;
+  }
+  .p-navigation span:first-child {
+    background-color: rgba(0, 0, 0, 0);
+    border: none;
+  }
+  .p-navigation a:last-child {
+    font-size: 22px;
+    padding: 11px 18px;
+    position: relative;
+    top: 2px;
+  }
+  .p-navigation .wp-pagenavi a:hover {
+    color: #fff;
+    background-color: #cc0000;
+  }
+  .p-navigation .wp-pagenavi span.current {
+    color: #fff;
+    background-color: #cc0000;
+  }
+}
 /* メディアリストタブで表示の切り替え */
 @media screen and (max-width: 780px) {
   .hide {

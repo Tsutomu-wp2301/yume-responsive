@@ -39,6 +39,9 @@
       <?php endwhile; endif; wp_reset_query(); ?><!-- メインループ終了 -->
     </div>
   </div>
+  <div class="p-navigation">
+    <?php if (function_exists('wp_pagenavi')) {wp_pagenavi();} ?>
+  </div>
   <a id="c-button--sp" href="<?php echo home_url() ; ?>" class="c-button--archive">
     <button>トップページ</button>
   </a><!-- トップページへ戻るボタン -->
