@@ -29,6 +29,9 @@
       margin-bottom: -4px;
       margin-left: 4px;
     }
+    a {
+      width: 100%;
+    }
   }
 }
 @include m.mq(pc){
