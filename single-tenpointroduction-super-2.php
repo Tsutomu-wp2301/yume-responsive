@@ -33,7 +33,7 @@
                     if(!empty($address)) {
                         echo esc_html($address);
                       } else { 
-                        echo 'かすかべ夢らんどのアドレスを入力します';
+                        echo 'スーパー夢らんどのアドレスを入力します';
                       } 
                   }else{
                     echo 'プラグインCFSを有効化して住所を入力します';
