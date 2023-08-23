@@ -9,6 +9,13 @@ function yume_responsive_setup() {
 }
 add_action('after_setup_theme', 'yume_responsive_setup');
 
+// 管理画面のテーマカラーを変更するカスタムスタイルを追加
+function custom_admin_styles() {
+    wp_enqueue_style('custom-admin_style', get_template_directory_uri().'/css/custom-admin.css', array(),date('ymdHis', filemtime( get_template_directory().'/css/custom-admin.css' )));
+}
+add_action('admin_enqueue_scripts', 'custom_admin_styles');
+
+
 // タイトル出力
 // function yume_responsisve_title( $title ) {
 //     if ( is_front_page() && is_home() ) { //トップページなら
@@ -26,9 +33,9 @@ function add_files(){
     // CSSファイルの読み込み
     wp_enqueue_style('my_style', get_template_directory_uri().'/css/style.css', array(),date('ymdHis', filemtime( get_template_directory().'/css/style.css' )));
 
+
     // グーグルフォントの読み込み
     wp_enqueue_style('googlefonts', 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap', array(),'1.0.0');
-
 
     // jQueryの読み込み
     wp_enqueue_script( 'jQuery', get_theme_file_uri( '/JS/jQuery.js' ), array(), '1.0.0', true );
@@ -43,7 +50,6 @@ function add_files(){
     wp_enqueue_script('headerInactive_script', get_template_directory_uri().'/JS/headerInactive.js', array(),'1.0.0',true);
     wp_enqueue_script('accordionMenu_script', get_template_directory_uri().'/JS/accordionMenu.js', array(),'1.0.0',true);
     wp_enqueue_script('drawerMenu_script', get_template_directory_uri().'/JS/drawerMenu.js', array(),'1.0.0',true);
-
 }
 add_action('wp_enqueue_scripts', 'add_files');
 
@@ -97,9 +103,6 @@ add_filter('pre_get_posts', 'custom_search_posts_per_page');
 // add_filter('pre_get_posts', 'custom_archive_posts_per_page');
 
 
-
-
-
 // YARPPのrelated.cssを削除
 function crunchify_dequeue_footer_styles()
 {
@@ -114,3 +117,31 @@ function add_post_category_archive( $wp_query ) {
     }
     }
 add_action( 'pre_get_posts', 'add_post_category_archive' , 10 , 1);
+
+
+// 管理画面からコメントの項目を消す
+function remove_menus () {
+     remove_menu_page( 'edit-comments.php' );// コメントを非表示
+}
+add_action('admin_menu', 'remove_menus');
+
+// 管理画面の項目並び替え
+function sort_side_menu( $menu_order ) {
+    return array(
+      "index.php", // ダッシュボード
+      "edit.php", // 投稿
+      "edit.php?post_type=tenpointroduction", // カスタム投稿タイプ
+      "edit.php?post_type=page", // 固定ページ
+      "separator1", // 区切り線1
+      "upload.php", // メディア
+      "separator2", // 区切り線2
+      "themes.php", // 外観
+      "plugins.php", // プラグイン
+      "users.php", // ユーザー
+      "tools.php", // ツール
+      "options-general.php", // 設定
+      "separator-last" // 区切り線（最後）
+    );
+  }
+  add_filter( 'custom_menu_order', '__return_true' );
+  add_filter( 'menu_order', 'sort_side_menu' );

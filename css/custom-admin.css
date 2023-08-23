@@ -1,0 +1,78 @@
+/* 管理画面のスタイルシート */
+
+/* 背景色 */
+body.wp-admin {
+	background-color: #f1f1f1;
+}
+
+/* メニューの背景 */
+#adminmenuwrap {
+	background-color: #950000;
+	font-family: "メイリオ","游ゴシック";
+}
+#adminmenu {
+	background-color: #950000;
+}
+#adminmenuback {
+	background-color: #950000;
+}
+#wpadminbar {
+	background-color: #950000;
+}
+
+/* ホバー時の背景色 */
+#adminmenu li.menu-top:hover {
+	background-color: #950000;
+}
+#adminmenu a:hover {
+	background-color: #950000;
+	font-weight: bold;
+}
+#adminmenu li.opensub>a.menu-top {
+	background-color: #950000;
+	color: #fff;
+}
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu {
+	background-color: #950000;
+}
+#adminmenu li.menu-top:hover {
+	background-color: #bb0101;
+}
+
+/* ホバー時の文字 */
+#adminmenu a:hover {
+	color: #fff;
+	font-weight: bold;
+}
+#adminmenu li:hover div.wp-menu-image:before {
+	color: #fff;
+}
+#adminmenu .wp-submenu a:hover, #adminmenu a:hover {
+	color: #fff;
+}
+#adminmenu li.wp-has-submenu.wp-not-current-submenu.opensub:hover:after {
+	border-right-color: #bb0101;
+}
+#collapse-button:hover {
+	color: #fff;
+}
+.smart_slider__admin_menu_go_pro {
+	color: rgba(240,246,252,0.7);
+	font-weight: normal;
+}
+.smart_slider__admin_menu_go_pro:hover {
+	color: rgba(255,255,255,1);
+	font-weight: 700;
+}
+
+#adminmenu li.opensub div.wp-menu-image:before {
+	color: #fff;
+}
+
+/* 項目選択時の背景 */
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu  {
+	background-color: #f81f1f;
+}
+#adminmenu .wp-submenu {
+	background-color: #bb0101;
+}
