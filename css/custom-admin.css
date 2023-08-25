@@ -18,7 +18,17 @@ body.wp-admin {
 }
 #wpadminbar {
 	background-color: #950000;
+	background: #950000;
 }
+
+/* メニューの文字 */
+#wpadminbar a.ab-item {
+	color: rgba(240,246,252,.6);
+}
+#wpadminbar>#wp-toolbar span.ab-label {
+	color: rgba(240,246,252,.6);
+}
+
 
 /* ホバー時の背景色 */
 #adminmenu li.menu-top:hover {
@@ -38,6 +48,23 @@ body.wp-admin {
 #adminmenu li.menu-top:hover {
 	background-color: #bb0101;
 }
+#wpadminbar:not(.mobile) .ab-top-menu>li:hover>.ab-item {
+	background-color: inherit;
+}
+#wpadminbar:not(.mobile) .ab-top-menu>li:hover>.ab-item {
+	background: inherit;
+}
+#wpadminbar .ab-top-menu>li.hover>.ab-item {
+	background: inherit;
+	color: #fff;
+}
+#wpadminbar .menupop .ab-sub-wrapper {
+	background-color: #bb0101;
+}
+#wpadminbar .quicklinks .menupop ul.ab-sub-secondary {
+	background-color: #bb0101;
+}
+
 
 /* ホバー時の文字 */
 #adminmenu a:hover {
@@ -64,10 +91,38 @@ body.wp-admin {
 	color: rgba(255,255,255,1);
 	font-weight: 700;
 }
-
+#wpadminbar li:hover .ab-icon:before {
+	color: #fff;
+}
+#wpadminbar:not(.mobile) .ab-top-menu>li:hover>.ab-item {
+	color: #fff;
+}
 #adminmenu li.opensub div.wp-menu-image:before {
 	color: #fff;
 }
+#wpadminbar li.hover .ab-icon:before {
+	color: #fff;
+}
+#wpadminbar .quicklinks .menupop.hover ul li a:hover {
+	color: #fff;
+}
+#wpadminbar li.hover .ab-item:before {
+	color: #fff;
+}
+#wpadminbar li:hover .ab-item:before {
+	color: #fff;
+}
+#wpadminbar:not(.mobile)>#wp-toolbar li:hover span.ab-label {
+	color: #fff;
+}
+#wpadminbar #wp-admin-bar-comments .count-0 {
+	opacity: 1;
+}
+#wpadminbar>#wp-toolbar li.hover span.ab-label {
+	color: #fff;
+}
+
+
 
 /* 項目選択時の背景 */
 #adminmenu li.wp-has-current-submenu a.wp-has-current-submenu  {
@@ -76,3 +131,4 @@ body.wp-admin {
 #adminmenu .wp-submenu {
 	background-color: #bb0101;
 }
+
