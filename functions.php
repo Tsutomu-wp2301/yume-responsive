@@ -10,10 +10,10 @@ function yume_responsive_setup() {
 add_action('after_setup_theme', 'yume_responsive_setup');
 
 // 管理画面のテーマカラーを変更するカスタムスタイルを追加
-function custom_admin_styles() {
-    wp_enqueue_style('custom-admin_style', get_template_directory_uri().'/css/custom-admin.css', array(),date('ymdHis', filemtime( get_template_directory().'/css/custom-admin.css' )));
+function custom_styles() {
+    wp_enqueue_style('custom_style', get_template_directory_uri().'/css/custom-style.css', array(),date('ymdHis', filemtime( get_template_directory().'/css/custom-style.css' )));
 }
-add_action('admin_enqueue_scripts', 'custom_admin_styles');
+add_action('admin_enqueue_scripts', 'custom_styles');
 
 
 // タイトル出力
@@ -86,7 +86,7 @@ add_filter('register_post_type_args', 'post_has_archive', 10, 2);
 // サーチページの投稿表示件数を設定
 function custom_search_posts_per_page($query) {
     if ($query->is_search) {
-      $query->set('posts_per_page', 5);
+      $query->set('posts_per_page', 20);
     }
     return $query;
 }
