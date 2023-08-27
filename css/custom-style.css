@@ -1,0 +1,126 @@
+@charset "UTF-8";
+/* 管理画面のテーマカラー設定 */
+/* adminメニューの背景色 */
+/* ベースカラー */
+/* セレクトカラー */
+/* インナーメニュー */
+/* adminbarの色 */
+/* 管理画面のテーマカラーを設定 */
+/* 背景色 */
+body.wp-admin {
+  background-color: #f1f1f1;
+}
+
+/* メニューの背景 */
+#adminmenuwrap {
+  font-family: "メイリオ", "游ゴシック";
+}
+
+#adminmenu,
+#adminmenuwrap,
+#adminmenuback,
+#wpadminbar {
+  background-color: #990000;
+}
+
+#wpadminbar {
+  background: #990000;
+}
+
+/* メニューの文字 */
+#wpadminbar a.ab-item {
+  color: rgba(240, 246, 252, 0.6);
+}
+
+#wpadminbar > #wp-toolbar span.ab-label {
+  color: rgba(240, 246, 252, 0.6);
+}
+
+#adminmenu .update-plugins {
+  background-color: #b88800;
+}
+
+/* ホバー時の背景色 */
+#adminmenu li.menu-top:hover,
+#adminmenu a:hover,
+#adminmenu li.opensub > a.menu-top,
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu,
+#adminmenu li.menu-top:hover,
+#wpadminbar .menupop .ab-sub-wrapper,
+#wpadminbar .quicklinks .menupop ul.ab-sub-secondary {
+  background-color: #950000;
+}
+
+#adminmenu a:hover {
+  font-weight: bold;
+}
+
+#adminmenu li.opensub > a.menu-top {
+  color: #fff;
+}
+
+#wpadminbar:not(.mobile) .ab-top-menu > li:hover > .ab-item {
+  background-color: inherit;
+}
+
+#wpadminbar:not(.mobile) .ab-top-menu > li:hover > .ab-item {
+  background: inherit;
+}
+
+#wpadminbar .ab-top-menu > li.hover > .ab-item {
+  background: inherit;
+  color: #fff;
+}
+
+/* ホバー時の文字 */
+#adminmenu a:hover {
+  font-weight: bold;
+}
+
+#adminmenu li.wp-has-submenu.wp-not-current-submenu.opensub:hover:after {
+  border-right-color: #bb0101;
+}
+
+.smart_slider__admin_menu_go_pro {
+  color: rgba(240, 246, 252, 0.7);
+  font-weight: normal;
+}
+
+.smart_slider__admin_menu_go_pro:hover {
+  color: rgb(255, 255, 255);
+  font-weight: 700;
+}
+
+#wpadminbar li:hover .ab-icon:before,
+#wpadminbar:not(.mobile) .ab-top-menu > li:hover > .ab-item,
+#adminmenu li.opensub div.wp-menu-image:before,
+#wpadminbar li.hover .ab-icon:before,
+#wpadminbar .quicklinks .menupop.hover ul li a:hover,
+#wpadminbar li.hover .ab-item:before,
+#wpadminbar li:hover .ab-item:before,
+#wpadminbar:not(.mobile) > #wp-toolbar li:hover span.ab-label,
+#adminmenu .wp-submenu a:hover,
+#adminmenu a:hover,
+#adminmenu li:hover div.wp-menu-image:before,
+#collapse-button:hover,
+#adminmenu a:hover {
+  color: #fff;
+}
+
+#wpadminbar #wp-admin-bar-comments .count-0 {
+  opacity: 1;
+}
+
+#wpadminbar > #wp-toolbar li.hover span.ab-label {
+  color: #fff;
+}
+
+/* 項目選択時の背景 */
+#adminmenu li.wp-has-current-submenu a.wp-has-current-submenu {
+  background-color: #f81f1f;
+}
+
+#adminmenu .wp-submenu {
+  background-color: #bb0101;
+}
+/*# sourceMappingURL=custom-style.css.map */

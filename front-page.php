@@ -6,45 +6,51 @@
           <h2 class="p-title--home">営 業 情 報</h2>
         </div>
         <ul class="content">
-          <?php
-            query_posts(
-            Array(
-              'category_name' => 'tenkyu',
-              'post_type' => 'post',
-              'orderby' => 'date',
-              'order' => 'DESC',
-              'posts_per_page' => '2'
-              )
-            );
-            if (have_posts()) : while (have_posts()) : the_post();
-          ?>
+        <?php /* サブループ開始 */
+          $tenkyu_args = array(
+            'post_type'       => 'post',  /* 出力する投稿タイプ */
+            'posts_per_page'  => '2',  /* 表示数 */
+            'category_name'   =>'tenkyu','',  /* categoryのスラッグ*/
+            'order'           =>'DESC',  /* 昇順はASC、降順はDESC */
+            'orderby'         =>'date',  /* 並び替えの基準 */
+            'paged'           => get_query_var('paged') // ページネーションのために追加
+          );
+          $tenkyu_query = new WP_Query($tenkyu_args);
+          if($tenkyu_query->have_posts()) : 
+        ?>
+        <?php while($tenkyu_query->have_posts()) :
+          $tenkyu_query->the_post();
+        ?>
           <li>
             <div class="p-tenkyu--honbun">
               <?php the_content(); ?>
             </div>
           </li>
-          <?php endwhile; endif; wp_reset_query(); ?>
+          <?php endwhile; wp_reset_postdata(); endif; ?><!-- サブループ終了 -->
         </ul>
       </section><!-- 営業情報セクション -->
       <section>
         <div class="p-h2--flex">
           <h2 class= "p-title--home">メディア掲載情報</h2>
         </div>
-        <?php
-          query_posts(
-          Array(
-            'category_name' => 'media',/* メディア情報 */
-            'post_type' => 'post',
-            'orderby' => 'date',
-            'order' => 'DESC',
-            'posts_per_page' => '6'
-            )
+        <?php /* サブループ開始 */
+          $media_args = array(
+            'post_type'       => 'post',  /* 出力する投稿タイプ */
+            'posts_per_page'  => '6',  /* 表示数 */
+            'category_name'   =>'media','',  /* categoryのスラッグ*/
+            'order'           =>'DESC',  /* 昇順はASC、降順はDESC */
+            'orderby'         =>'date',  /* 並び替えの基準 */
+            'paged'           => get_query_var('paged') // ページネーションのために追加
           );
-          if (have_posts()) : while (have_posts()) : the_post();
+          $media_query = new WP_Query($media_args);
+          if($media_query->have_posts()) : 
         ?>
-        <?php get_template_part('template-parts/media','postsp')?><!-- sp用テンプレート -->
-        <?php get_template_part('template-parts/media','posttab')?><!-- tab/pc用テンプレート -->
-        <?php endwhile; endif; wp_reset_query(); ?>
+        <?php while($media_query->have_posts()) :
+          $media_query->the_post();
+        ?>
+          <?php get_template_part('template-parts/media','postsp')?><!-- sp用テンプレート -->
+          <?php get_template_part('template-parts/media','posttab')?><!-- tab/pc用テンプレート -->
+        <?php endwhile; wp_reset_postdata(); endif; ?><!-- サブループ終了 -->
       </section><!-- メディア掲載情報セクション -->
       <section class="p-media-list--wrapper">
         <div class="p-media-list">
@@ -57,84 +63,94 @@
           </ul>
           <ul class="p-media-list__content">
             <li id="media-list--all" class="hide select">
-              <?php
-                query_posts(
-                Array(
-                  'category_name' => 'media',
-                  'post_type' => 'post',
-                  'orderby' => 'date',
-                  'order' => 'DESC',
-                  'posts_per_page' => '5'
-                  )
+              <?php /* サブループ開始 */
+                $media_args = array(
+                  'post_type'       => 'post',  /* 出力する投稿タイプ */
+                  'posts_per_page'  => '5',  /* 表示数 */
+                  'category_name'   =>'media','',  /* categoryのスラッグ*/
+                  'order'           =>'DESC',  /* 昇順はASC、降順はDESC */
+                  'orderby'         =>'date',  /* 並び替えの基準 */
                 );
-                if (have_posts()) : while (have_posts()) : the_post();
+                $media_query = new WP_Query($media_args);
+                if($media_query->have_posts()) : 
               ?>
-              <?php get_template_part('template-parts/media','posttitle')?>
-              <?php endwhile; endif; wp_reset_query(); ?>
+              <?php while($media_query->have_posts()) :
+                $media_query->the_post();
+              ?>
+                <?php get_template_part('template-parts/media','posttitle')?>
+              <?php endwhile; wp_reset_postdata(); endif; ?><!-- サブループ終了 -->
             </li><!--すべて-->
             <li id="media-list--super" class="hide">
-              <?php
-                query_posts(
-                Array(
-                  'category_name' => 'super',
-                  'post_type' => 'post',
-                  'orderby' => 'date',
-                  'order' => 'DESC',
-                  'posts_per_page' => '5'
-                  )
+              <?php /* サブループ開始 */
+                $super_args = array(
+                  'post_type'       => 'post',  /* 出力する投稿タイプ */
+                  'posts_per_page'  => '5',  /* 表示数 */
+                  'category_name'   =>'super','',  /* categoryのスラッグ*/
+                  'order'           =>'DESC',  /* 昇順はASC、降順はDESC */
+                  'orderby'         =>'date',  /* 並び替えの基準 */
                 );
-                if (have_posts()) : while (have_posts()) : the_post();
+                $super_query = new WP_Query($super_args);
+                if($super_query->have_posts()) : 
               ?>
-              <?php get_template_part('template-parts/media','posttitle')?>
-              <?php endwhile; endif; wp_reset_query(); ?>
+              <?php while($super_query->have_posts()) :
+                $super_query->the_post();
+              ?>
+                <?php get_template_part('template-parts/media','posttitle')?>
+              <?php endwhile; wp_reset_postdata(); endif; ?><!-- サブループ終了 -->
             </li><!--スーパー-->
             <li id="media-list--kasukabe" class="hide">
-              <?php
-                query_posts(
-                Array(
-                  'category_name' => 'kasukabe',
-                  'post_type' => 'post',
-                  'orderby' => 'date',
-                  'order' => 'DESC',
-                  'posts_per_page' => '5'
-                  )
+              <?php /* サブループ開始 */
+                $kasukabe_args = array(
+                  'post_type'       => 'post',  /* 出力する投稿タイプ */
+                  'posts_per_page'  => '5',  /* 表示数 */
+                  'category_name'   =>'kasukabe','',  /* categoryのスラッグ*/
+                  'order'           =>'DESC',  /* 昇順はASC、降順はDESC */
+                  'orderby'         =>'date',  /* 並び替えの基準 */
                 );
-                if (have_posts()) : while (have_posts()) : the_post();
+                $kasukabe_query = new WP_Query($kasukabe_args);
+                if($kasukabe_query->have_posts()) : 
               ?>
-              <?php get_template_part('template-parts/media','posttitle')?>
-              <?php endwhile; endif; wp_reset_query(); ?>
+              <?php while($kasukabe_query->have_posts()) :
+                $kasukabe_query->the_post();
+              ?>
+                <?php get_template_part('template-parts/media','posttitle')?>
+              <?php endwhile; wp_reset_postdata(); endif; ?><!-- サブループ終了 -->
             </li><!--かすかべ-->
             <li id="media-list--hirakata" class="hide">
-              <?php
-                query_posts(
-                Array(
-                  'category_name' => 'hirakata',
-                  'post_type' => 'post',
-                  'orderby' => 'date',
-                  'order' => 'DESC',
-                  'posts_per_page' => '5'
-                  )
+              <?php /* サブループ開始 */
+                $hirakata_args = array(
+                  'post_type'       => 'post',  /* 出力する投稿タイプ */
+                  'posts_per_page'  => '5',  /* 表示数 */
+                  'category_name'   =>'hirakata','',  /* categoryのスラッグ*/
+                  'order'           =>'DESC',  /* 昇順はASC、降順はDESC */
+                  'orderby'         =>'date',  /* 並び替えの基準 */
                 );
-                if (have_posts()) : while (have_posts()) : the_post();
+                $hirakata_query = new WP_Query($hirakata_args);
+                if($hirakata_query->have_posts()) : 
               ?>
-              <?php get_template_part('template-parts/media','posttitle')?>
-              <?php endwhile; endif; wp_reset_query(); ?>
+              <?php while($hirakata_query->have_posts()) :
+                  $hirakata_query->the_post();
+              ?>
+                <?php get_template_part('template-parts/media','posttitle')?>
+              <?php endwhile; wp_reset_postdata(); endif; ?><!-- サブループ終了 -->
             </li><!--平方-->
             <li id="media-list--uchimaki" class="hide">
-              <?php
-                query_posts(
-                Array(
-                  'category_name' => 'uchimaki',
-                  'post_type' => 'post',
-                  'orderby' => 'date',
-                  'order' => 'DESC',
-                  'posts_per_page' => '5'
-                  )
+              <?php /* サブループ開始 */
+                $uchimaki_args = array(
+                  'post_type'       => 'post',  /* 出力する投稿タイプ */
+                  'posts_per_page'  => '5',  /* 表示数 */
+                  'category_name'   =>'uchimaki','',  /* categoryのスラッグ*/
+                  'order'           =>'DESC',  /* 昇順はASC、降順はDESC */
+                  'orderby'         =>'date',  /* 並び替えの基準 */
                 );
-                if (have_posts()) : while (have_posts()) : the_post();
+                $uchimaki_query = new WP_Query($uchimaki_args);
+                if($uchimaki_query->have_posts()) : 
               ?>
-              <?php get_template_part('template-parts/media','posttitle')?>
-              <?php endwhile; endif; wp_reset_query(); ?>
+              <?php while($uchimaki_query->have_posts()) :
+                $uchimaki_query->the_post();
+              ?>
+                <?php get_template_part('template-parts/media','posttitle')?>
+              <?php endwhile; wp_reset_postdata(); endif; ?><!-- サブループ終了 -->
             </li><!--内牧-->
           </ul>
           <a id="c-button--sp" href="<?php echo home_url() ; ?>/category/media/" class="c-button--archive">
@@ -147,43 +163,50 @@
           <h2 class= "p-title--home">夢らんどニュース</h2>
         </div>
         <ul class="p-news--content">
-          <?php
-            query_posts(
-            Array(
-              'category_name' => 'news',/* ニュース */
-              'post_type' => 'post',
-              'orderby' => 'date',
-              'order' => 'DESC',
-              'posts_per_page' => '3'
-              )
+          <?php /* サブループ開始 */
+            $news_args = array(
+              'post_type'       => 'post',  /* 出力する投稿タイプ */
+              'posts_per_page'  => '3',  /* 表示数 */
+              'category_name'   =>'news','',  /* categoryのスラッグ*/
+              'order'           =>'DESC',  /* 昇順はASC、降順はDESC */
+              'orderby'         =>'date',  /* 並び替えの基準 */
+              'date_query'      => array(  /* 日付クエリを追加 */
+                array(
+                    'after' => date('Y-m-d', strtotime('-1 year')),  /* 1年前までの投稿を取得 */
+                ),
+              ),
             );
-            if (have_posts()) : while (have_posts()) : the_post();
+            $news_query = new WP_Query($news_args);
+            if($media_query->have_posts()) : 
           ?>
-          <li>
-            <div class="time">
-              <?php
-                $d_year = get_the_time('Y');
-                $d_month = get_the_time('m');
-                $d_day = get_the_time('d');
-                $d_youbi = get_the_time('D');
-                echo $d_year."年".$d_month."月".$d_day."日(".$d_youbi.")";
-              ?>
-            </div>
-            <div class="title p-news--title">
-              <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
-            </div>
-            <div class="p-news--flex clearfix">
-              <a href="<?php the_permalink(); ?>">
-                <?php the_post_thumbnail(); ?>
-              </a>
-              <p class="p-news--text">
-                <?php echo nl2br(mb_substr(strip_tags($post-> post_content),0,130)); ?>
-              </p>
-            </div>
-            <a id="c-button--more--sp" href="<?php the_permalink(); ?>" class="c-button--more"><button>もっと見る</button></a><!-- もっと見るボタン -->
-          </li>
-          <div class="c-news--line c-news--line--tab"></div>
-          <?php endwhile; endif; wp_reset_query(); ?> 
+          <?php while($news_query->have_posts()) :
+            $news_query->the_post();
+          ?>
+            <li>
+              <div class="time">
+                <?php
+                  $d_year = get_the_time('Y');
+                  $d_month = get_the_time('m');
+                  $d_day = get_the_time('d');
+                  $d_youbi = get_the_time('D');
+                  echo $d_year."年".$d_month."月".$d_day."日(".$d_youbi.")";
+                ?>
+              </div>
+              <div class="title p-news--title">
+                <a href="<?php the_permalink(); ?>"><?php the_title(); ?></a>
+              </div>
+              <div class="p-news--flex clearfix">
+                <a href="<?php the_permalink(); ?>">
+                  <?php the_post_thumbnail(); ?>
+                </a>
+                <p class="p-news--text">
+                  <?php echo nl2br(mb_substr(strip_tags($post-> post_content),0,130)); ?>
+                </p>
+              </div>
+              <a id="c-button--more--sp" href="<?php the_permalink(); ?>" class="c-button--more"><button>もっと見る</button></a><!-- もっと見るボタン -->
+            </li>
+            <div class="c-news--line c-news--line--tab"></div>
+          <?php endwhile; wp_reset_postdata(); endif; ?><!-- サブループ終了 -->
         </ul>
         <a id="c-button--sp" href="<?php echo home_url() ; ?>/category/news/" class="c-button--archive">
           <button>NEWS一覧</button>
