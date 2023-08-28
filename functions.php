@@ -32,6 +32,7 @@ add_action('admin_enqueue_scripts', 'custom_styles');
 function add_files(){
     // CSSファイルの読み込み
     wp_enqueue_style('my_style', get_template_directory_uri().'/css/style.css', array(),date('ymdHis', filemtime( get_template_directory().'/css/style.css' )));
+    wp_enqueue_style('wpcalendar_style', get_template_directory_uri().'/css/wpcalendar.css', array(),date('ymdHis', filemtime( get_template_directory().'/css/wpcalendar.css' )));
 
 
     // グーグルフォントの読み込み
@@ -55,20 +56,20 @@ add_action('wp_enqueue_scripts', 'add_files');
 
 
 // ウィジェットの追加
-// function hamburgerSite_widgets_init() {
-//     register_sidebar (
-//         array(
-//             'name'          => 'サイドメニューウィジェット',
-//             'id'            => 'sideMenu_widget',
-//             'description'   => 'サイドメニュー用ウィジェットです',
-//             'before_widget' => '<div id="%1$s" class="widget %2$s">',
-//             'after_widget'  => '</div>',
-//             'before_title'  => '<h2><i class="fa fa-folder-open" aria-hidden="true"></i>',
-//             'after_title'   => "</h2>\n",
-//         )
-//     );
-// }
-// add_action( 'widgets_init', 'hamburgerSite_widgets_init' );
+function yumeland_widgets_init() {
+    register_sidebar (
+        array(
+            'name'          => 'カレンダーウィジェット',
+            'id'            => 'calendar_widget',
+            'description'   => 'カレンダー用ウィジェットです',
+            'before_widget' => '<div id="%1$s" class="widget %2$s">',
+            'after_widget'  => '</div>',
+            'before_title'  => '<h2><i class="fa fa-folder-open" aria-hidden="true"></i>',
+            'after_title'   => "</h2>\n",
+        )
+    );
+}
+add_action( 'widgets_init', 'yumeland_widgets_init' );
 
 
 // 投稿のアーカイブページを作成する

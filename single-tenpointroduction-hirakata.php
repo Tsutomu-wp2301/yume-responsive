@@ -33,7 +33,7 @@
                     if(!empty($address)) {
                         echo esc_html($address);
                       } else { 
-                        echo 'かすかべ夢らんどのアドレスを入力します';
+                        echo '平方夢らんどのアドレスを入力します';
                       } 
                   }else{
                     echo 'プラグインCFSを有効化して住所を入力します';
@@ -47,7 +47,7 @@
                     if(!empty($telephone)) {
                         echo esc_html($telephone);
                       } else { 
-                        echo 'かすかべ夢らんどの電話番号を入力します';
+                        echo '平方夢らんどの電話番号を入力します';
                       } 
                   }else{
                     echo 'プラグインCFSを有効化して電話番号を入力します';
@@ -61,7 +61,7 @@
                     if(!empty($time)) {
                         echo esc_html($time);
                       } else { 
-                        echo 'かすかべ夢らんどの営業時間を入力します';
+                        echo '平方夢らんどの営業時間を入力します';
                       } 
                   }else{
                     echo 'プラグインCFSを有効化して営業時間を入力します';
@@ -79,7 +79,7 @@
                     if(!empty($scale)) {
                         echo esc_html($scale);
                       } else { 
-                        echo 'かすかべ夢らんどの設置台数を入力します';
+                        echo '平方夢らんどの設置台数を入力します';
                       } 
                   }else{
                     echo 'プラグインCFSを有効化して設置台数を入力します';
@@ -93,7 +93,7 @@
                     if(!empty($parking)) {
                         echo esc_html($parking);
                       } else { 
-                        echo 'かすかべ夢らんどの駐車場台数を入力します';
+                        echo '平方夢らんどの駐車場台数を入力します';
                       } 
                   }else{
                     echo 'プラグインCFSを有効化して駐車場台数を入力します';
@@ -105,6 +105,9 @@
         </ul>
       </section>
       <?php the_content(); ?>
+      <div class="p-calendar">
+        <?php dynamic_sidebar( 'smartslider_area_1' ); ?>
+      </div>
       <a id="c-button--sp" href="<?php echo home_url() ; ?>" class="c-button--archive margin-top100">
         <button>トップページ</button>
       </a><!-- トップページへ戻るボタン -->
