@@ -51,6 +51,10 @@
 			margin-right: 0px;
 		}
 	}
+	/* カレンダーの枠を削除 */
+	.wpsbc-container .wpsbc-calendars .wpsbc-calendar {
+		border: 0px;
+	}
 	/* 凡例アイコン */
 	.wpsbc-legend .wpsbc-legend-item {
 		span {
@@ -136,7 +140,7 @@
 }
 
 @include m.mq(tab) {
-  /* 曜日の色を変更 */
+	/* 曜日の色を変更 */
 	.wpsbc-container .wpsbc-calendars .wpsbc-calendar table {
 		th:first-child {
 			color: rgb(255, 0, 0);
@@ -183,6 +187,10 @@
 		.wpsbc-legend-item:last-of-type {
 			margin-right: 0px;
 		}
+	}
+	/* カレンダーの枠を削除 */
+	.wpsbc-container .wpsbc-calendars .wpsbc-calendar {
+		border: 0px;
 	}
 	/* 凡例アイコン */
 	.wpsbc-legend .wpsbc-legend-item {
