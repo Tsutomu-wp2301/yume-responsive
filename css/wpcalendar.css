@@ -43,6 +43,10 @@
   .wpsbc-legend .wpsbc-legend-item:last-of-type {
     margin-right: 0px;
   }
+  /* カレンダーの枠を削除 */
+  .wpsbc-container .wpsbc-calendars .wpsbc-calendar {
+    border: 0px;
+  }
   /* 凡例アイコン */
   .wpsbc-legend .wpsbc-legend-item span {
     color: #fff;
@@ -156,6 +160,10 @@
   }
   .wpsbc-legend .wpsbc-legend-item:last-of-type {
     margin-right: 0px;
+  }
+  /* カレンダーの枠を削除 */
+  .wpsbc-container .wpsbc-calendars .wpsbc-calendar {
+    border: 0px;
   }
   /* 凡例アイコン */
   .wpsbc-legend .wpsbc-legend-item span {
