@@ -1,17 +1,20 @@
-@use"../../foundation/breakpoint" as m;
+@use "../../foundation/breakpoint" as m;
 
-
-@include m.mq(sp){
-
+@include m.mq(sp) {
 }
 
-@include m.mq(tab){
-  .archive-margin {
-    .c-button--archive {
-      margin-bottom: 150px;
-    }
-
-  }
+@include m.mq(tab) {
+	.archive-margin {
+		.c-button--archive {
+			margin-bottom: 60px;
+		}
+	}
 }
-@include m.mq(pc){
+@include m.mq(pc) {
+	.archive-margin {
+		.c-button--archive {
+			margin-bottom: 80px;
+			margin-top: 80px;
+		}
+	}
 }
