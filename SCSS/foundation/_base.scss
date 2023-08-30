@@ -1,37 +1,42 @@
-@use './breakpoint' as m;
+@use "./breakpoint" as m;
+
+html,
+body {
+	overflow-x: hidden;
+}
 
 body {
-  font-size: 14px;
-  list-style: none;
-    @include m.mq(tab){
-      font-size: 16px;
-    }
-    @include m.mq(pc){
-      font-size: 16px;
-    }
-  &.open {
-    overflow: hidden;/* ハンバーガーメニュー展開時スクロール禁止 */
-  }
+	font-size: 14px;
+	list-style: none;
+	@include m.mq(tab) {
+		font-size: 16px;
+	}
+	@include m.mq(pc) {
+		font-size: 16px;
+	}
+	&.open {
+		overflow: hidden; /* ハンバーガーメニュー展開時スクロール禁止 */
+	}
 }
 
 #footer {
-  margin-top: 100px;
-  @include m.mq(tab){
-    margin-top: 100px;
-  }
-
+	margin-top: 100px;
+	@include m.mq(tab) {
+		margin-top: 100px;
+	}
 }
 
-h2,h3 {
-  font-family: 'Noto Sans','メイリオ','ヒラギノ角ゴ ProN',sans-serif;
+h2,
+h3 {
+	font-family: "Noto Sans", "メイリオ", "ヒラギノ角ゴ ProN", sans-serif;
 }
 * {
-  font-family: 'Meiryo', '游ゴシック', 'YuGothic', sans-serif;
+	font-family: "Meiryo", "游ゴシック", "YuGothic", sans-serif;
 }
 ul {
-  list-style: none;
+	list-style: none;
 }
 a {
-  text-decoration: none;
-  color: #000;
+	text-decoration: none;
+	color: #000;
 }

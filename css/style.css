@@ -1,4 +1,9 @@
 @charset "UTF-8";
+html,
+body {
+  overflow-x: hidden;
+}
+
 body {
   font-size: 14px;
   list-style: none;
@@ -26,7 +31,8 @@ body.open {
   }
 }
 
-h2, h3 {
+h2,
+h3 {
   font-family: "Noto Sans", "メイリオ", "ヒラギノ角ゴ ProN", sans-serif;
 }
 
@@ -1537,7 +1543,7 @@ a {
   .p-main--flex--archive p {
     padding: 0px;
     padding-left: 10%;
-    padding-right: 10%;
+    padding-right: 10px;
     padding-top: 0px;
   }
   .p-main--flex--archive h2 {
@@ -1581,6 +1587,7 @@ a {
     align-items: center;
     background-image: url(../image/background1.png);
     background-size: cover;
+    padding-bottom: 1px;
   }
   .p-main--flex--archive p {
     padding: 0% 0%;
@@ -2841,7 +2848,13 @@ a {
 }
 @media screen and (min-width:781.5px) {
   .archive-margin .c-button--archive {
-    margin-bottom: 150px;
+    margin-bottom: 60px;
+  }
+}
+@media screen and (min-width: 1200px) {
+  .archive-margin .c-button--archive {
+    margin-bottom: 80px;
+    margin-top: 80px;
   }
 }
 /*# sourceMappingURL=style.css.map */

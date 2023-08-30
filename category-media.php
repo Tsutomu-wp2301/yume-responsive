@@ -21,13 +21,6 @@
       ?>
         <article id="post-<?php the_ID(); ?>" <?php post_class('p-article-layout p-media-archive--layout'); ?>>
           <div class="p-media--content--wrapper">
-            <div class="c-image--container">
-              <?php if (has_post_thumbnail()) : ?><!-- アイキャッチがあれば表示する条件分岐 -->
-                <?php the_post_thumbnail('archive_eyecatch'); ?>
-                <?php else: ?><!-- アイキャッチ画像が無ければ指定したファイル画像を表示 -->
-                  <img src="<?php echo esc_url(get_template_directory_uri()); ?>/image/noimage.jpg" alt="" width="" height="" load="lazy">
-              <?php endif; ?>
-            </div><!-- アイキャッチ画像 -->
             <div class="c-media--content--container">
               <h3>
                 <?php echo the_title(); ?>
