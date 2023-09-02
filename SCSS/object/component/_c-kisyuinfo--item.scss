@@ -1,0 +1,54 @@
+@use"../../foundation/breakpoint" as m;
+
+
+@include m.mq(sp){
+  .c-kisyuinfo--item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 4px #dedede;
+    margin: 10px 10px 0px 10px;
+    p {
+      font-size: 14px;
+      padding: 6px;
+    }
+    &--place {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: solid 4px #dedede;
+      margin: 0px 10px;
+      p {
+        font-size: 14px;
+        padding: 6px;
+      }
+    }
+  }
+}
+
+@include m.mq(tab){
+  .c-kisyuinfo--item {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    border: solid 4px #dedede;
+    margin: 10px 10px 0px 10px;
+    p {
+      font-size: 14px;
+      padding: 6px;
+    }
+    &--place {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+      border: solid 4px #dedede;
+      margin: 0px 10px;
+      p {
+        font-size: 14px;
+        padding: 6px;
+      }
+    }
+  }
+}
+@include m.mq(pc){
+}

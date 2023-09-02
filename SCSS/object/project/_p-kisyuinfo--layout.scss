@@ -1,0 +1,16 @@
+@use"../../foundation/breakpoint" as m;
+
+
+@include m.mq(sp){
+  .p-kisyuinfo--layout {
+    margin-top: 20px;
+  }
+}
+
+@include m.mq(tab){
+  .p-kisyuinfo--layout {
+    margin-top: 20px;
+  }
+}
+@include m.mq(pc){
+}
