@@ -1,131 +1,61 @@
-@use'./p-header-flex';
-@use'./p-header-color';
-@use'./p-header';
-@use'./p-header-height';
-@use'./p-header-flex--sp';
-@use'./p-header-flex__img';
-@use'./p-header-button--sp';
-@use'./p-global-nav';
-@use'./p-global-nav--sp';
-@use'./p-global-nav__list';
-@use'./p-footer-nav';
-@use'./p-footer__logo';
-@use'./p-footer__logo__flex';
-@use'./p-footer__wrapper';
-@use'./p-footer__link';
-@use'./p-footer--bottom';
-@use'./p-header--background';
-@use'./p-h2--flex';
-@use'./p-title--home';
-@use'./p-tenkyu--honbun';
-@use'./p-content--flex';
-@use'./p-article-layout';
-@use'./p-main--flex';
-@use'./p-media--flex';
-@use'./p-media-list__tab';
-@use'./p-media-list__content';
-@use'./p-post--list--wrapper';
-@use'./p-news--flex';
-@use'./p-news--title';
-@use'./p-news--content';
-@use'./p-header--navMenu';
-@use'./p-inner-list--wrapper';
-@use'./p-inner-list';
-@use'./p-thumbnail--container';
-@use'./p-date--wrapper';
-@use'./p-content__text--flex';
-@use'./p-content--tab--flex';
-@use'./p-media-list--wrapper';
-@use'./p-footer__flex';
-@use'./p-article--page';
-@use'./p-tenpointroduction';
-@use'./p-article--archive';
-@use'./p-archive--wrapper';
-@use'./p-single--layout';
-@use'./p-post--content--wrapper';
-@use'./p-media-archive--layout';
-@use'./p-media--content--wrapper';
-@use'./p-article-layout--page';
-@use'./p-qalist--wrapper';
-@use'./p-navigation';
-@use'./p-navigation--sp';
-@use'./p-sitemap';
-@use'./p-tenpointroduction-margin';
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
+@use "./p-header-flex";
+@use "./p-header-color";
+@use "./p-header";
+@use "./p-header-height";
+@use "./p-header-flex--sp";
+@use "./p-header-flex__img";
+@use "./p-header-button--sp";
+@use "./p-global-nav";
+@use "./p-global-nav--sp";
+@use "./p-global-nav__list";
+@use "./p-footer-nav";
+@use "./p-footer__logo";
+@use "./p-footer__logo__flex";
+@use "./p-footer__wrapper";
+@use "./p-footer__link";
+@use "./p-footer--bottom";
+@use "./p-header--background";
+@use "./p-h2--flex";
+@use "./p-title--home";
+@use "./p-tenkyu--honbun";
+@use "./p-content--flex";
+@use "./p-article-layout";
+@use "./p-main--flex";
+@use "./p-media--flex";
+@use "./p-media-list__tab";
+@use "./p-media-list__content";
+@use "./p-post--list--wrapper";
+@use "./p-news--flex";
+@use "./p-news--title";
+@use "./p-news--content";
+@use "./p-header--navMenu";
+@use "./p-inner-list--wrapper";
+@use "./p-inner-list";
+@use "./p-thumbnail--container";
+@use "./p-date--wrapper";
+@use "./p-content__text--flex";
+@use "./p-content--tab--flex";
+@use "./p-media-list--wrapper";
+@use "./p-footer__flex";
+@use "./p-article--page";
+@use "./p-tenpointroduction";
+@use "./p-article--archive";
+@use "./p-archive--wrapper";
+@use "./p-single--layout";
+@use "./p-post--content--wrapper";
+@use "./p-media-archive--layout";
+@use "./p-media--content--wrapper";
+@use "./p-article-layout--page";
+@use "./p-qalist--wrapper";
+@use "./p-navigation";
+@use "./p-navigation--sp";
+@use "./p-sitemap";
+@use "./p-tenpointroduction-margin";
+@use "./p-kisyuinfo--layout";
+@use'./p-kisyuinfo--container';
+@use'./p-kisyuinfo';
+@use'./p-kisyuinfo--wrapper';
+@use'./p-tarm--container';
 
 
 

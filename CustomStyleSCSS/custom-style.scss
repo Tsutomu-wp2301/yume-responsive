@@ -106,3 +106,35 @@ body.wp-admin {
 #adminmenu .wp-submenu {
 	background-color: $select-color--inner;
 }
+
+/* カスタムフィールドのテーマカラー */
+// .postbox-header {
+// 	background-color: #950000;
+// 	color: #fff;
+// }
+.postbox-container .inside .field {
+	border-top: 0px;
+	border-bottom: 0px;
+}
+.field-dai_number,
+.field-yugisyu,
+.field-spec {
+	background-color: #ffa0a0;
+}
+.postbox-container .cfs_input .field p.notes {
+	color: #000;
+	label {
+		color: #000;
+	}
+}
+
+.field-probability,
+.field-rush,
+.field-continu {
+	background-color: #ffd2d2;
+}
+
+.field-zyunzou,
+.field-limit {
+	background-color: #d0ddff;
+}
