@@ -9,21 +9,12 @@ if (is_singular('kisyuinformation')) {
 ?>
 <main class="p-main--flex">
   <article>
-    <?php /* サブループ開始 */
-      $kisyuinformation_args = array(
-          'post_type'       => 'kisyuinformation',  /* カスタム投稿タイプのスラッグ */
-          'posts_per_page'  => '10',  /* 表示数 */
-          'category_name'   =>'','',  /* カテゴリーのスラッグ名 */
-          'order'           =>'DESC',  /* 昇順はASC、降順はDESC */
-          'orderby'         =>'date',  /* 何を基準に並び替えるか */
-          'paged'           => get_query_var('paged') // ページネーションのために追加
-      );
-      $kisyuinformation_query = new WP_Query($kisyuinformation_args);
-      if($kisyuinformation_query->have_posts()) : 
-      ?>
-      <?php while($kisyuinformation_query->have_posts()) :
-      $kisyuinformation_query->the_post();
-      ?>
+    <?php if( have_posts() ) : ?>
+    <?php  
+      while( have_posts() ) : 
+        the_post();
+    ?>
+      <article id="post-<?php the_ID(); ?>" <?php post_class(); ?>>
       <section class="p-kisyuinfo--wrapper">
         <h2 class="p-title--home  show-underline">機種情報</h2>
         <h3>
@@ -35,15 +26,15 @@ if (is_singular('kisyuinformation')) {
               echo '投稿のタイトルが表示されます';
             }
           ?>
-          <div class="p-tarm--container">
+          <div class="p-term--container">
             <?php 
+              the_terms(get_the_ID(), 'recommendation');
               the_terms(get_the_ID(), 'yugisyu');
               the_terms(get_the_ID(), 'specifications');
               the_terms(get_the_ID(), 'style'); 
             ?>
           </div>
         </h3>
-
         <?php the_content(); ?> 
         <?php include_once(ABSPATH . 'wp-admin/includes/plugin.php'); ?>
         <div class="p-kisyuinfo--layout">
@@ -83,7 +74,7 @@ if (is_singular('kisyuinformation')) {
                       }
                     ?><!-- 遊技種 -->
                   </p>
-                </li>
+                </li><!-- 遊技種 -->
                 <li class="c-kisyuinfo--item">
                   <p>タイプ</p>
                   <p>
@@ -100,7 +91,24 @@ if (is_singular('kisyuinformation')) {
                       }
                     ?><!-- タイプ -->
                   </p>
-                </li>
+                </li><!-- タイプ -->
+                <li class="c-kisyuinfo--item">
+                  <p>導入日</p>
+                  <p>
+                    <?php 
+                      if (is_plugin_active('custom-field-suite/cfs.php')) {
+                        $arrival = CFS()->get('arrival');
+                        if(!empty($arrival)) {
+                            echo esc_html($arrival);
+                          } else { 
+                            echo '導入日を入力します';
+                          } 
+                      }else{
+                        echo 'プラグインCFSを有効化してください';
+                      }
+                    ?>
+                  </p>
+                </li><!-- 導入日 -->
               </ul>
             </li>
             <li class="p-kisyuinfo">
@@ -160,7 +168,7 @@ if (is_singular('kisyuinformation')) {
           </ul>
         </div>
       </section>
-    <?php endwhile; wp_reset_postdata(); endif; ?><!-- サブループ終了 -->
+    <?php endwhile; endif; ?><!-- ループ終了 -->
     <a id="c-button--sp" href="<?php echo home_url() ; ?>" class="c-button--archive">
       <button>新機種情報へ</button>
     </a><!-- トップページへ戻るボタン -->

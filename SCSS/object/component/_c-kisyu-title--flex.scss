@@ -1,0 +1,26 @@
+@use"../../foundation/breakpoint" as m;
+
+
+@include m.mq(sp){
+  .c-kisyutitle--flex {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    z-index: 10;
+    .c-kisyu-title {
+      margin-top: 0px;
+      margin-bottom: 10px;
+      line-height: 1.2;
+    }
+  }
+}
+
+@include m.mq(tab){
+}
+@include m.mq(pc){
+}

@@ -1,0 +1,28 @@
+@use"../../foundation/breakpoint" as m;
+
+
+@include m.mq(sp){
+  .p-recommendation--wrapper {
+    h3 {display: flex;
+      align-items: center;
+      font-size: 22px;
+      margin-bottom: 20px;
+      &::before {
+        content: "";
+        height: 26px;
+        width: 4px;
+        background-color: #cc0000;
+        display: block;
+        margin-right: 8px;
+        margin-left: 10px;
+        border-radius: 3px;
+      }
+    }
+
+  }
+}
+
+@include m.mq(tab){
+}
+@include m.mq(pc){
+}

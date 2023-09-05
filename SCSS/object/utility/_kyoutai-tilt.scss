@@ -1,0 +1,17 @@
+@use "../../foundation/breakpoint" as m;
+
+@include m.mq(sp) {
+	.kyoutai-tilt {
+		/* 筐体画像を30度傾ける */
+		transform: rotate(30deg);
+    position: relative;
+    top: 6px;
+    right: 10px;
+    width: 30%;
+	}
+}
+
+@include m.mq(tab) {
+}
+@include m.mq(pc) {
+}
