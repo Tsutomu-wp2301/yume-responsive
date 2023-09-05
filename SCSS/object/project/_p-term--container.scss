@@ -1,0 +1,23 @@
+@use "../../foundation/breakpoint" as m;
+
+@include m.mq(sp) {
+	.p-term--container {
+		display: flex;
+		position: relative;
+		left: 0px;
+		font-size: 10px;
+		margin-top: 6px;
+		a {
+			background-color: #900;
+			border-radius: 6px;
+			padding: 1px 6px 1px 6px;
+			color: #fff;
+			margin-left: 4px;
+		}
+	}
+}
+
+@include m.mq(tab) {
+}
+@include m.mq(pc) {
+}

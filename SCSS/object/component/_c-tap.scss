@@ -1,0 +1,18 @@
+@use"../../foundation/breakpoint" as m;
+
+
+@include m.mq(sp){
+  .c-tap {
+    background-image: url(../image/tap.svg);
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+  }
+}
+
+@include m.mq(tab){
+}
+@include m.mq(pc){
+}

@@ -1,0 +1,30 @@
+@use "../../foundation/breakpoint" as m;
+
+@include m.mq(sp) {
+	.p-recommend--archive--container {
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		margin-bottom: 20px;
+    position: relative;
+    .c-kisyu-title {
+      p {
+        color: #602300;
+        text-align: center;
+      }
+    }
+    .c-kisyu-number {
+      p {
+        color: #602300;
+        text-align: center;
+        text-shadow: -1px -1px 1px #fff8f0, 1px -1px 1px #fff8f0, -1px 1px 1px #fff8f0, 1px 1px 1px #fff8f0; /* 縁取りの影 */
+        position: relative;
+      }
+    }
+	}
+}
+
+@include m.mq(tab) {
+}
+@include m.mq(pc) {
+}

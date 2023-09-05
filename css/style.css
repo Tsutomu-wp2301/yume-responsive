@@ -672,6 +672,49 @@ a {
   }
 }
 @media screen and (max-width: 780px) {
+  .c-recommend--kisyuinformation {
+    width: 94vw;
+    max-width: 600px;
+    height: 130px;
+    background-color: #fff8f0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 0px #7e7e7e;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+}
+@media screen and (max-width: 780px) {
+  .c-kisyutitle--flex {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    z-index: 10;
+  }
+  .c-kisyutitle--flex .c-kisyu-title {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+}
+@media screen and (max-width: 780px) {
+  .c-tap {
+    background-image: url(../image/tap.svg);
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+  }
+}
+@media screen and (max-width: 780px) {
   .p-header-flex {
     display: flex;
     justify-content: space-between;
@@ -2915,19 +2958,75 @@ a {
   }
 }
 @media screen and (max-width: 780px) {
-  .p-tarm--container {
+  .p-term--container {
     display: flex;
     position: relative;
-    left: 10px;
+    left: 0px;
     font-size: 10px;
     margin-top: 6px;
   }
-  .p-tarm--container a {
+  .p-term--container a {
     background-color: #900;
     border-radius: 6px;
     padding: 1px 6px 1px 6px;
     color: #fff;
     margin-left: 4px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .p-kisyuinformation--archive {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+  .p-kisyuinformation--archive h2 {
+    font-size: 26px;
+  }
+}
+@media screen and (min-width:781.5px) {
+  .p-kisyuinformation--archive {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+}
+@media screen and (max-width: 780px) {
+  .p-recommendation--wrapper h3 {
+    display: flex;
+    align-items: center;
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+  .p-recommendation--wrapper h3::before {
+    content: "";
+    height: 26px;
+    width: 4px;
+    background-color: #cc0000;
+    display: block;
+    margin-right: 8px;
+    margin-left: 10px;
+    border-radius: 3px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .p-recommend--archive--container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-bottom: 20px;
+    position: relative;
+  }
+  .p-recommend--archive--container .c-kisyu-title p {
+    color: #602300;
+    text-align: center;
+  }
+  .p-recommend--archive--container .c-kisyu-number p {
+    color: #602300;
+    text-align: center;
+    text-shadow: -1px -1px 1px #fff8f0, 1px -1px 1px #fff8f0, -1px 1px 1px #fff8f0, 1px 1px 1px #fff8f0; /* 縁取りの影 */
+    position: relative;
   }
 }
 /* メディアリストタブで表示の切り替え */
@@ -3039,6 +3138,16 @@ a {
   .archive-margin .c-button--archive {
     margin-bottom: 80px;
     margin-top: 80px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .kyoutai-tilt {
+    /* 筐体画像を30度傾ける */
+    transform: rotate(30deg);
+    position: relative;
+    top: 6px;
+    right: 10px;
+    width: 30%;
   }
 }
 /*# sourceMappingURL=style.css.map */

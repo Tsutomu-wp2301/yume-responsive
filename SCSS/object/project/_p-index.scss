@@ -52,11 +52,13 @@
 @use "./p-sitemap";
 @use "./p-tenpointroduction-margin";
 @use "./p-kisyuinfo--layout";
-@use'./p-kisyuinfo--container';
-@use'./p-kisyuinfo';
-@use'./p-kisyuinfo--wrapper';
-@use'./p-tarm--container';
-
+@use "./p-kisyuinfo--container";
+@use "./p-kisyuinfo";
+@use "./p-kisyuinfo--wrapper";
+@use "./p-term--container";
+@use'./p-kisyuinformation--archive';
+@use'./p-recommendation--wrapper';
+@use'./p-recommend--archive--container';
 
 
 

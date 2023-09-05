@@ -144,6 +144,14 @@ function sort_side_menu( $menu_order ) {
       "options-general.php", // 設定
       "separator-last" // 区切り線（最後）
     );
-  }
-  add_filter( 'custom_menu_order', '__return_true' );
-  add_filter( 'menu_order', 'sort_side_menu' );
+}
+add_filter( 'custom_menu_order', '__return_true' );
+add_filter( 'menu_order', 'sort_side_menu' );
+
+  
+/* メディアライブラリーにSVGデータのアップロードを許可する */
+function allow_svg_upload($mimes) {
+$mimes['svg'] = 'image/svg+xml';
+return $mimes;
+}
+add_filter('upload_mimes', 'allow_svg_upload');
