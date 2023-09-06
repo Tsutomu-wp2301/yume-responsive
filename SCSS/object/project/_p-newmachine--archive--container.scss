@@ -1,30 +1,31 @@
 @use "../../foundation/breakpoint" as m;
 
 @include m.mq(sp) {
-	.p-recommend--archive--container {
+	.p-newmachine--archive--container {
 		display: flex;
+    flex-direction: column;
 		justify-content: center;
-		align-items: center;
+		align-items: flex-start;
 		margin-bottom: 20px;
     position: relative;
     .c-kisyu-title {
       p {
-        color: #602300;
+        color: #600100;
         text-align: center;
       }
     }
     .c-kisyu-number {
       p {
-        color: #602300;
+        color: #600100;
         text-align: center;
         text-shadow: -1px -1px 1px #fff8f0, 1px -1px 1px #fff8f0, -1px 1px 1px #fff8f0, 1px 1px 1px #fff8f0; /* 縁取りの影 */
         position: relative;
       }
     }
     &:hover {
-      left: 2px;
       top: 2px;
-      .c-recommend--kisyuinformation {
+      left: 2px;
+      .c-newmachine--kisyuinformation {
         box-shadow: none;
       }
     }
@@ -32,30 +33,31 @@
 }
 
 @include m.mq(tab) {
-  .p-recommend--archive--container {
+  .p-newmachine--archive--container {
 		display: flex;
+    flex-direction: column;
 		justify-content: center;
-		align-items: center;
+		align-items: flex-start;
 		margin-bottom: 20px;
     position: relative;
     .c-kisyu-title {
       p {
-        color: #602300;
+        color: #600100;
         text-align: center;
       }
     }
     .c-kisyu-number {
       p {
-        color: #602300;
+        color: #600100;
         text-align: center;
         text-shadow: -1px -1px 1px #fff8f0, 1px -1px 1px #fff8f0, -1px 1px 1px #fff8f0, 1px 1px 1px #fff8f0; /* 縁取りの影 */
         position: relative;
       }
     }
     &:hover {
-      left: 2px;
       top: 2px;
-      .c-recommend--kisyuinformation {
+      left: 2px;
+      .c-newmachine--kisyuinformation {
         box-shadow: none;
       }
     }

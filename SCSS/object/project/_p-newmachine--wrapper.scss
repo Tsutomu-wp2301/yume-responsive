@@ -1,0 +1,16 @@
+@use"../../foundation/breakpoint" as m;
+
+
+@include m.mq(sp){
+  .p-newmachine--wrapper {
+    margin-top: 30px;
+  }
+}
+
+@include m.mq(tab){
+  .p-newmachine--wrapper {
+    margin-top: 30px;
+  }
+}
+@include m.mq(pc){
+}
