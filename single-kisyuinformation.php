@@ -168,13 +168,24 @@ if (is_singular('kisyuinformation')) {
           </ul>
         </div>
       </section>
+      <?php 
+        if (is_plugin_active('custom-field-suite/cfs.php')) {
+          // カスタムフィールドを取得
+          $pachiseven = CFS()->get('pachiseven');
+          // カスタムフィールド機種情報URLが空欄でないかチェックしてから表示
+          if(!empty($pachiseven)) {
+            echo '<a id="c-button--sp" href="';
+            echo $pachiseven ;
+            echo '" class="c-button--kisyuinfo"><button>パチセブンの情報サイトへ</button></a>';
+          }
+        } else {
+          echo '<p>プラグインCFSを有効化してください</p>';
+        }
+      ?>
+      <a id="c-button--sp" href="<?php echo home_url('/kisyuinformation') ; ?>" class="c-button--kisyuinfo">
+        <button>平方夢らんどの新機種情報へ</button>
+      </a><!-- 新機種情報へボタン -->
     <?php endwhile; endif; ?><!-- ループ終了 -->
-    <a id="c-button--sp" href="<?php echo home_url() ; ?>" class="c-button--archive">
-      <button>新機種情報へ</button>
-    </a><!-- トップページへ戻るボタン -->
-    <a id="c-button--sp" href="https://pachiseven.jp/machines/6414#mpanel2" class="c-button--archive">
-      <button>パチセブン機種情報へ</button>
-    </a><!-- トップページへ戻るボタン -->
   </article>
 </main>
 <?php

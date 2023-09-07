@@ -779,6 +779,60 @@ a {
   }
 }
 @media screen and (max-width: 780px) {
+  .c-button--kisyuinfo {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 240px;
+    margin: auto;
+    padding: 18px 20px;
+    font-weight: bold;
+    border: 2px solid #CC0000;
+    color: #CC0000;
+    transition: 0.5s;
+    margin-top: 30px;
+    margin-bottom: -10px;
+  }
+  .c-button--kisyuinfo:hover {
+    color: #fff;
+    background: #CC0000;
+  }
+  .c-button--kisyuinfo button {
+    color: #CC0000;
+    font-weight: bold;
+  }
+  .c-button--kisyuinfo:hover button {
+    color: #fff;
+  }
+}
+@media screen and (min-width:781.5px) {
+  .c-button--kisyuinfo {
+    display: block;
+    text-align: center;
+    text-decoration: none;
+    width: 300px;
+    margin: auto;
+    padding: 1rem;
+    font-weight: bold;
+    border: 2px solid #CC0000;
+    color: #CC0000;
+    transition: 0.5s;
+    margin-top: 50px;
+    margin-bottom: 50px;
+  }
+  .c-button--kisyuinfo:hover {
+    color: #fff;
+    background: #CC0000;
+  }
+  .c-button--kisyuinfo button {
+    color: #CC0000;
+    font-weight: bold;
+  }
+  .c-button--kisyuinfo:hover button {
+    color: #fff;
+  }
+}
+@media screen and (max-width: 780px) {
   .p-header-flex {
     display: flex;
     justify-content: space-between;

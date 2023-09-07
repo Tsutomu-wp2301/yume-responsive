@@ -121,8 +121,12 @@ body.wp-admin {
 .field-dai_number,
 .field-yugisyu,
 .field-spec,
-.field-arrival {
+.field-arrival,
+.field-pachiseven {
 	background-color: #ffa0a0;
+}
+.edit-post-meta-boxes-area .postbox > .inside {
+	color: #000;
 }
 .postbox-container .cfs_input .field p.notes {
 	color: #000;
