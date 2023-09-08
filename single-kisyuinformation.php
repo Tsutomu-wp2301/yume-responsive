@@ -181,7 +181,7 @@ if (is_singular('kisyuinformation')) {
         } else {
           echo '<p>プラグインCFSを有効化してください</p>';
         }
-      ?>
+      ?><!-- パチセブン機種情報へボタン -->
       <a id="c-button--sp" href="<?php echo home_url('/kisyuinformation') ; ?>" class="c-button--kisyuinfo">
         <button>平方夢らんどの新機種情報へ</button>
       </a><!-- 新機種情報へボタン -->
@@ -189,12 +189,12 @@ if (is_singular('kisyuinformation')) {
   </article>
 </main>
 <?php
-if (is_singular('kisyuinformation')) {
-    // カスタム投稿タイプ用のヘッダーを表示
-    get_template_part('custom-footer');
-} else {
-    // 通常のヘッダーを表示
-    get_footer();
-}
+  if (is_singular('kisyuinformation')) {
+      // カスタム投稿タイプ用のヘッダーを表示
+      get_template_part('custom-footer');
+  } else {
+      // 通常のヘッダーを表示
+      get_footer();
+  }
 ?>
 

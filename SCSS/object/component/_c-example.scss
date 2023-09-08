@@ -1,0 +1,60 @@
+@use"../../foundation/breakpoint" as m;
+
+
+@include m.mq(sp){
+  .c-example {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: -10px;
+    margin-right: 4px;
+    .c-tenkyu {
+      margin-right: 10px;
+      display: flex;
+      align-items: center;
+      &::before {
+        content: "";
+        display: block;
+        width: 16px;
+        height: 16px;
+        border-radius: 2px;
+        background-color: #FEC0BD;
+        margin-right: 4px;
+      }
+    }
+    .c-sinsou {
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+      &::before {
+        content: "";
+        display: block;
+        width: 16px;
+        height: 16px;
+        border-radius: 2px;
+        background-color: #FEE2A0;
+        margin-right: 4px;
+      }
+    }
+    .c-normal {
+      display: flex;
+      align-items: center;
+      margin-right: 10px;
+      &::before {
+        content: "";
+        display: block;
+        width: 16px;
+        height: 16px;
+        border-radius: 2px;
+        background-color: #DEFFCC;
+        margin-right: 4px;
+      }
+    }
+
+  }
+}
+
+@include m.mq(tab){
+}
+@include m.mq(pc){
+}

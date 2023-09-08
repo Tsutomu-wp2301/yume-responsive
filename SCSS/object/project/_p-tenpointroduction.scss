@@ -27,6 +27,7 @@
         left: 0;
         right: 0;
         background-color: rgba(0,0,0,0);
+        z-index: 200;
       }
       li {
         padding: 2px 0px;
@@ -41,7 +42,7 @@
       align-items: center;
       overflow: hidden;
       a::after {
-        z-index: 11;
+        z-index: 110;
         content: "";
         position: absolute;
         top: 0;

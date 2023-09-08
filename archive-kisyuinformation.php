@@ -57,11 +57,8 @@ if (is_singular('kisyuinformation')) {
         <?php get_template_part( 'template-parts/kisyuinfo', 'newmachine' ); ?>
       <?php endwhile; wp_reset_postdata(); endif; ?><!-- サブループ終了 -->
     </section><!-- 最新機種セクション -->
-    <a id="c-button--sp" href="<?php echo home_url() ; ?>" class="c-button--archive">
-      <button>新機種情報へ</button>
-    </a><!-- トップページへ戻るボタン -->
-    <a id="c-button--sp" href="https://pachiseven.jp/machines/6414#mpanel2" class="c-button--archive">
-      <button>パチセブン機種情報へ</button>
+    <a id="c-button--sp" href="<?php echo home_url('/schedule') ; ?>" class="c-button--kisyuinfo">
+      <button>平方夢らんどの営業予定へ</button>
     </a><!-- トップページへ戻るボタン -->
   </article>
 </main>

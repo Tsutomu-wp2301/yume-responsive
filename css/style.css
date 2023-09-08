@@ -696,7 +696,7 @@ a {
     font-size: 18px;
     font-weight: bold;
     padding: 10px;
-    z-index: 10;
+    z-index: 80;
   }
   .c-kisyutitle--flex--newmachine {
     margin-top: -20px;
@@ -830,6 +830,57 @@ a {
   }
   .c-button--kisyuinfo:hover button {
     color: #fff;
+  }
+}
+@media screen and (max-width: 780px) {
+  .c-example {
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+    margin-top: -10px;
+    margin-right: 4px;
+  }
+  .c-example .c-tenkyu {
+    margin-right: 10px;
+    display: flex;
+    align-items: center;
+  }
+  .c-example .c-tenkyu::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    background-color: #FEC0BD;
+    margin-right: 4px;
+  }
+  .c-example .c-sinsou {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  .c-example .c-sinsou::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    background-color: #FEE2A0;
+    margin-right: 4px;
+  }
+  .c-example .c-normal {
+    display: flex;
+    align-items: center;
+    margin-right: 10px;
+  }
+  .c-example .c-normal::before {
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    border-radius: 2px;
+    background-color: #DEFFCC;
+    margin-right: 4px;
   }
 }
 @media screen and (max-width: 780px) {
@@ -1448,6 +1499,9 @@ a {
   h2.p-title--home.margin-top--page {
     margin-top: 0px;
     margin-bottom: 40px;
+  }
+  h2.p-title--home.size24 {
+    font-size: 24px;
   }
   .p-tenkyu .p-title--home {
     margin-bottom: 1em;
@@ -2352,6 +2406,7 @@ a {
     left: 0;
     right: 0;
     background-color: rgba(0, 0, 0, 0);
+    z-index: 200;
   }
   .p-tenpointroduction--wrapper li {
     padding: 2px 0px;
@@ -2366,7 +2421,7 @@ a {
     overflow: hidden;
   }
   .p-tenpointroduction--wrapper--singlepage a::after {
-    z-index: 11;
+    z-index: 110;
     content: "";
     position: absolute;
     top: 0;
@@ -2702,6 +2757,13 @@ a {
   .p-article-layout--page .wp-block-table {
     margin-top: 20px;
     margin-bottom: 40px;
+  }
+  .p-article-layout--page--schedule {
+    background-color: inherit;
+  }
+  .p-article-layout--page--schedule h2 {
+    margin-top: -50px;
+    margin-bottom: 20px;
   }
 }
 @media screen and (min-width:781.5px) {
@@ -3262,6 +3324,32 @@ a {
 @media screen and (min-width:781.5px) {
   .p-newmachine--wrapper {
     margin-top: 30px;
+  }
+}
+@media screen and (max-width: 780px) {
+  .p-hirayume-news--container {
+    padding: 0px 30px;
+  }
+  .p-hirayume-news--container h3 {
+    font-size: 16px;
+    font-weight: bold;
+  }
+  .p-hirayume-news--container h3::before {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #a3a3a3;
+    margin-bottom: 20px;
+  }
+  .p-hirayume-news--container p::after {
+    content: "";
+    display: block;
+    width: 100%;
+    height: 1px;
+    background-color: #a3a3a3;
+    margin-top: 20px;
+    margin-bottom: 10px;
   }
 }
 /* メディアリストタブで表示の切り替え */

@@ -133,6 +133,7 @@ function sort_side_menu( $menu_order ) {
       "edit.php", // 投稿
       "edit.php?post_type=tenpointroduction", // カスタム投稿タイプ
       "edit.php?post_type=kisyuinformation", // カスタム投稿タイプ
+      "edit.php?post_type=hirayume-news", // カスタム投稿タイプ
       "edit.php?post_type=page", // 固定ページ
       "separator1", // 区切り線1
       "upload.php", // メディア
