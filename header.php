@@ -16,8 +16,10 @@
   <div class = "p-header-color p-header-height p-header-flex--sp">
     <div class="p-header-flex">
       <h1 class = "p-header-flex__img ">
-        <P>YUME LAND</p>
-        <img src="<?php echo get_template_directory_uri(); ?>/image/h2logo.png" alt="夢らんどグループ" width="100%">
+        <a href="<?php echo esc_url(home_url());?>">
+          <P>YUME LAND</p>
+        </a>
+        <a href="<?php echo esc_url(home_url());?>"><img src="<?php echo get_template_directory_uri(); ?>/image/h2logo.png" alt="夢らんどグループ" width="100%"></a>
       </h1>
       <a href="https://www.facebook.com/taiheiyumeland">
         <i class="fa-brands fa-facebook"></i>

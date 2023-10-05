@@ -23,6 +23,17 @@
 			left: 0;
 		}
 	}
+	.c-newmachine--kisyuinformation.slot {
+		&::after {
+			content: "";
+			width: 70%;
+			height: 24px;
+			background-color: #0800ff;
+			position: absolute;
+			bottom: 0;
+			left: 0;
+		}
+	} 
 }
 
 @include m.mq(tab) {

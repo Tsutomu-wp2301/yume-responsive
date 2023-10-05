@@ -5,10 +5,13 @@
   .p-header {
     width: 100vw;
     h1 {
-      p {
-        font-size: 24px;
-        color: #fff;
-        font-family: 'ヒラギノ明朝 ProN','Yu Mincho','MS PMincho';
+      a {
+        display: block;
+        p {
+          font-size: 24px;
+          color: #fff;
+          font-family: 'ヒラギノ明朝 ProN','Yu Mincho','MS PMincho';
+        }
       }
     }
   }
