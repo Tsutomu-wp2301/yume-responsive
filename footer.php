@@ -1,6 +1,6 @@
 </body>
 <div id="footer">
-	<div id="fnavi" class="clearfix p-footer-nav">
+	<!-- <div id="fnavi" class="clearfix p-footer-nav">
 		<ul class="p-footer__flex">
 			<div class="p-footer__flex--tab">
 				<li><a href="<?php echo home_url() ; ?>" title="夢らんど">ホーム</a></li>
@@ -16,8 +16,8 @@
 				<li><a href="<?php echo home_url() ; ?>/inquiry/">お問合せ</a>
 			</div>
 		</ul>
-	</div>
-	<div class="p-footer__wrapper">
+	</div> -->
+	<!-- <div class="p-footer__wrapper">
 		<div class="p-footer__logo__flex">
 			<div class="p-footer__logo">
 				<img src="<?php echo get_template_directory_uri() . '/image/h2logo.png'?>" alt="夢らんどグループ">
@@ -56,7 +56,7 @@
 				</div>
 			</div>
 		</div>
-	</div>
+	</div> -->
 </div>
 <div id="footer2" class="p-footer--bottom p-footer--bottom--pc">
 		<div id="copy" class="p-copy">Copyright © Yumeland Group All Rights Reserved.</div>

@@ -741,6 +741,15 @@ a {
     bottom: 0;
     left: 0;
   }
+  .c-newmachine--kisyuinformation.slot::after {
+    content: "";
+    width: 70%;
+    height: 24px;
+    background-color: #0800ff;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+  }
 }
 @media screen and (min-width:781.5px) {
   .c-newmachine--kisyuinformation {
@@ -789,7 +798,6 @@ a {
     font-weight: bold;
     border: 2px solid #CC0000;
     color: #CC0000;
-    transition: 0.5s;
     margin-top: 30px;
     margin-bottom: -10px;
   }
@@ -884,6 +892,57 @@ a {
   }
 }
 @media screen and (max-width: 780px) {
+  .c-new {
+    position: relative;
+    margin-left: 6px;
+  }
+  .c-new P {
+    position: relative;
+    font-family: "Montserrat", sans-serif;
+    font-weight: 800;
+    color: #fd0000;
+    font-size: 16px;
+  }
+  .c-new P::before {
+    content: "";
+    height: 3px;
+    width: 43px;
+    background-color: #fd0000;
+    display: block;
+  }
+  .c-new P::after {
+    content: "";
+    height: 3px;
+    width: 43px;
+    background-color: #fd0000;
+    display: block;
+  }
+}
+@media screen and (min-width:781.5px) {
+  .c-new {
+    font-size: 16px;
+    color: #1f1f1f;
+    font-weight: bold;
+    font-family: "Roboto";
+    position: relative;
+    margin-left: 6px;
+  }
+  .c-new P {
+    position: relative;
+  }
+  .c-new P::before {
+    content: "";
+    height: 3px;
+    width: 45px;
+    background: linear-gradient(to right, #ff0000, #ffffff);
+    display: block;
+    position: absolute;
+    z-index: -10;
+    bottom: 4px;
+    transform: rotate(-8deg);
+  }
+}
+@media screen and (max-width: 780px) {
   .p-header-flex {
     display: flex;
     justify-content: space-between;
@@ -942,7 +1001,10 @@ a {
   .p-header {
     width: 100vw;
   }
-  .p-header h1 p {
+  .p-header h1 a {
+    display: block;
+  }
+  .p-header h1 a p {
     font-size: 24px;
     color: #fff;
     font-family: "ヒラギノ明朝 ProN", "Yu Mincho", "MS PMincho";
@@ -3268,7 +3330,8 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    margin-top: 4px;
     position: relative;
   }
   .p-newmachine--archive--container .c-kisyu-title p {
@@ -3295,7 +3358,8 @@ a {
     flex-direction: column;
     justify-content: center;
     align-items: flex-start;
-    margin-bottom: 20px;
+    margin-bottom: 30px;
+    margin-top: 4px;
     position: relative;
   }
   .p-newmachine--archive--container .c-kisyu-title p {

@@ -1,5 +1,5 @@
 <div class="p-newmachine--archive--container">
-  <div class="c-newmachine--kisyuinformation">
+  <div class="c-newmachine--kisyuinformation<?php if (has_term('47枚スロ', 'yugisyu') || has_term('188枚スロ', 'yugisyu')) echo ' slot'; ?>">
     <div class="c-kisyutitle--flex c-kisyutitle--flex--newmachine">
       <div class="c-kisyu-title">
         <p>
@@ -15,13 +15,14 @@
       </div>
       <div class="c-kisyu-number">
         <p>
+          <?php include_once(ABSPATH . 'wp-admin/includes/plugin.php'); ?>
           <?php 
             if (is_plugin_active('custom-field-suite/cfs.php')) {
               $dai_number = CFS()->get('dai_number');
               if(!empty($dai_number)) {
                   echo esc_html($dai_number);
                 } else { 
-                  echo '機種タイトル';
+                  echo '遊技台番号を入力';
                 } 
             }else{
               echo 'プラグインCFSを有効化してください';

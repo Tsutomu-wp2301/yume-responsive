@@ -22,7 +22,7 @@
               if(!empty($dai_number)) {
                   echo esc_html($dai_number);
                 } else { 
-                  echo '機種タイトル';
+                  echo '遊技台番号を入力';
                 } 
             }else{
               echo 'プラグインCFSを有効化してください';

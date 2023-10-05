@@ -1,4 +1,15 @@
-<?php get_header(); ?>
+<?php
+if (is_singular('kisyuinformation')) {
+    // カスタム投稿タイプ用のヘッダーを表示
+    get_template_part('custom-header');
+  } elseif (is_page('schedule')) {
+    // カスタム投稿タイプのアーカイブページ用のヘッダーを表示
+    get_template_part('custom-header');
+} else {
+    // 通常のヘッダーを表示
+    get_header();
+}
+?>
 <main class="p-main--flex">
   <?php if( have_posts() ) : ?>
     <?php  
@@ -74,6 +85,9 @@
 
   <a id="c-button--sp" href="<?php echo home_url('/kisyuinformation') ; ?>" class="c-button--kisyuinfo">
     <button>平方夢らんどの新機種情報へ</button>
+  </a><!-- 新機種情報へボタン -->
+  <a id="c-button--sp" href="<?php echo home_url('/floormap') ; ?>" class="c-button--kisyuinfo">
+    <button>フロアマップへ</button>
   </a><!-- 新機種情報へボタン -->
   <div class="c-background--menu"></div><!-- メニュー展開時の背景 -->
 </main>

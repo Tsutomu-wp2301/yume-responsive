@@ -33,10 +33,12 @@ function add_files(){
     // CSSファイルの読み込み
     wp_enqueue_style('my_style', get_template_directory_uri().'/css/style.css', array(),date('ymdHis', filemtime( get_template_directory().'/css/style.css' )));
     wp_enqueue_style('wpcalendar_style', get_template_directory_uri().'/css/wpcalendar.css', array(),date('ymdHis', filemtime( get_template_directory().'/css/wpcalendar.css' )));
+    wp_enqueue_style('lightbox_style', get_template_directory_uri().'/css-lightbox/lightbox.css', array(),date('ymdHis', filemtime( get_template_directory().'/css-lightbox/lightbox.css' )));
 
 
     // グーグルフォントの読み込み
     wp_enqueue_style('googlefonts', 'https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap', array(),'1.0.0');
+    wp_enqueue_style('custom-google-fonts', 'https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;700;800;900&display=swap', array(),'1.0.0');
 
     // jQueryの読み込み
     wp_enqueue_script( 'jQuery', get_theme_file_uri( '/JS/jQuery.js' ), array(), '1.0.0', true );
@@ -51,6 +53,8 @@ function add_files(){
     wp_enqueue_script('headerInactive_script', get_template_directory_uri().'/JS/headerInactive.js', array(),'1.0.0',true);
     wp_enqueue_script('accordionMenu_script', get_template_directory_uri().'/JS/accordionMenu.js', array(),'1.0.0',true);
     wp_enqueue_script('drawerMenu_script', get_template_directory_uri().'/JS/drawerMenu.js', array(),'1.0.0',true);
+    wp_enqueue_script('lightbox_script', get_template_directory_uri().'/JS/lightbox.js', array(),'1.0.0',true);
+    wp_enqueue_script('floatingMotion_script', get_template_directory_uri().'/JS/floatingMotion.js', array(),'1.0.0',true);
 }
 add_action('wp_enqueue_scripts', 'add_files');
 

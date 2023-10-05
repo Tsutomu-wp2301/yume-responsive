@@ -10,6 +10,7 @@ if (is_singular('kisyuinformation')) {
     get_header();
 }
 ?>
+
 <main class="p-main--flex">
   <article class="p-kisyuinformation--archive">
     <h2 class="p-title--home  show-underline">新機種情報</h2>
@@ -51,15 +52,30 @@ if (is_singular('kisyuinformation')) {
       $newmachine_query = new WP_Query($newmachine_args);
       if($newmachine_query->have_posts()) : 
       ?>
-      <?php while($newmachine_query->have_posts()) :
-      $newmachine_query->the_post();
-      ?>
-        <?php get_template_part( 'template-parts/kisyuinfo', 'newmachine' ); ?>
+        <?php while($newmachine_query->have_posts()) :
+        $newmachine_query->the_post();
+        ?>
+        <?php 
+          $post_date = strtotime(get_the_date('Y-m-d')); 
+          $two_weeks_ago = strtotime('-2 weeks'); 
+          if ($post_date >= $two_weeks_ago) : ?>
+          <div class="c-new">
+            <p>NEW</p>
+          </div>
+        <?php endif; ?><!-- 投稿から2週間のみNEWマークを表示 -->
+        <?php 
+          $two_month_ago = strtotime('-2 month'); // ２ヶ月前のUNIXタイムスタンプを取得
+          if ($post_date >= $two_month_ago) : ?>
+          <?php get_template_part( 'template-parts/kisyuinfo', 'newmachine' ); ?>
+        <?php endif; ?><!-- 投稿から2ヶ月間のみ投稿を表示 -->
       <?php endwhile; wp_reset_postdata(); endif; ?><!-- サブループ終了 -->
     </section><!-- 最新機種セクション -->
     <a id="c-button--sp" href="<?php echo home_url('/schedule') ; ?>" class="c-button--kisyuinfo">
       <button>平方夢らんどの営業予定へ</button>
-    </a><!-- トップページへ戻るボタン -->
+    </a><!-- 営業予定へボタン -->
+    <a id="c-button--sp" href="<?php echo home_url('/floormap') ; ?>" class="c-button--kisyuinfo">
+      <button>フロアマップへ</button>
+    </a><!-- フロアマップへボタン -->
   </article>
 </main>
 <?php
