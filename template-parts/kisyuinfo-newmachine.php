@@ -1,4 +1,4 @@
-<div class="p-newmachine--archive--container">
+<div class="p-newmachine--archive--container floatingMotion">
   <div class="c-newmachine--kisyuinformation<?php if (has_term('47枚スロ', 'yugisyu') || has_term('188枚スロ', 'yugisyu')) echo ' slot'; ?>">
     <div class="c-kisyutitle--flex c-kisyutitle--flex--newmachine">
       <div class="c-kisyu-title">

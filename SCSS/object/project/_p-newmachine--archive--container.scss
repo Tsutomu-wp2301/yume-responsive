@@ -2,6 +2,7 @@
 
 @include m.mq(sp) {
 	.p-newmachine--archive--container {
+    opacity: 0;
 		display: flex;
     flex-direction: column;
 		justify-content: center;
@@ -35,6 +36,7 @@
 
 @include m.mq(tab) {
   .p-newmachine--archive--container {
+    opacity: 0;
 		display: flex;
     flex-direction: column;
 		justify-content: center;

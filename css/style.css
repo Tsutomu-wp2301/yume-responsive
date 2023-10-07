@@ -3274,6 +3274,7 @@ a {
 }
 @media screen and (max-width: 780px) {
   .p-recommend--archive--container {
+    opacity: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -3300,6 +3301,7 @@ a {
 }
 @media screen and (min-width:781.5px) {
   .p-recommend--archive--container {
+    opacity: 0;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -3326,6 +3328,7 @@ a {
 }
 @media screen and (max-width: 780px) {
   .p-newmachine--archive--container {
+    opacity: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -3354,6 +3357,7 @@ a {
 }
 @media screen and (min-width:781.5px) {
   .p-newmachine--archive--container {
+    opacity: 0;
     display: flex;
     flex-direction: column;
     justify-content: center;
