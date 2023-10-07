@@ -1,4 +1,4 @@
-<div class="p-recommend--archive--container">
+<div class="p-recommend--archive--container floatingMotion">
   <div class="c-recommend--kisyuinformation">
     <div class="c-kisyutitle--flex">
       <div class="c-kisyu-title">
