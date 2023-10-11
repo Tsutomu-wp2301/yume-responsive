@@ -38,7 +38,7 @@
     justify-content: center;
     align-items: center;
     h2 {
-      font-size: 26px;
+      font-size: 34px;
     }
     h3 {display: flex;
       align-items: center;
@@ -54,6 +54,10 @@
         margin-left: 10px;
         border-radius: 3px;
       }
+    }
+    .c-button--kisyuinfo:last-child {
+      margin-top: 0px;
+      margin-bottom: 50px;
     }
   }
 }

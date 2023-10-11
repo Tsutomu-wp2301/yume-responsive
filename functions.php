@@ -160,3 +160,14 @@ $mimes['svg'] = 'image/svg+xml';
 return $mimes;
 }
 add_filter('upload_mimes', 'allow_svg_upload');
+
+
+
+// カスタムエディターの権限設定
+function create_custom_editor_role() {
+    $capabilities = get_role('administrator')->capabilities; // 管理者の権限を取得
+    add_role('custom_editor', 'Custom Editer', $capabilities); // 管理者と同じ権限を持つカスタムロールを作成
+}
+add_action('init', 'create_custom_editor_role');
+
+

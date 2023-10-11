@@ -13,6 +13,15 @@
 }
 
 @include m.mq(tab) {
+  .kyoutai-tilt {
+		/* 筐体画像を30度傾ける */
+		transform: rotate(30deg);
+    position: relative;
+    top: 6px;
+    right: 10px;
+    width: 30%;
+    z-index: 30;
+	}
 }
 @include m.mq(pc) {
 }

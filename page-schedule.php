@@ -38,9 +38,9 @@ if (is_singular('kisyuinformation')) {
     if ($query->have_posts()) :
     while ($query->have_posts()) : $query->the_post();
     $post_date = strtotime(get_the_date('Y-m-d'));
-    $two_weeks_ago = strtotime('-2 weeks');
+    $two_weeks_ago = strtotime('-3 weeks');
 
-    // 投稿日から2週間以内の投稿を表示
+    // 投稿日から3週間以内の投稿を表示
     if ($post_date >= $two_weeks_ago) :
   ?>
   <section class="p-hirayume-news--container">
