@@ -686,6 +686,21 @@ a {
     position: relative;
   }
 }
+@media screen and (min-width:781.5px) {
+  .c-recommend--kisyuinformation {
+    width: 94vw;
+    max-width: 600px;
+    height: 130px;
+    background-color: #fff8f0;
+    border-radius: 10px;
+    box-shadow: 2px 2px 2px 0px #7e7e7e;
+    overflow: hidden;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    position: relative;
+  }
+}
 @media screen and (max-width: 780px) {
   .c-kisyutitle--flex {
     width: 70%;
@@ -707,7 +722,39 @@ a {
     line-height: 1.2;
   }
 }
+@media screen and (min-width:781.5px) {
+  .c-kisyutitle--flex {
+    width: 70%;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    font-size: 18px;
+    font-weight: bold;
+    padding: 10px;
+    z-index: 80;
+  }
+  .c-kisyutitle--flex--newmachine {
+    margin-top: -20px;
+  }
+  .c-kisyutitle--flex .c-kisyu-title {
+    margin-top: 0px;
+    margin-bottom: 10px;
+    line-height: 1.2;
+  }
+}
 @media screen and (max-width: 780px) {
+  .c-tap {
+    background-image: url(../image/tap.svg);
+    width: 70px;
+    height: 70px;
+    position: absolute;
+    bottom: 0;
+    right: 5px;
+    z-index: 40;
+  }
+}
+@media screen and (min-width:781.5px) {
   .c-tap {
     background-image: url(../image/tap.svg);
     width: 70px;
@@ -787,6 +834,18 @@ a {
     z-index: 50;
   }
 }
+@media screen and (min-width:781.5px) {
+  .c-arrival {
+    font-size: 14px;
+    font-weight: bold;
+    margin-left: 5px;
+    color: #fff;
+    position: absolute;
+    bottom: 1px;
+    left: 10px;
+    z-index: 50;
+  }
+}
 @media screen and (max-width: 780px) {
   .c-button--kisyuinfo {
     display: block;
@@ -825,8 +884,8 @@ a {
     border: 2px solid #CC0000;
     color: #CC0000;
     transition: 0.5s;
-    margin-top: 50px;
-    margin-bottom: 50px;
+    margin-top: 30px;
+    margin-bottom: 20px;
   }
   .c-button--kisyuinfo:hover {
     color: #fff;
@@ -3253,7 +3312,7 @@ a {
     align-items: center;
   }
   .p-kisyuinformation--archive h2 {
-    font-size: 26px;
+    font-size: 34px;
   }
   .p-kisyuinformation--archive h3 {
     display: flex;
@@ -3270,6 +3329,10 @@ a {
     margin-right: 8px;
     margin-left: 10px;
     border-radius: 3px;
+  }
+  .p-kisyuinformation--archive .c-button--kisyuinfo:last-child {
+    margin-top: 0px;
+    margin-bottom: 50px;
   }
 }
 @media screen and (max-width: 780px) {
@@ -3532,6 +3595,17 @@ a {
   }
 }
 @media screen and (max-width: 780px) {
+  .kyoutai-tilt {
+    /* 筐体画像を30度傾ける */
+    transform: rotate(30deg);
+    position: relative;
+    top: 6px;
+    right: 10px;
+    width: 30%;
+    z-index: 30;
+  }
+}
+@media screen and (min-width:781.5px) {
   .kyoutai-tilt {
     /* 筐体画像を30度傾ける */
     transform: rotate(30deg);
