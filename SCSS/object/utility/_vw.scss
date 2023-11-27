@@ -1,0 +1,16 @@
+@use"../../foundation/breakpoint" as m;
+
+@include m.mq(sp){
+  .vw {
+    width: 100vw;
+    padding-left: 20px;
+  }
+}
+
+@include m.mq(tab){
+  .vw {
+    width: 100vw;
+  }
+}
+@include m.mq(pc){
+}

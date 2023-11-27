@@ -37,6 +37,16 @@ if (is_singular('kisyuinformation')) {
   <?php while($kisyuinfo_query->have_posts()) :
   $kisyuinfo_query->the_post();
   ?>
+    <div class="vw">
+      <?php 
+      $post_date = strtotime(get_the_date('Y-m-d')); 
+      $two_weeks_ago = strtotime('-2 weeks'); 
+      if ($post_date >= $two_weeks_ago) : ?>
+        <div class="c-new">
+          <p>NEW</p>
+        </div>
+      <?php endif; ?><!-- 投稿から2週間のみNEWマークを表示 -->
+    </div>
     <?php 
     $post_date = strtotime(get_the_date('Y-m-d')); 
     $two_month_ago = strtotime('-2 month'); 
