@@ -3668,4 +3668,30 @@ a {
     width: 100vw;
   }
 }
+@media screen and (max-width: 780px) {
+  .exception {
+    font-weight: bold;
+    -webkit-text-decoration: underline double;
+            text-decoration: underline double;
+    -webkit-text-decoration-color: red;
+            text-decoration-color: red;
+    margin-top: -6px;
+  }
+  .exception span {
+    color: red;
+  }
+}
+@media screen and (min-width:781.5px) {
+  .exception {
+    font-weight: bold;
+    -webkit-text-decoration: underline double;
+            text-decoration: underline double;
+    -webkit-text-decoration-color: red;
+            text-decoration-color: red;
+    margin-top: -6px;
+  }
+  .exception span {
+    color: red;
+  }
+}
 /*# sourceMappingURL=style.css.map */

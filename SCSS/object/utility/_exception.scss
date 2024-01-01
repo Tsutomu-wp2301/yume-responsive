@@ -1,0 +1,27 @@
+@use "../../foundation/breakpoint" as m;
+
+@include m.mq(sp) {
+	.exception {
+		font-weight: bold;
+		text-decoration: underline double;
+		text-decoration-color: red;
+		margin-top: -6px;
+		span {
+			color: red;
+		}
+	}
+}
+
+@include m.mq(tab) {
+	.exception {
+		font-weight: bold;
+		text-decoration: underline double;
+		text-decoration-color: red;
+		margin-top: -6px;
+		span {
+			color: red;
+		}
+	}
+}
+@include m.mq(pc) {
+}
