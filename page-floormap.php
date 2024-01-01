@@ -51,7 +51,7 @@ if (is_singular('kisyuinformation')) {
     $post_date = strtotime(get_the_date('Y-m-d')); 
     $two_month_ago = strtotime('-2 month'); 
     if ($post_date >= $two_month_ago) : ?>
-      <?php get_template_part( 'template-parts/kisyuinfo', 'recommend' ); ?>
+      <?php get_template_part( 'template-parts/kisyuinfo', 'newmachine' ); ?>
     <?php endif; ?><!-- 投稿から2ヶ月間のみ投稿を表示 -->
   <?php endwhile; wp_reset_postdata(); endif; ?><!-- サブループ終了 -->
 

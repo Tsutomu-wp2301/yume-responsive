@@ -24,6 +24,8 @@ if (is_singular('kisyuinformation')) {
         <li class="c-normal">通常営業</li>
       </ui>
     </article>
+    <!-- 大晦日の閉店時間の案内 -->
+    <!-- <p class="exception">※12月31日のみ<span>21時閉店</span>となります</p> -->
   <?php endwhile;  endif; ?>
 
   <h2 class="p-title--home size24">平方夢らんどニュース</h2>
