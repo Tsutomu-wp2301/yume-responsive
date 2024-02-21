@@ -1,43 +1,40 @@
-@use"../../foundation/breakpoint" as m;
+@use "../../foundation/breakpoint" as m;
 
-
-@include m.mq(sp){
-  .p-news--flex {
-    img {
-      width: 100%;
-      height: auto;
-    }
-    p {
-      padding: 10px;
-      margin-top: -30px;
-    }
-  }
+@include m.mq(sp) {
+	.p-news--flex {
+		img {
+			width: 100%;
+			height: auto;
+		}
+		p {
+			padding: 10px;
+		}
+	}
 }
 
-@include m.mq(tab){
-  .p-news--flex {
-    width: 100%;
-    display: flex;
-    img {
-      width: 200px;
-      height: auto;
-    }
-    p {
-      padding: 10px;
-      margin-top: -30px;
-      font-size: 14px;
-    }
-  }
+@include m.mq(tab) {
+	.p-news--flex {
+		width: 100%;
+		display: flex;
+		img {
+			width: 200px;
+			height: auto;
+		}
+		p {
+			padding: 10px;
+			font-size: 14px;
+		}
+	}
 }
-@include m.mq(pc){
-  .p-news--flex {
-    img {
-      width: 300px;
-    }
-    p {
-      padding: 20px;
-      margin-top: -30px;
-      font-size: 18px;
-    }
-  }
+@include m.mq(pc) {
+	.p-news--flex {
+		img {
+			width: 300px;
+		}
+		p {
+			padding: 20px;
+			// margin-top: -30px;
+			font-size: 18px;
+		}
+	}
 }
