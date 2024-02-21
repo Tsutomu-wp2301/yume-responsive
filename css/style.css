@@ -1007,12 +1007,14 @@ a {
   }
   .c-eyecatch:hover {
     transform: scale(1.2);
+    cursor: pointer;
   }
   .p-eyecatch--container {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    margin-top: 50px;
   }
   .p-eyecatch--container li {
     overflow: hidden;
@@ -1023,6 +1025,11 @@ a {
        object-fit: contain;
     width: 100%;
     height: 100%;
+  }
+  .p-eyecatch--container h2 {
+    margin-top: 10px;
+    margin-bottom: 30px;
+    font-size: 18px;
   }
 }
 @media screen and (min-width:781.5px) {
@@ -1053,7 +1060,7 @@ a {
   .p-eyecatch--container h2 {
     margin-top: 20px;
     margin-bottom: 50px;
-    font-size: 20px;
+    font-size: 24px;
   }
 }
 @media screen and (max-width: 780px) {
@@ -2241,7 +2248,6 @@ a {
   }
   .p-news--flex p {
     padding: 10px;
-    margin-top: -30px;
   }
 }
 @media screen and (min-width:781.5px) {
@@ -2255,7 +2261,6 @@ a {
   }
   .p-news--flex p {
     padding: 10px;
-    margin-top: -30px;
     font-size: 14px;
   }
 }
@@ -2265,7 +2270,6 @@ a {
   }
   .p-news--flex p {
     padding: 20px;
-    margin-top: -30px;
     font-size: 18px;
   }
 }

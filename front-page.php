@@ -32,7 +32,7 @@
       <section>
         <ul class="p-eyecatch--container">
           <li>
-            <img class="c-eyecatch" src="<?php echo get_template_directory_uri(); ?>/image/blogImage.jpeg" alt="ブログ" width="">
+            <img class="c-eyecatch" src="<?php echo get_template_directory_uri(); ?>/image/blogImage1.png" alt="ブログ" width="">
           </li>
           <h2>スタッフブログ</h2>
           <li>
@@ -216,7 +216,7 @@
                   <?php echo nl2br(mb_substr(strip_tags($post-> post_content),0,130)); ?>
                 </p>
               </div>
-              <a id="c-button--more--sp" href="<?php the_permalink(); ?>" class="c-button--more"><button>もっと見る</button></a><!-- もっと見るボタン -->
+              <!-- <a id="c-button--more--sp" href="<?php the_permalink(); ?>" class="c-button--more"><button>もっと見る</button></a> --><!-- もっと見るボタン -->
             </li>
             <div class="c-news--line c-news--line--tab"></div>
           <?php endwhile; wp_reset_postdata(); endif; ?><!-- サブループ終了 -->
