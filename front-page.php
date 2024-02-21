@@ -30,6 +30,19 @@
         </ul>
       </section><!-- 営業情報セクション -->
       <section>
+        <ul class="p-eyecatch--container">
+          <li>
+            <img class="c-eyecatch" src="<?php echo get_template_directory_uri(); ?>/image/blogImage.jpeg" alt="ブログ" width="">
+          </li>
+          <h2>スタッフブログ</h2>
+          <li>
+            <img class="c-eyecatch" src="<?php echo get_template_directory_uri(); ?>/image/jobImage.png" alt="採用情報" width="">
+          </li>
+          <h2>夢らんどの採用情報</h2>
+        </ul>
+
+      </section><!-- 求人情報・ブログへのリンク -->
+      <section>
         <div class="p-h2--flex">
           <h2 class= "p-title--home">メディア掲載情報</h2>
         </div>

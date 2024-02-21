@@ -45,6 +45,7 @@ if (is_singular('kisyuinformation')) {
     // 投稿日から3週間以内の投稿を表示
     if ($post_date >= $two_weeks_ago) :
   ?>
+  
   <section class="p-hirayume-news--container">
     <h3>
       <?php the_title(); ?>
