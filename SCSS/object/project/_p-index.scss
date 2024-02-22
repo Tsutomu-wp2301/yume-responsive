@@ -56,16 +56,11 @@
 @use "./p-kisyuinfo";
 @use "./p-kisyuinfo--wrapper";
 @use "./p-term--container";
-@use'./p-kisyuinformation--archive';
-@use'./p-recommend--archive--container';
-@use'./p-newmachine--archive--container';
-@use'./p-newmachine--wrapper';
-@use'./p-hirayume-news--container';
-@use'./JStest';
-
-
-
-
-
-
-
+@use "./p-kisyuinformation--archive";
+@use "./p-recommend--archive--container";
+@use "./p-newmachine--archive--container";
+@use "./p-newmachine--wrapper";
+@use "./p-hirayume-news--container";
+@use "./JStest";
+@use "./p-banner";
+@use "./p-h2--wrapper";

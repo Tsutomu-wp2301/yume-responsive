@@ -31,15 +31,17 @@
       </section><!-- 営業情報セクション -->
       <section>
         <ul class="p-eyecatch--container">
-          <li>
-            <a href="https://ameblo.jp/superyumeland/"><img class="c-eyecatch" src="<?php echo get_template_directory_uri(); ?>/image/blogImage1.png" alt="スタッフブログ" width=""></a>
-          </li>
-          <h2>スタッフブログ</h2>
-          <li>
-            <a href="https://taihei-g-job.jp/list/ds_8000507102/"><img class="c-eyecatch" src="<?php echo get_template_directory_uri(); ?>/image/jobImage.png" alt="採用情報" width=""></a>
-          </li>
-          <h2>夢らんどの採用情報</h2>
+          <div class="p-banner--container">
+            <div class="p-banner">
+              <a href="https://ameblo.jp/superyumeland/"><img class="c-eyecatch" src="<?php echo get_template_directory_uri(); ?>/image/blogImage1.png" alt="スタッフブログ" width=""></a>
+            </div>
+            <div class="p-h2--wrapper">
+              <h2>スタッフブログ</h2>
+              <img class="c-circle" src="<?php echo get_template_directory_uri(); ?>/image/arrow.png" alt="矢印の記号">
+            </div>
+          </div>
         </ul>
+
 
       </section><!-- 求人情報・ブログへのリンク -->
       <section>
