@@ -39,7 +39,16 @@
               <h2>スタッフブログ</h2>
               <img class="c-circle" src="<?php echo get_template_directory_uri(); ?>/image/arrow.png" alt="矢印の記号">
             </div>
-          </div>
+          </div><!-- スタッフブログのバナー -->
+          <div class="p-banner2--container">
+            <div class="p-banner2">
+              <a href="https://ameblo.jp/superyumeland/"><img class="c-eyecatch" src="<?php echo get_template_directory_uri(); ?>/image/blogImage1.png" alt="求人情報" width=""></a>
+            </div>
+            <div class="p-h2--wrapper">
+              <h2>夢らんどの求人情報</h2>
+              <img class="c-circle" src="<?php echo get_template_directory_uri(); ?>/image/arrow2.png" alt="矢印の記号">
+            </div>
+          </div><!-- 夢らんどの求人情報のバナー -->
         </ul>
 
 

@@ -55,6 +55,7 @@ function add_files(){
     wp_enqueue_script('drawerMenu_script', get_template_directory_uri().'/JS/drawerMenu.js', array(),'1.0.0',true);
     wp_enqueue_script('lightbox_script', get_template_directory_uri().'/JS/lightbox.js', array(),'1.0.0',true);
     wp_enqueue_script('floatingMotion_script', get_template_directory_uri().'/JS/floatingMotion.js', array(),'1.0.0',true);
+    wp_enqueue_script('banner_script', get_template_directory_uri().'/JS/banner.js', array(),'1.0.0',true);
 }
 add_action('wp_enqueue_scripts', 'add_files');
 

@@ -1,37 +1,28 @@
 @use "../../foundation/breakpoint" as m;
 
 @include m.mq(sp) {
-	.c-eyecatch {
-		transition: transform 0.3s ease-in-out;
-	}
-	.c-eyecatch:hover {
-		transform: scale(1.2);
-		cursor: pointer;
-	}
 	.p-eyecatch--container {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		margin-top: 50px;
 	}
 }
 
 @include m.mq(tab) {
-	.c-eyecatch {
-		transition: transform 0.3s ease-in-out;
-	}
-	.c-eyecatch:hover {
-		transform: scale(1.2);
-		cursor: pointer;
-	}
 	.p-eyecatch--container {
 		display: flex;
 		flex-direction: column;
 		justify-content: center;
 		align-items: center;
-		margin-top: 100px;
 	}
 }
+
 @include m.mq(pc) {
+	.p-eyecatch--container {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+	}
 }
