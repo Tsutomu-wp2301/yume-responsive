@@ -16,6 +16,21 @@
 			transition: 0.3s ease-in-out; /* ホバー時のトランジション */
 		}
 	}
+  .p-h2--wrapper2 {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 12px;
+		h2 {
+			text-align: center;
+			color: #007c15;
+			margin-right: 8px;
+		}
+		img {
+			margin-left: 8px;
+			transition: 0.3s ease-in-out; /* ホバー時のトランジション */
+		}
+	}
 }
 
 @include m.mq(tab) {
@@ -26,7 +41,22 @@
 		margin-top: 30px;
 		h2 {
 			text-align: center;
-			color: aliceblue;
+			color: #fff;
+			margin-right: 8px;
+		}
+		img {
+			margin-left: 8px;
+			transition: 0.3s ease-in-out; /* ホバー時のトランジション */
+		}
+	}
+	.p-h2--wrapper2 {
+		display: flex;
+		align-items: center;
+		justify-content: center;
+		margin-top: 30px;
+		h2 {
+			text-align: center;
+			color: #007c15;
 			margin-right: 8px;
 		}
 		img {
