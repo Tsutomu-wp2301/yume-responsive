@@ -30,28 +30,30 @@
         </ul>
       </section><!-- 営業情報セクション -->
       <section>
-        <ul class="p-eyecatch--container">
-          <div class="p-banner--container">
-            <div class="p-banner">
-              <a href="https://ameblo.jp/superyumeland/"><img class="c-eyecatch" src="<?php echo get_template_directory_uri(); ?>/image/blogImage1.png" alt="スタッフブログ" width=""></a>
-            </div>
-            <div class="p-h2--wrapper">
-              <h2>スタッフブログ</h2>
-              <img class="c-circle" src="<?php echo get_template_directory_uri(); ?>/image/arrow.png" alt="矢印の記号">
-            </div>
-          </div><!-- スタッフブログのバナー -->
-          <div class="p-banner2--container">
-            <div class="p-banner2">
-              <a href="https://ameblo.jp/superyumeland/"><img class="c-eyecatch" src="<?php echo get_template_directory_uri(); ?>/image/blogImage1.png" alt="求人情報" width=""></a>
-            </div>
-            <div class="p-h2--wrapper">
-              <h2>夢らんどの求人情報</h2>
-              <img class="c-circle" src="<?php echo get_template_directory_uri(); ?>/image/arrow2.png" alt="矢印の記号">
-            </div>
-          </div><!-- 夢らんどの求人情報のバナー -->
-        </ul>
-
-
+        <div class="p-eyecatch--container">
+          <a href="https://ameblo.jp/superyumeland/">
+            <div class="p-banner--container">
+              <div class="p-banner">
+                <img src="<?php echo get_template_directory_uri(); ?>/image/blogImage1.png" alt="スタッフブログ" width="">
+              </div>
+              <div class="p-h2--wrapper">
+                <h2>スタッフブログ</h2>
+                <img class="c-circle" src="<?php echo get_template_directory_uri(); ?>/image/arrow.png" alt="矢印の記号">
+              </div>
+            </div><!-- 夢らんどの求人情報のバナー -->
+          </a>
+          <a href="https://taihei-g-job.jp/list/ds_8000507102/">
+            <div class="p-banner2--container">
+              <div class="p-banner2">
+                <img src="<?php echo get_template_directory_uri(); ?>/image/jobImage5.png" alt="求人情報" width="">
+              </div>
+              <div class="p-h2--wrapper2">
+                <h2>夢らんどの求人情報</h2>
+                <img class="c-circle" src="<?php echo get_template_directory_uri(); ?>/image/arrow2.png" alt="矢印の記号">
+              </div>
+            </div><!-- 夢らんどの求人情報のバナー -->
+          </a>
+        </div>
       </section><!-- 求人情報・ブログへのリンク -->
       <section>
         <div class="p-h2--flex">
